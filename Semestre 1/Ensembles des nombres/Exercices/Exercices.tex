@@ -1,0 +1,187 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[top=2cm,left=1cm,right=1cm,bottom=2cm]{geometry}
+\usepackage{tikz}
+ \usepackage[tikz]{bclogo}%
+ \usetikzlibrary{calc,intersections}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{decorations.pathmorphing}
+\usepackage{amssymb,mathtools,amsthm}
+\usepackage{fourier}
+\usepackage{tkz-tab}
+\usepackage{xcolor}
+\usepackage{multicol, array, fancyhdr}
+\usepackage{tasks}
+\newcommand{\Lim}{\displaystyle\lim}
+\renewcommand{\columnseprule}{1pt}
+\renewcommand{\arraystretch}{1.5}
+% \renewcommand{\displaystyle\frac}[2]{\displaystyle\displaystyle\frac{#1}{#2}}
+
+
+%======================================================
+\newtheoremstyle{mystyle}
+  {\topsep}% espace avant
+  {\topsep}% espace après
+  {\upshape}% police du corps du théorème
+  {}% indentation (vide pour rien, \parindent)
+  {\bfseries\sffamily}% police du titre du théorème
+  { :\newline}% ponctuation après le théorème
+  { }% après le titre du théorème (espace ou \newline)
+  {%
+    \rule[0.5\baselineskip]{0.5\textwidth}{1pt}%
+    \newline\fcolorbox{black}{white}{%
+      \thmname{#1}\thmnumber{ \textup{#2}}\thmnote{ \textnormal{(#3)}}%
+    }%
+    
+    % \vspace{0.5em} % Adjust vertical space after the title
+  }% spécifications du titre
+
+\theoremstyle{mystyle}
+\newtheorem{exo}{Exercice}
+
+%======================================================
+
+
+
+\begin{document}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyhead[L]{Lycée : Zitoun \hspace{1.5cm} Année scolaire : 2024-2025} % Left header
+\fancyhead[C]{ \hspace{4cm} Niveau : TCSF} % Right-Center header
+\fancyhead[R]{Prof. Othmane Laksoumi} % Right header
+\fancyfoot[C]{\thepage} % Footer
+
+
+\begin{center}
+    \textbf{\Large Ensembles Des Nombres}
+\end{center}
+\begin{multicols*}{2}
+
+\begin{exo}
+Compléter par un des symboles $\in$ ou $\not\in$ :
+	\begin{enumerate}
+		\item $-15\dots \mathbb{N}\quad;\quad 15,5\dots\mathbb{D}\quad;\quad 2\times 10,5\dots\mathbb{N}$
+		\item $5\dots \mathbb{Q}\quad;\quad \dfrac{1}{3}\dots\mathbb{D}\quad;\quad 7,55\dots\mathbb{D}\quad;\quad \sqrt{16}\dots\mathbb{Q}$
+		\item $\sqrt{2}\dots \mathbb{Q}\quad;\quad \dfrac{\sqrt{20}}{\sqrt{5}}\dots\mathbb{D}\quad;\quad \sqrt{0,04}\dots\mathbb{D}$
+		\item $\dfrac{1}{5}\dots\mathbb{D}\quad;\quad \dfrac{4}{9}\dots\mathbb{D}\quad;\quad \sqrt{8}\dots\mathbb{Q}\ ;\ \sqrt{49}-\dfrac{1}{3}\dots\mathbb{D}$
+	\end{enumerate}
+\end{exo}
+
+\begin{exo}
+Calculer les expressions suivantes et donner le résultat sous forme de fraction irréductible :\\
+
+		$\hspace{-10mm} A = \dfrac{5}{3} - \dfrac{5}{6} - \dfrac{1}{3}\left(3 - \dfrac{3}{4}\right)\ \ ; \ \ B = \dfrac{2}{3} + \dfrac{7}{2}\times\dfrac{7}{8} - \dfrac{1}{8}\left(7 - \dfrac{57}{19} \right)$
+		
+		
+		 $C = \dfrac{1-\dfrac{1}{2} + \dfrac{1}{3} - \dfrac{1}{4}}{1 + \dfrac{1}{2} - \dfrac{1}{3} + \dfrac{1}{4}}\ \ ; \ \ D = \dfrac{(3^2\times 11^5)^{-2}}{(3^4\times 11^2)^3}\times\dfrac{33^{15}}{3^2}$
+				
+%	\end{enumerate}
+
+\end{exo}
+
+\begin{exo}
+Ecrire les nombre suivantes sous forme $\dfrac{a}{b}$ tels que $a\wedge b = 1$ :
+$$1,25\quad;\quad 0,484848\dots\quad;\quad 5,965965965\dots$$
+$$6,25999\dots\quad;\quad4,74121212\dots\quad;\quad4,4021021021\dots$$
+\end{exo}
+
+\begin{exo}
+Calculer le nombre réel $\alpha$ sachant que : 
+$$2 = 1 + \dfrac{1}{3} + \dfrac{1}{4} + \dfrac{1}{5} + \dfrac{1}{6} + \dfrac{1}{\alpha}$$
+
+Calculer le nombre réel $x$ sachant que : 
+$$1 + \dfrac{1}{2} + \dfrac{1}{3} + \dfrac{1}{4} + \dfrac{1}{5} + \dfrac{1}{6} + x = 2$$
+\end{exo}
+	
+\begin{exo}
+Soit $x,y\in\mathbb{R}^*$ tel que $x\neq y$.
+	
+	Montrer que $\dfrac{-1 + \dfrac{x}{x - y}}{1 + \dfrac{y}{x - y}} = \dfrac{y}{x}$
+	
+	Calculer la valeur du nombre : 
+\end{exo}
+
+
+\begin{exo}
+\text{ }
+	\begin{enumerate}
+		\item Développer et simplifier :
+		$$\hspace{-10mm}A = \left(\dfrac{1}{2}x - 1\right)^2 - (4x - 1)(4x + 1)  \quad ; \quad B = 3(x+2)^2 - 5(x - 3)^2$$
+%		$$B = 3(x+2)^2 - 5(x - 3)^2$$ 
+		$$C = 2(x+1)^3 -3(1-5x) - 4x^2  \quad ; \quad  D = (5x-1)^2 - (x+6)^2$$
+		%$$D = (5x-1)^2 - (x+6)^2$$	
+		$$E = \dfrac{1}{4}(4x - 1)^2 + 2(2x - 1)^2 \quad;\quad F = (x + y)^2 - (x - y)^2$$
+		\item Factoriser :
+		\[
+\hspace{-10mm} A = (x + 2)^2 + (x^2 - 4) \quad ; \quad B = x^3 + 1\quad;\quad C = 8x^3 + 1 \]
+\[
+\hspace{-10mm}  D = x^5 + x^3 - x^2 - 1\quad ; \quad E = x^3 - 8 + 4(x^2 - 4) - 3(x - 2)
+\]
+\[
+\hspace{-10mm} F = x^3 + 125 - 5x(x + 5) \quad ; \quad G = (2x^2 - 1)^3 + x^6  \quad ; \quad H = x^6 - 1
+\]
+	\end{enumerate}
+\end{exo}
+	
+\begin{exo}
+	\text{ }
+	\begin{enumerate}
+		\item Donner l'écriture scientifique des nombres suivants :
+		$$a = 36004 \quad;\quad b = 500\times 0,001 \quad;\quad c = 15000 \times 4000$$
+		$$d = 15\times 10^{-5}\times 0,014 \quad;\quad e = \dfrac{720\times 10^5}{0,00002}$$
+		\item Simplifier :
+		$$A = \left(\dfrac{5^8}{10^2\times 2}\right)\left(\dfrac{2^3\times 5^{-3}}{4\times 25}\right)^2 $$
+		\end{enumerate}
+\end{exo}
+
+\begin{exo}
+	\text{ }
+	\begin{enumerate}
+		\item Simplifier les nombres suivants :
+		$$A = 3\sqrt{112} - 2\sqrt{7} + 5\sqrt{28}\quad;\quad B = \dfrac{3 + \sqrt{11}}{\sqrt{13} - 2\sqrt{5}} $$
+		$$C = (\sqrt{3} + \sqrt{2} - \sqrt{5})(\sqrt{3} + \sqrt{2} + \sqrt{5}) \quad;\quad D = \dfrac{-\sqrt{3}}{\sqrt{6} - \sqrt{2}}$$
+		\item Montrer que : $12^3 = (9+\sqrt{5})^3 + (9 - \sqrt{5}$.
+		\item Soit $a,b\in\mathbb{R}^*_+$ tel que $\sqrt{\dfrac{a}{b}} + \sqrt{\dfrac{b}{a}} = \sqrt{5}$
+		\begin{enumerate}
+			\item Montrer que : $\dfrac{a}{b} + \dfrac{b}{a} = 3$
+			\item Calculer $\dfrac{a^2}{b^2} + \dfrac{b^2}{a^2}$ et $\dfrac{a^3}{b^3} + \dfrac{b^3}{a^3}$
+		\end{enumerate}
+	\end{enumerate}
+\end{exo}
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{multicols*}
+
+
+
+\end{document}
