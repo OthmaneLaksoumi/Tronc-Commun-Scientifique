@@ -314,7 +314,7 @@ title=#1,coltitle=black,fonttitle=\sffamily}
     \begin{minipage}{8cm}
     \textcolor{darkbrown}{Année scolaire : } 2024-2025 \\
     \textcolor{darkbrown}{Niveau : } Tronc commun scientifique \\
-    \textcolor{darkbrown}{Durée totale : } $5h$
+    \textcolor{darkbrown}{Durée totale : } $6h$
     \end{minipage}
 \end{mybox}
 
@@ -587,12 +587,55 @@ Soit $x;y\in\mathbb{R}$ et $r > 0$.
 \end{enumerate}
 \end{Proposition}
 
+\begin{Application}
+Résoudre dans $\mathbb{R}$ :
+\begin{multicols}{2}
+	\begin{enumerate}
+		\item $|3x - 5| = 4$
+		\item $|5x - 8| = 7$
+		\item $|x - 2| \leq 1$
+		\item $|x - 2| < 1$
+		\item $|3 - x| > 2$
+		\item $|x| \geq 1$
+	\end{enumerate}
+\end{multicols}
+\end{Application}
+
 \mysection{Intervalles}
 \begin{Activite}
-
-
+Représenter chaque fois sur une droite graduée $D(O;I)$ l'ensemble des nombres réels $x$ dans les cas suivants :
+$$2\leq x \leq 5 \ \ ; \ \ -2\leq x \leq -5 \ \ ; \ \ 0\leq x < 1 \ \ ; \ \ 2 < x < 3$$
 \end{Activite}
 
+\begin{Definition}
+Soient $a;b\in\mathbb{R}$ tel que $a < b$.
+
+L'ensemble des nombres réels $x$ tel que $a\leq x\leq b$ est appelée \textcolor{red}{l'intervalle} d'extrémités $a$ et $b$, on le note $[a;b]$.
+\begin{center}
+	\begin{tikzpicture}
+    % Draw the line with arrow
+    \draw[->, thick] (-1,0) -- (4,0);
+    % Draw the interval line in red
+    \draw[red, thick] (0,0) -- (3,0);
+    % Add the [ bracket on the left
+    \node at (0,0) {\textcolor{red}{[}};
+    % Add the ] bracket on the right
+    \node at (3,0) {\textcolor{red}{]}};
+    % Label the points
+    \node[below, black] at (0,0) {$a$};
+    \node[below, black] at (3,0) {$b$};
+\end{tikzpicture}
+\end{center}
+On défini les intervalles de l'ensemble $\mathbb{R}$ par la manière suivante :
+\begin{center}
+	\begin{tabular}{|>{\centering}p{4cm}|>{\centering}p{6cm}|>{}p{1.5cm}|>{}p{2.5cm}|}
+\hline
+	 Ensemble des nombres réels qui vérifiant & Représentation sur la droite numérique & Notation & L'intervalle  \\
+\hline
+\end{tabular}
+\end{center}
+
+\end{Definition}
 
 &\\
 \hline
