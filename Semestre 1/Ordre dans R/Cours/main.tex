@@ -589,7 +589,7 @@ Soit $x;y\in\mathbb{R}$ et $r > 0$.
 
 \begin{Application}
 Résoudre dans $\mathbb{R}$ :
-\begin{multicols}{2}
+%\begin{multicols}{2}
 	\begin{enumerate}
 		\item $|3x - 5| = 4$
 		\item $|5x - 8| = 7$
@@ -598,7 +598,7 @@ Résoudre dans $\mathbb{R}$ :
 		\item $|3 - x| > 2$
 		\item $|x| \geq 1$
 	\end{enumerate}
-\end{multicols}
+%\end{multicols}
 \end{Application}
 
 \mysection{Intervalles}
@@ -607,6 +607,14 @@ Représenter chaque fois sur une droite graduée $D(O;I)$ l'ensemble des nombres
 $$2\leq x \leq 5 \ \ ; \ \ -2\leq x \leq -5 \ \ ; \ \ 0\leq x < 1 \ \ ; \ \ 2 < x < 3$$
 \end{Activite}
 
+&\\
+\hline
+
+\end{tabular}
+
+\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
+\hline
+\vspace{1mm}
 \begin{Definition}
 Soient $a;b\in\mathbb{R}$ tel que $a < b$.
 
@@ -614,7 +622,7 @@ L'ensemble des nombres réels $x$ tel que $a\leq x\leq b$ est appelée \textcolo
 \begin{center}
 	\begin{tikzpicture}
     % Draw the line with arrow
-    \draw[->, thick] (-1,0) -- (4,0);
+    \draw[thick] (-1,0) -- (4,0);
     % Draw the interval line in red
     \draw[red, thick] (0,0) -- (3,0);
     % Add the [ bracket on the left
@@ -628,22 +636,280 @@ L'ensemble des nombres réels $x$ tel que $a\leq x\leq b$ est appelée \textcolo
 \end{center}
 On défini les intervalles de l'ensemble $\mathbb{R}$ par la manière suivante :
 \begin{center}
-	\begin{tabular}{|>{\centering}p{4cm}|>{\centering}p{6cm}|>{}p{1.5cm}|>{}p{2.5cm}|}
+	\begin{tabular}{|>{\centering}p{3.5cm}|>{\centering}p{5cm}|>{\centering}p{1.4cm}|>{\centering\arraybackslash}p{3.6cm}|}
 \hline
 	 Ensemble des nombres réels qui vérifiant & Représentation sur la droite numérique & Notation & L'intervalle  \\
 \hline
+$a\leq x\leq b$ 
+&
+\begin{tikzpicture}
+    % Draw the line with arrow
+    \draw[thick] (-1,0) -- (4,0);
+    % Draw the interval line in red
+    \draw[red, thick] (0,0) -- (3,0);
+    % Add the [ bracket on the left
+    \node at (0,0) {\textcolor{red}{[}};
+    % Add the ] bracket on the right
+    \node at (3,0) {\textcolor{red}{]}};
+    % Label the points
+    \node[below, black] at (0,0) {$a$};
+    \node[below, black] at (3,0) {$b$};
+\end{tikzpicture}
+&
+$[a;b]$
+&
+Intervalle fermé $[a;b]$\\
+\hline
+$a < x < b$ 
+&
+\begin{tikzpicture}
+    % Draw the line with arrow
+    \draw[thick] (-1,0) -- (4,0);
+    % Draw the interval line in red
+    \draw[red, thick] (0,0) -- (3,0);
+    % Add the [ bracket on the left
+    \node at (0,0) {\textcolor{red}{]}};
+    % Add the ] bracket on the right
+    \node at (3,0) {\textcolor{red}{[}};
+    % Label the points
+    \node[below, black] at (0,0) {$a$};
+    \node[below, black] at (3,0) {$b$};
+\end{tikzpicture}
+&
+$]a;b[$
+&
+Intervalle ouvert $]a;b[$\\
+\hline
+$a\leq x< b$ 
+&
+\begin{tikzpicture}
+    % Draw the line with arrow
+    \draw[thick] (-1,0) -- (4,0);
+    % Draw the interval line in red
+    \draw[red, thick] (0,0) -- (3,0);
+    % Add the [ bracket on the left
+    \node at (0,0) {\textcolor{red}{[}};
+    % Add the ] bracket on the right
+    \node at (3,0) {\textcolor{red}{[}};
+    % Label the points
+    \node[below, black] at (0,0) {$a$};
+    \node[below, black] at (3,0) {$b$};
+\end{tikzpicture}
+&
+$[a;b[$
+&
+Intervalle semi-ouvert à droite $[a;b[$\\
+\hline
+$a< x\leq b$ 
+&
+\begin{tikzpicture}
+    % Draw the line with arrow
+    \draw[thick] (-1,0) -- (4,0);
+    % Draw the interval line in red
+    \draw[red, thick] (0,0) -- (3,0);
+    % Add the [ bracket on the left
+    \node at (0,0) {\textcolor{red}{]}};
+    % Add the ] bracket on the right
+    \node at (3,0) {\textcolor{red}{]}};
+    % Label the points
+    \node[below, black] at (0,0) {$a$};
+    \node[below, black] at (3,0) {$b$};
+\end{tikzpicture}
+&
+$]a;b]$
+&
+Intervalle semi-ouvert à gauche $]a;b]$\\
+\hline
+$x\geq a$ 
+&
+\begin{tikzpicture}
+    % Draw the line with arrow
+    \draw[thick] (-1,0) -- (4,0);
+    % Draw the interval line in red
+    \draw[red, thick] (0,0) -- (4,0);
+    % Add the [ bracket on the left
+    \node at (0,0) {\textcolor{red}{[}};
+    % Add the ] bracket on the right
+%    \node at (3,0) {\textcolor{red}{]}};
+    % Label the points
+    \node[below, black] at (0,0) {$a$};
+%    \node[below, black] at (3,0) {$b$};
+\end{tikzpicture}
+&
+$[a;+\infty[$
+&
+Intervalle fermé $[a;+\infty[$\\
+\hline
+$x\leq a$ 
+&
+\begin{tikzpicture}
+    % Draw the line with arrow
+    \draw[thick] (-1,0) -- (4,0);
+    % Draw the interval line in red
+    \draw[red, thick] (1,0) -- (-1,0);
+    % Add the [ bracket on the left
+    \node at (1,0) {\textcolor{red}{]}};
+    % Add the ] bracket on the right
+%    \node at (3,0) {\textcolor{red}{]}};
+    % Label the points
+    \node[below, black] at (1,0) {$a$};
+%    \node[below, black] at (3,0) {$b$};
+\end{tikzpicture}
+&
+$]-\infty;a]$
+&
+Intervalle fermé $]-\infty;a]$\\
+\hline
+$x > a$ 
+&
+\begin{tikzpicture}
+    % Draw the line with arrow
+    \draw[thick] (-1,0) -- (4,0);
+    % Draw the interval line in red
+    \draw[red, thick] (0,0) -- (4,0);
+    % Add the [ bracket on the left
+    \node at (0,0) {\textcolor{red}{]}};
+    % Add the ] bracket on the right
+%    \node at (3,0) {\textcolor{red}{]}};
+    % Label the points
+    \node[below, black] at (0,0) {$a$};
+%    \node[below, black] at (3,0) {$b$};
+\end{tikzpicture}
+&
+$]a;+\infty[$
+&
+Intervalle ouvert $]a;+\infty[$\\
+\hline
+$x < a$ 
+&
+\begin{tikzpicture}
+    % Draw the line with arrow
+    \draw[thick] (-1,0) -- (4,0);
+    % Draw the interval line in red
+    \draw[red, thick] (1,0) -- (-1,0);
+    % Add the [ bracket on the left
+    \node at (1,0) {\textcolor{red}{[}};
+    % Add the ] bracket on the right
+%    \node at (3,0) {\textcolor{red}{]}};
+    % Label the points
+    \node[below, black] at (1,0) {$a$};
+%    \node[below, black] at (3,0) {$b$};
+\end{tikzpicture}
+&
+$]-\infty;a[$
+&
+Intervalle ouvert $]-\infty;a[$\\
+\hline
 \end{tabular}
 \end{center}
-
 \end{Definition}
+
+\textcolor{red}{Remarque :}
+\begin{itemize}
+	\item $a\leq x\leq b$ signifie que $x\in [a;b]$ et $a<x\leq b$ signifie que $x\in ]a;b]$.
+	\item Les symboles $+\infty$ (plus l'infinie) et $-\infty$ (moins l'infini) ne sont pas des nombres réels.
+	\item Le crochet est toujours ouvert du côté de $+\infty$ et $-\infty$ dans les intervalles de $\mathbb{R}$.
+	\item L'ensemble qui ne contient aucun élément est appelé l'ensemble vide on le note par : \textcolor{red}{$\emptyset$}.
+	\item $\mathbb{R} = ]-\infty; +\infty[\quad ; \quad \mathbb{R}^+ = [0; +\infty[\quad ; \quad \mathbb{R}^- = ]-\infty;0] \quad ; \quad \mathbb{R}^*_+ = ]0; +\infty[\quad ; \quad \mathbb{R}^*_- = ]-\infty; +\infty[$.
+\end{itemize}
+
+\begin{Exemple}
+La représentation des deux intervalles $[-3;2]$ et $[-1;4]$ sur une droite numérique est la suivante :
+\begin{center}
+	\begin{tikzpicture} 
+\draw[-] (-7,0) -- (6,0); % Dessiner la droite 
+\foreach \x in {-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6} % Dessiner les graduations
+ \draw (\x,0.1) -- (\x,-0.1); 
+ \draw[red, thick] (-3,0) -- (2,0);
+ \draw[green, thick] (-1,0.02) -- (4,0.02);
+ \node at (-3,0) {\textcolor{red}{[}};
+ \node at (2,0) {\textcolor{red}{]}};
+ \node at (-1,0.02) {\textcolor{green}{[}};
+ \node at (4,0.02) {\textcolor{green}{]}};
+% \node at (-6,0.3) {F}; 
+% \node at (-5,0.3) {D}; 
+% \node at (-3,0.3) {A};
+% \node at (-1,0.3) {C}; 
+% \node at (0,0.3) {O}; 
+% \node at (2,0.3) {E}; 
+% \node at (3,0.3) {B}; 
+ \foreach \x in {-6,-5,-4,-3,-2,-1,0,1,2,3} % Étiqueter les graduations
+ \node at (\x,-0.3) {\x};
+ \end{tikzpicture}
+\end{center}
+\end{Exemple}
+
+\begin{Application}
+Représenter chacun des deux intervalles $I = [2;+\infty[$ et $J = ]-5;7]$ sur une droite numérique.
+\end{Application}
+&\\
+\hline
+\end{tabular}
+
+\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
+\hline
+\vspace{1mm}
+\begin{Definition}
+Soit $I$ et $J$ deux intervalles.
+\begin{itemize}
+	\item L'ensemble des éléments communs de $I$ et $J$ se note $I\cap J$ et se lit \textcolor{red}{$I$ inter $J$}.
+	\item L'ensemble des éléments qui appartiennent à $I$ ou à $J$ se note $I\cup J$ et se lit \textcolor{red}{$I$ union $J$}.
+\end{itemize}
+\end{Definition}
+
+\begin{Exemple}
+Déterminer $[3;5]\cap [2;4]$ et $[3;5]\cup [2;4]$.
+\end{Exemple}
+
+\begin{Application}
+Ecrire si possible sous forme d'un intervalle les ensembles suivants :
+\begin{enumerate}
+	\item $[2;6]\cap [-1;3]$ et $[2;6]\cup [-1;3]$
+	\item $[2;+\infty[\cap ]-\infty;1]$ et $[2;+\infty[\cup ]-\infty;1]$
+	\item $[3;7[\cap [5;+\infty[$ et $[3;7[\cup [5;+\infty[$
+	\item Écrire $\mathbb{R}^*$ sous forme d'une union de deux intervalles.
+\end{enumerate}
+\end{Application}
+
+\begin{Application}
+Déterminer l'ensemble des réels $x$ qui vérifient :
+\begin{multicols}{2}
+	\begin{enumerate}
+		\item $-1 \leq x < 0$
+		\item $x> -1$
+		\item $|x| \leq 1$
+		\item $|x| < 5$
+		\item $|x| > 1$
+		\item $|x| \geq 3$
+\end{enumerate}
+\end{multicols}
+\end{Application}
+
+\mysection{Encadrement}
+\begin{Definition}
+Soient $a$ et $b$ deux nombres réels tels que $a<b$.
+Toute double inégalité (parmi les doubles inégalités suivantes) $a<x<b\;\ a<x\leq b\;\ a\leq x < b\;\ a\leq x\leq b$ est appelée encadrement, de $x$, d'amplitude $b - a$.
+\end{Definition}
+
+\begin{Exemple}
+\begin{itemize}
+	\item $3,14 < x < 3,15$ est un encadrement de $\pi$ d'amplitude $3,15 - 3,14 = 0,01$.
+	\item $1< \dfrac{3}{2} < 2$ est un encadrement de $\dfrac{3}{2}$ d'amplitude $2 - 1 = 1$.
+\end{itemize}
+\end{Exemple}
+
+\begin{Application}
+\begin{enumerate}
+	\item Déterminer un encadrement de $\sqrt{5}$ d'amplitude $1$.
+	\item Déterminer un encadrement de $\dfrac{9}{8}$ d'amplitude $2$ et un autre encadrement de $\dfrac{9}{8}$ d'amplitude $0,02$.
+\end{enumerate}
+\end{Application}
+
+
 
 &\\
 \hline
-
 \end{tabular}
-
-
-
 
 
 
