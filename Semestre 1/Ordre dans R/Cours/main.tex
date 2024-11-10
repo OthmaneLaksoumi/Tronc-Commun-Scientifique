@@ -904,15 +904,181 @@ Toute double inégalité (parmi les doubles inégalités suivantes) $a<x<b\;\ a<
 	\item Déterminer un encadrement de $\dfrac{9}{8}$ d'amplitude $2$ et un autre encadrement de $\dfrac{9}{8}$ d'amplitude $0,02$.
 \end{enumerate}
 \end{Application}
-
-
-
 &\\
 \hline
 \end{tabular}
 
 
+\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
+\hline
+\vspace{1mm}
+\mysubsection{1}{Encadrement de la somme de deux nombres}
+\begin{Proposition}
+Si $a\leq x\leq b$ et $c\leq x\leq d$ sont des encadrements des deux nombres réels $x$ et $y$, alors :
+$\begin{cases}
+a + c \leq x + y \leq b + d \\
+a - d \leq x - y \leq b - c
+\end{cases}$ son des encadrement des réels $x+y$ et $x-y$.
+\end{Proposition}
 
+\begin{Exemple}
+\begin{itemize}
+	\item On a : $1,41 < \sqrt{2} < 1,42$ et $1,732 < \sqrt{3} < 1,733$.
+	
+	Donc $3,142 < \sqrt{3} + x < 3,153$ est un encadrement de $\sqrt{3} + \sqrt{2}$ d'amplitude $3,153 - 3,142 = 0,011$.
+	\item On a : $1,732 - 1,42 < \sqrt{3} - \sqrt{2} < 1,733 - 1,41$ c'est-à-dire : $0,312 < \sqrt{3} - \sqrt{2} < 0,323$ est un encadrement de $\sqrt{3} - \sqrt{2}$ d'amplitude de $0,01$.
+\end{itemize}
+\end{Exemple}
+\mysubsection{2}{Encadrement du produit de deux nombres}
+\begin{Proposition}
+Soient $a,b,c$ et $d$ des nombres réels \underline{positifs}.
+
+Si $a\leq x\leq b$ et $x\leq y\leq d$ sont deux encadrement de $x$ et $y$, alors $ax\leq xy\leq bd$ est encadrement de $xy$.
+\end{Proposition}
+
+\begin{Exemple}
+\begin{itemize}
+	\item Soit $1,3\leq x\leq 1,4$ et $3,9\leq y\leq 4$, alors $5,07\leq xy\leq 5,6$.
+	\item Soit $-17,4\leq a\leq -14,3$ et $-22\leq b\leq -21,9$...
+\end{itemize}
+\end{Exemple}
+\textcolor{red}{Remarque : }
+
+Si $a\leq x\leq b$, alros $-b\leq -x \leq -a$.
+
+\begin{Application}
+Donner un encadrement de $x + y$ et $xy$ dans chacun des cas suivants :
+\begin{enumerate}
+	\item $1,01 \leq x\leq 1,02$ et $1,9\leq y\leq 2$
+	\item $-2\leq x\leq -1$ et $4\leq y \leq 4,5$
+	\item $-4\leq x\leq 2$ et $1\leq y\leq 3$
+	\item $-1\leq x\leq 1$ et $1\leq y\leq 2$
+\end{enumerate}
+\end{Application}
+\mysubsection{3}{Encadrement de l'inverse et du quotient}
+\begin{Proposition}
+Soient $a,b,c$ et $d$ des nombres réels \underline{strictement positifs}.
+
+Si $a\leq x\leq b$ et $c\leq y\leq d$ sont deux encadrements des deux nombres réels $x$ et $y$, alors : $\dfrac{1}{b}\leq x\leq \dfrac{1}{a}$ et $\dfrac{1}{d}\leq y\leq \dfrac{1}{c}$ et $\dfrac{a}{d}\leq \dfrac{x}{y}\leq\dfrac{b}{c}$ sont deux encadrements des réels $\dfrac{1}{y}$ et $\dfrac{x}{y}$.
+\end{Proposition}
+
+&\\
+\hline
+
+\end{tabular}
+
+
+\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
+\hline
+\vspace{1mm}
+\begin{Exemple}
+\begin{itemize}
+	\item Soit $2\leq x\leq 4$ et $1\leq y\leq 3$.
+
+Alors $\dfrac{1}{3}\leq y\leq 1$(encadrement de $y$) et $\dfrac{2}{3}\leq \dfrac{x}{y}\leq 4$ (encadrement de $\dfrac{x}{y}$.
+	\item $-4\leq a\leq -2$ et $1\leq b\leq 3$.
+\end{itemize}
+\end{Exemple}
+
+\begin{Application}
+\begin{enumerate}
+	\item Soit $3,95\leq x\leq 4,01$ et $-2\leq y\leq -1,2$. Donner un encadrement de $\dfrac{x}{y}$
+	\item Soit $0\leq a\leq 3$ et $-4\leq b\leq -2$. Donner un encadrement de chacun des deux nombres : $\dfrac{a}{b}$ et $\dfrac{2a + 3b}{3a - 2b}$.
+\end{enumerate}
+\end{Application}
+
+\mysection{Approximation}
+
+\mysubsection{1}{Approximation par défaut et par excès}
+\begin{Definition}
+Soit $a\leq x\leq b$ ($a < x < b$ ; $a < x \leq b$ ; $a\leq x < b$) un encadrement du nombre $x$ d'amplitude $b-a$.
+\begin{itemize}
+	\item Le nombre $a$ est appelé approximation du nombre $x$ à prés par défaut.
+	\item Le nombre $b$ est appelé approximation du nombre $x$ à prés par excès.
+\end{itemize}
+\end{Definition}
+
+\begin{Exemple}
+\begin{itemize}
+	\item On a $3,14 < \pi < 3,15$.
+	
+	Donc : $3,14$ est une approximation du nombre $\pi$ à $0,01$ prés par défaut
+	
+	$3,15$ est une approximation du nombre $\pi$ à $0,01$ prés par excès.
+	\item On a $1,4142 < \sqrt{2} < 1,4143$.
+	
+	Donc : $1,4142$ est une approximation du nombre $\sqrt{2}$ à $0,0001 = 10^{-4}$ près par défaut
+	
+	$1,4143$ est une approximation du nombre $\sqrt{2}$ à $0,0001$ prés par excès.
+\end{itemize}
+\end{Exemple}
+
+\begin{Application}
+\begin{enumerate}
+	\item Donner une approximation de $\dfrac{5}{4}$ à $10^{-1}$ près par excès.
+	\item Donner une approximation de $\dfrac{}{25}$ à $10^{-2}$ près par défaut.	
+\end{enumerate}
+\end{Application}
+
+\mysubsection{2}{Valeur approchée}
+\begin{Definition}
+Soient $x$ un nombre réel et $r$ un nombre réel strictement positif.
+
+Tout nombre réel $a$ qui vérifie l'une ou l'autre des deux inégalités $|x - a| < r$ ou $|x - a|\leq r$ est appelé valeur approchée (ou approximation) du nombre $x$ à $r$ près (ou à la précision $r$ prés).
+\end{Definition}
+
+\begin{Exemple}
+On a : $|\sqrt{5} - 2,235|\leq 0,005$. Donc $2,235$ est une valeur approchée du nombre $\sqrt{5}$ à la précision $0,005$ (ou $0,005$ près).
+\end{Exemple}
+
+&\\
+\hline
+\end{tabular}
+
+\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
+\hline
+\vspace{1mm}
+\begin{Application}
+\begin{enumerate}
+	\item Déterminer une valeur approchée de $\dfrac{8}{7}$ à $10^{-2}$ près.
+	\item Soit $a\leq x\leq b$ un encadrement du nombre $x$.
+	
+	Montrer que $b$ est une valeur approchée de $x$ à $\dfrac{b-a}{2}$ près. 
+\end{enumerate}
+\end{Application}
+
+\mysection{Approximation décimales}
+\begin{Definition}
+Soit $x$ un nombre réel tel que : $N\times 10^{-p}\leq x\leq (N+1)\times 10^{-p}$ où $p\in\mathbb{N}$ et $N\in\mathbb{Z}$.
+\begin{itemize}
+	\item Le nombre $N\times 10^{-p}$ est appelé l'approximation décimales du nombre $x$ à $10^{-p}$ prés par défaut.
+	\item Le nombre $(N+1)\times 10^{-p}$ est appelé l'approximation décimales du nombre $x$ à $10^{-p}$ prés par excès.
+\end{itemize}
+\end{Definition}
+
+\begin{Exemple}
+On a : $0,62<\dfrac{5}{8} < 0,63$ c'est-à-dire $62\times 10^{-2} < \dfrac{5}{8} < (62 + 1)\times 10^{-2}$.
+
+Donc : $62\times 10^{-2} = 0,62$ est l'approximation décimale du nombre $\dfrac{5}{8}$ à $10^{-2}$ près par défaut.
+
+$63\times 10^{-2} = 0,63$ est l'approximation décimale du nombre $\dfrac{5}{8}$ à $10^{-2}$ près par excès.
+\end{Exemple}
+\begin{Application}
+\begin{enumerate}
+	\item Donner l'approximation décimale du nombre $\sqrt{3}$ à $10^{-2}$ prés par défaut.
+	\item Donner l'approximation décimale du nombre $\sqrt{2}$ à $10^{-2}$ prés par excès.
+	\item On pose $a = \dfrac{\sqrt{7} - \sqrt{3}}{2}$
+	
+	Sachant que $1,73 < \sqrt{3} < 1,74$ et $2,64 < \sqrt{7} < 2,65$
+	
+	Donner les approximations décimales à $10^{-2}$ prés par défaut et par excès du nombre $a$.
+\end{enumerate}
+\end{Application}
+
+
+&\\
+\hline
+\end{tabular}
 
 
 
