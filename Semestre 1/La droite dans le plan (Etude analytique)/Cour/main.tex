@@ -1,0 +1,365 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[right=0.5cm, left=0.5cm,top=1cm,bottom=1.5cm]{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{array, tasks}
+\usepackage{blindtext}
+\usepackage{fontspec}
+\usepackage{amsmath,amsfonts,amssymb,mathrsfs,amsthm}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage[font={bf}]{caption}
+% \captionsetup[table]{box=colorbox,boxcolor=orange!20}
+\usepackage{float}
+\usepackage{esvect}
+\usepackage{tabularx}
+\usepackage{pifont}
+\usepackage{colortbl}
+ \usepackage{fancybox}
+ \mathversion{bold}
+ \usepackage{pgfplots}
+ % \usepackage[utf8]{inputenc}
+\usepackage{tikz}
+ \usepackage[tikz]{bclogo}%
+ \usepackage{mathpazo}
+\usepackage{ulem}
+\usepackage{yagusylo}
+\usepackage{textcomp}
+\usepackage{blindtext}
+\usepackage{multicol}
+\usepackage{varwidth}
+\usetikzlibrary{calc,intersections}
+\usepackage{pgfplots}
+%\usepackage{fourier}
+\pgfplotsset{compat=1.11}
+\usepackage{tkz-tab}
+\usepackage{xcolor}
+\usepackage{color}
+\usetikzlibrary{calc}
+\mathchardef\times="2202
+\usepackage[most]{tcolorbox}
+\definecolor{lightgray}{gray}{0.9}
+\definecolor{ocre}{RGB}{0,244,244} 
+\definecolor{head}{RGB}{255,211,204}
+\definecolor{browndark}{RGB}{105,79,56}
+%\RequirePackage[framemethod=default]{mdframed}
+\usepackage{tikz}
+\usetikzlibrary{calc,patterns,decorations.pathmorphing,arrows.meta,decorations.markings}
+\usetikzlibrary{arrows.meta}
+\makeatletter
+\tcbuselibrary{skins,breakable,xparse}
+\tcbset{%
+  save height/.code={%
+    \tcbset{breakable}%
+    \providecommand{#1}{2cm}%
+    \def\tcb@split@start{%
+      \tcb@breakat@init%
+      \tcb@comp@h@page%
+      \def\tcb@ch{%
+        \tcbset{height=\tcb@h@page}%
+        \tcbdimto#1{#1+\tcb@h@page-\tcb@natheight}%
+        \immediate\write\@auxout{\string\gdef\string#1{#1}}%
+        \tcb@ch%
+      }%
+      \tcb@drawcolorbox@standalone%
+    }%
+  }%
+}
+\newcommand{\Lim}{\displaystyle\lim}
+\makeatother
+\newcommand{\oij}{$\left( \text{O};\vv{i},\vv{j} , \vv{k}\right)$}
+\colorlet{darkred}{red!30!black}
+\newcommand{\red}[1]{\textcolor{darkred}{ #1}}
+\newcommand{\rr}{\mathbb{R}}
+\renewcommand{\baselinestretch}{1.2}
+ \setlength{\arrayrulewidth}{1.25pt}
+\usepackage{titlesec}
+\usepackage{titletoc}
+\usepackage{minitoc}
+\usepackage{ulem}
+%--------------------------------------------------------------
+
+\usetikzlibrary{decorations.pathmorphing}
+\tcbuselibrary{skins}
+
+%%%%%%%%%%%
+%-------------------------------------------------------------------------
+\tcbset{
+        enhanced,
+        colback=white,
+        boxrule=0.1pt,
+        colframe=brown!10,
+        fonttitle=\bfseries
+       }
+\definecolor{problemblue}{RGB}{100,134,158}
+\definecolor{idiomsgreen}{RGB}{0,162,0}
+\definecolor{exercisebgblue}{RGB}{192,232,252}
+\definecolor{darkbrown}{rgb}{0.4, 0.26, 0.13}
+
+\newcommand*{\arraycolor}[1]{\protect\leavevmode\color{#1}}
+\newcolumntype{A}{>{\columncolor{blue!50!white}}c}
+\newcolumntype{B}{>{\columncolor{LightGoldenrod}}c}
+\newcolumntype{C}{>{\columncolor{FireBrick!50}}c}
+\newcolumntype{D}{>{\columncolor{Gray!42}}c}
+
+\newcounter{mysection}
+\newcounter{mysubsection}
+\newcommand{\mysection}[1]{%
+    \stepcounter{mysection} % Increment the counter
+    \textcolor{red}{\LARGE\themysection. #1 :}
+}
+\newcommand{\mysubsection}[2]{
+    \stepcounter{mysubsection}
+    \textcolor{red}{\large \themysection.#1. #2 :}
+}
+% \textcolor{red}{\LARGE\bfseries 1. Les équation du deuxiéme degrée :}
+
+%------------------------------------------------------
+\newtcolorbox[auto counter]{Definition}{enhanced,
+before skip=2mm,after skip=2mm,
+colback=yellow!20!white,colframe=lime,boxrule=0.2mm,
+attach boxed title to top left =
+    {xshift=0.6cm,yshift*=1mm-\tcboxedtitleheight},
+    varwidth boxed title*=-3cm,
+    boxed title style={frame code={
+                        \path[fill=lime]
+                            ([yshift=-1mm,xshift=-1mm]frame.north west)  
+                            arc[start angle=0,end angle=180,radius=1mm]
+                            ([yshift=-1mm,xshift=1mm]frame.north east)
+                            arc[start angle=180,end angle=0,radius=1mm];
+                        \path[left color=lime,right color = lime,
+                            middle color = lime]
+                            ([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+                            [rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east) 
+                            -- (frame.south east) -- (frame.south west)
+                            -- ([xshift=-1mm,yshift=-1mm]frame.north west)
+                            [sharp corners]-- cycle;
+                            },interior engine=empty,
+                    },
+fonttitle=\bfseries\sffamily,
+title={Définition ~\thetcbcounter}}
+%------------------------------------------------------
+\newtcolorbox[auto counter]{Proposition}{enhanced,
+before skip=2mm,after skip=2mm,
+colback=yellow!20!white,colframe=blue,boxrule=0.2mm,
+attach boxed title to top left =
+    {xshift=0.6cm,yshift*=1mm-\tcboxedtitleheight},
+    varwidth boxed title*=-3cm,
+    boxed title style={frame code={
+                        \path[fill=blue]
+                            ([yshift=-1mm,xshift=-1mm]frame.north west)  
+                            arc[start angle=0,end angle=180,radius=1mm]
+                            ([yshift=-1mm,xshift=1mm]frame.north east)
+                            arc[start angle=180,end angle=0,radius=1mm];
+                        \path[left color=blue,right color = blue,
+                            middle color = blue]
+                            ([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+                            [rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east) 
+                            -- (frame.south east) -- (frame.south west)
+                            -- ([xshift=-1mm,yshift=-1mm]frame.north west)
+                            [sharp corners]-- cycle;
+                            },interior engine=empty,
+                    },
+fonttitle=\bfseries\sffamily,
+title={Proposition ~\thetcbcounter}}
+%------------------------------------------------------
+\newtcolorbox[auto counter]{Theoreme}{enhanced,
+before skip=2mm,after skip=2mm,
+colback=yellow!20!white,colframe=red,boxrule=0.2mm,
+attach boxed title to top left =
+    {xshift=0.6cm,yshift*=1mm-\tcboxedtitleheight},
+    varwidth boxed title*=-3cm,
+    boxed title style={frame code={
+                        \path[fill=red]
+                            ([yshift=-1mm,xshift=-1mm]frame.north west)  
+                            arc[start angle=0,end angle=180,radius=1mm]
+                            ([yshift=-1mm,xshift=1mm]frame.north east)
+                            arc[start angle=180,end angle=0,radius=1mm];
+                        \path[left color=red,right color = red,
+                            middle color = red]
+                            ([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+                            [rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east) 
+                            -- (frame.south east) -- (frame.south west)
+                            -- ([xshift=-1mm,yshift=-1mm]frame.north west)
+                            [sharp corners]-- cycle;
+                            },interior engine=empty,
+                    },
+fonttitle=\bfseries\sffamily,
+title={Théorème ~\thetcbcounter}}
+%------------------------------------------------------
+\newtcolorbox[auto counter]{exemple}{
+  % breakable,
+  enhanced,
+  colback=white,
+  boxrule=0pt,
+  arc=0pt,
+  outer arc=0pt,
+  title=Exemple ~\thetcbcounter,
+  fonttitle=\bfseries\sffamily\large\strut,
+  coltitle=problemblue,
+  colbacktitle=problemblue,
+  title style={
+left color=exercisebgblue,
+    right color=white,
+    middle color=exercisebgblue  
+  },
+  overlay={
+    \draw[line width=1pt,problemblue] (frame.south west) -- (frame.south east);
+    \draw[line width=1pt,problemblue] (frame.north west) -- (frame.north east);
+    \draw[line width=1pt,problemblue] (frame.south west) -- (frame.north west);
+    \draw[line width=1pt,problemblue] (frame.south east) -- (frame.north east);
+  }
+}
+%----------------------------------------------------
+\newtcolorbox[auto counter]{Activite}{
+  % breakable,
+  enhanced,
+  colback=white,
+  boxrule=0pt,
+  arc=0pt,
+  outer arc=0pt,
+  title=Activité ~\thetcbcounter,
+  fonttitle=\bfseries\sffamily\large\strut,
+  coltitle=problemblue,
+  colbacktitle=problemblue,
+  title style={
+left color=yellow!50!white,
+    right color=white,
+    middle color=yellow!20!white  
+  },
+  overlay={
+    \draw[line width=1pt,problemblue] (frame.south west) -- (frame.south east);
+    \draw[line width=1pt,problemblue] (frame.north west) -- (frame.north east);
+    \draw[line width=1pt,problemblue] (frame.south west) -- (frame.north west);
+    \draw[line width=1pt,problemblue] (frame.south east) -- (frame.north east);
+  }
+}
+%----------------------------------------------------
+\newtcolorbox[auto counter]{Application}{
+  % breakable,
+  enhanced,
+  colback=white,
+  boxrule=0pt,
+  arc=0pt,
+  outer arc=0pt,
+  title=Application ~\thetcbcounter,
+  fonttitle=\bfseries\sffamily\large\strut,
+  coltitle=problemblue,
+  colbacktitle=problemblue,
+  title style={
+left color=exercisebgblue,
+    right color=white,
+    middle color=exercisebgblue  
+  },
+  overlay={
+    \draw[line width=1pt,problemblue] (frame.south west) -- (frame.south east);
+    \draw[line width=1pt,problemblue] (frame.north west) -- (frame.north east);
+    \draw[line width=1pt,problemblue] (frame.south west) -- (frame.north west);
+    \draw[line width=1pt,problemblue] (frame.south east) -- (frame.north east);
+  }
+}
+%----------------------------------------------------
+\newtcolorbox{mybox}[2]{enhanced,breakable,
+    before skip=2mm,after skip=2mm,
+    colback=white,colframe=#2!30!blue,boxrule=0.3mm,rightrule=0.3mm,
+    attach boxed title to top center={xshift=0cm,yshift*=1mm-\tcboxedtitleheight},
+    varwidth boxed title*=-3cm,
+    boxed title style={frame code={
+    \path[fill=#2!30!black]
+    ([yshift=-1mm,xshift=-1mm]frame.north west)
+    arc[start angle=0,end angle=180,radius=1mm]
+    ([yshift=-1mm,xshift=1mm]frame.north east)
+    arc[start angle=180,end angle=0,radius=1mm];
+    \path[draw=black,line width=1pt,left color=#2!1!white,right color=#2!1!blue!65,
+    middle color=#2!1!green]
+    ([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+    [rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east)
+    -- (frame.south east) -- (frame.south west)
+    -- ([xshift=-1mm,yshift=-1mm]frame.north west)
+    [sharp corners]-- cycle;
+    },interior engine=empty,
+    },
+title=#1,coltitle=black,fonttitle=\sffamily}
+%---------------------------------------------
+\newtcolorbox{boxone}{%
+    enhanced,
+    colback=brown!10,
+    boxrule=0pt,
+    sharp corners,
+    drop lifted shadow,
+    frame hidden,
+    fontupper=\bfseries,
+    notitle,
+    overlay={%
+        \draw[Circle-Circle, brown!70!black, line width=2pt](frame.north west)--(frame.south west); 
+        \draw[Circle-Circle, brown!70!black, line width=2pt](frame.north east)--(frame.south east);}
+    }
+\def\N{\mathbb{N}}
+\def\Z{\mathbb{Z}}
+\def\D{\mathbb{D}}
+\def\Q{\mathbb{Q}}
+\def\R{\mathbb{R}}
+
+    
+\begin{document}
+
+
+\begin{tcolorbox}[title=\textcolor{blue}{\shadowbox{ Prof : Othmane Laksoumi}}
+\hfill
+\textcolor{blue}{\shadowbox{La droite dans le plan (Etude analytique)}}]
+\end{tcolorbox}
+
+\begin{mybox}{Lycée Qualifiant Zitoun}{gray}
+    \begin{minipage}{8cm}
+    \textcolor{darkbrown}{Année scolaire : } 2024-2025 \\
+    \textcolor{darkbrown}{Niveau : } Tronc commun scientifique \\
+    \textcolor{darkbrown}{Durée totale : } $5h$
+    \end{minipage}
+\end{mybox}
+
+\begin{boxone}
+{\Large\ding{45}}
+\textcolor{red}{\large Contenus du programme :}
+\begin{itemize}
+     \item Le repère : coordonnées d’un point, coordonnées d’un vecteur;
+    \item Condition de colinéarité de deux vecteurs;
+    \item Détermination d’une droite définie par la donnée d’un point et d’un vecteur directeur;  
+    \item Représentation paramétrique d’une droite;
+    \item Équation cartésienne d’une droite;
+    \item Positions relatives de deux droites.
+\end{itemize}
+
+{\Large\ding{45}}
+\textcolor{red}{\large Les capacités attendues :}
+\begin{itemize}
+    \item Exprimer les notions et les propriétés de la géométrie affine et de la géométrie vectorielle à l’aide des coordonnées.
+    \item Utiliser l’outil analytique dans la résolution de problèmes géométriques.
+\end{itemize}
+
+{\Large\ding{45}}
+\textcolor{red}{\large Recommandations pédagogiques :} 
+  \begin{itemize}
+      \item Il faudra habituer les élèves à l’utilisation des différentes méthodes pour exprimer la colinéarité de deux vecteurs.
+  \end{itemize}
+\end{boxone}
+
+\newpage
+
+\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
+\hline
+\rowcolor{head}
+
+\centering Contenu du cours &
+ Durée \\
+\hline
+
+\vspace{1mm}
+
+
+&\\
+\hline
+\end{tabular}
+
+
+\end{document}
