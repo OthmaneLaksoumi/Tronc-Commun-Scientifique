@@ -1,0 +1,184 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[top=2cm,left=1cm,right=1cm,bottom=2cm]{geometry}
+\usepackage{amssymb,mathtools,amsthm}
+\usepackage{fourier}
+\usepackage{xcolor}
+\usepackage{multicol, array, fancyhdr}
+\usepackage{tasks}
+\newcommand{\Lim}{\displaystyle\lim}
+\renewcommand{\columnseprule}{1pt}
+\renewcommand{\arraystretch}{1.5}
+% \renewcommand{\frac}[2]{\displaystyle\frac{#1}{#2}}
+
+
+%======================================================
+\newtheoremstyle{mystyle}
+  {\topsep}% espace avant
+  {\topsep}% espace après
+  {\upshape}% police du corps du théorème
+  {}% indentation (vide pour rien, \parindent)
+  {\bfseries\sffamily}% police du titre du théorème
+  { :}% ponctuation après le théorème
+  { }% après le titre du théorème (espace ou \newline)
+  {%
+    \rule[0.5\baselineskip]{0.5\textwidth}{1pt}%
+    \newline\fcolorbox{black}{white}{%
+      \thmname{#1}\thmnumber{ \textup{#2}}\thmnote{ \textnormal{(#3)}}%
+    }%
+    
+    % \vspace{0.5em} % Adjust vertical space after the title
+  }% spécifications du titre
+
+\theoremstyle{mystyle}
+\newtheorem{exo}{Exercice}
+
+%======================================================
+
+
+
+\begin{document}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyhead[L]{Lycée : Zitoun \hspace{1.5cm} Année scolaire : 2024-2025} % Left header
+\fancyhead[C]{ \hspace{4cm} Niveau : TCS} % Right-Center header
+\fancyhead[R]{Prof. Othmane Laksoumi} % Right header
+\fancyfoot[C]{\thepage} % Footer
+
+
+\begin{center}
+    \textbf{\Large Ensemble des nombres entiers naturels et notions d'arithmétique }
+\end{center}
+\begin{multicols*}{2}
+
+\begin{exo}
+    Déterminer les nombres pairs et les nombres impairs parmi les nombres suivants :\\
+    \begin{tabular*}{0.5\textwidth}{@{\extracolsep{\fill}} ccc}
+        $55^3$ & $15^4+21^7$ & $11^5-11^4$  \\
+        $45591\times 1789054$ & $15^4+21^7$ & $753\times 457$
+    \end{tabular*}
+\end{exo}
+
+\begin{exo}
+    Soit $n$ un entier naturel.\\
+    Déterminer les nombres pairs et les nombres impairs parmi les nombres suivants :\\
+    \begin{tabular*}{0.5\textwidth}{@{\extracolsep{\fill}} ccc}
+        $A = 8n + 6$ & $B = 6n + 7$ & $C = 4n + 2$  \\
+        $D = 2n^2 + 4n + 1$ & $E = (2n+1)^2 - 2n$ & $F = 2n^2+4n+5$
+    \end{tabular*}
+\end{exo}
+
+
+
+\begin{exo}
+    \leavevmode
+    % \vspace{-6mm}
+    \begin{enumerate}
+        \item Montrer que $165$ est un multiple de $33$.
+        \item Montrer que $165$ est un multiple de $5$, $11$ et $55$.
+        \item Montrer que $5\times 24$ est un diviseur de $120\times 28$.
+        \item Montrer que $25^2\times 3$ est un diviseur de $15\times 750$.
+    \end{enumerate}
+\end{exo}
+
+\begin{exo}
+    Soit $n$ et $k$ deux entiers naturels.
+    \begin{enumerate}
+        \item Montrer que si $n=5k+1$ alors $n^2-1$ est divisible par $5$.
+        \item Montrer que si $n=5k+2$ alors $n^2+1$ est divisible par $5$.
+    \end{enumerate}
+\end{exo}
+
+\begin{exo}
+    Sans calculer, les nombres suivants sont-ils premiers ?
+    \begin{tasks}(2)
+        \task $A = 55\times 49 + 5$
+        \task $B = 35 \times 40 + 5^4$
+        \task $C = 55^3\times 9 + 11^2 + 22$
+    \end{tasks}
+\end{exo}
+
+\begin{exo}
+    Calculer $a\wedge b$ et $a\vee b$ dans chacun des cas suivants :
+    \begin{tasks}(2)
+        \task[$\bullet$] $a = 7$ et $b=35$.
+        \task[$\bullet$] $a = 13$ et $b = 17$.
+        \task[$\bullet$] $a = 4$ et $b = 5$.
+        \task[$\bullet$] $a = 36$ et $b = 15$.
+    \end{tasks}
+\end{exo}
+\columnbreak 
+\begin{exo}
+ Montrer que les opérations suivantes sont fausses :
+    \begin{enumerate}
+        \item $156985 \times 4558912 = 45899665471$
+        \item $156^{45} = 143987451874578591$
+        \item $2456321 + 458965123 = 156978484153$
+    \end{enumerate}
+  
+\end{exo}
+
+\begin{exo}
+Soit $n$ en entier naturel non nul.
+   \begin{enumerate}
+        \item Décomposer les nombres suivants en produit de facteurs premiers :
+           \begin{tasks}(2)
+               \task[$\bullet$] $A = 3^{n+2} + 3^n$
+               \task[$\bullet$] $B = 5^{n+3} - 5^n$
+           \end{tasks}
+        \item En Déduire $A\wedge B$ et $A\vee B$.
+   \end{enumerate}
+   
+\end{exo}
+
+\begin{exo}
+
+    Soit $m$ un entier naturel.
+    \begin{enumerate}
+        \item Montrer que si $m$ est pair, alors $m^2$ est pair.
+        \item Montrer que si $m$ est impair, alors $m^2$ est impair.
+    \end{enumerate}
+\end{exo}
+
+\begin{exo}
+    \leavevmode
+    % \vspace{-6mm}
+    \begin{enumerate}
+        \item Décomposer les deux nombres $a$ et $b$ en\\ produit de facteurs premiers, tels que : $a = 1386$ et $b = 2520$
+        \item En déduire $a\wedge b$ et $a\vee b$.
+    \end{enumerate}
+\end{exo}
+
+\begin{exo}
+    \leavevmode
+    % \vspace{-6mm}
+    \begin{enumerate}
+        \item Déterminer tous les nombres premiers\\inférieurs à $50$.
+        \item Déterminer tous les nombres premiers $p$\\inférieurs à $50$ tel que $8$ divise $p-1$.
+    \end{enumerate}
+\end{exo}
+
+\begin{exo}
+   \leavevmode
+    \begin{enumerate}
+        \item Calculer $x\wedge y$ et $x\vee y$ dans chacun des cas\\ suivants :
+        \vspace{-2.5mm}\begin{tasks}(2)
+            \task[$\bullet$] $x=13$ et $y=15$ 
+            \task[$\bullet$] $x=99$ et $y=33$ 
+        \end{tasks}\vspace{-2.5mm}
+        \item Comparer $(x\wedge y)\times(x\vee y)$ et $xy$ dans chaque cas précédent.
+    \end{enumerate}
+\end{exo}
+
+\begin{exo}
+    Montrer que $A = 40^2+40+41$ n'est pas un nombre premier.\\
+    Montrer que $B = 2^{10} - 1$ n'est pas un nombre premier. $(10 = 5 \times 2)$
+\end{exo}
+
+
+\end{multicols*}
+
+
+
+\end{document}

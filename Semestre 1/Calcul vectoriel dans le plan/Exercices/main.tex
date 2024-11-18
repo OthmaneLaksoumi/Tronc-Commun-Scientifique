@@ -1,0 +1,152 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[top=2cm,left=1cm,right=1cm,bottom=2cm]{geometry}
+\usepackage{amssymb,mathtools,amsthm}
+\usepackage{fourier}
+\usepackage{xcolor}
+\usepackage{multicol, array, fancyhdr}
+\usepackage{tasks}
+\newcommand{\Lim}{\displaystyle\lim}
+\renewcommand{\columnseprule}{1pt}
+\renewcommand{\arraystretch}{1.5}
+% \renewcommand{\frac}[2]{\displaystyle\frac{#1}{#2}}
+
+
+%======================================================
+\newtheoremstyle{mystyle}
+  {\topsep}% espace avant
+  {\topsep}% espace après
+  {\upshape}% police du corps du théorème
+  {}% indentation (vide pour rien, \parindent)
+  {\bfseries\sffamily}% police du titre du théorème
+  { :\newline}% ponctuation après le théorème
+  { }% après le titre du théorème (espace ou \newline)
+  {%
+    \rule[0.5\baselineskip]{0.5\textwidth}{1pt}%
+    \newline\fcolorbox{black}{white}{%
+      \thmname{#1}\thmnumber{ \textup{#2}}\thmnote{ \textnormal{(#3)}}%
+    }%
+    
+    % \vspace{0.5em} % Adjust vertical space after the title
+  }% spécifications du titre
+
+\theoremstyle{mystyle}
+\newtheorem{exo}{Exercice}
+
+%======================================================
+
+
+
+\begin{document}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyhead[L]{Lycée : Zitoun \hspace{1.5cm} Année scolaire : 2024-2025} % Left header
+\fancyhead[C]{ \hspace{4cm} Niveau : TCS} % Right-Center header
+\fancyhead[R]{Prof. Othmane Laksoumi} % Right header
+\fancyfoot[C]{\thepage} % Footer
+
+
+\begin{center}
+    \textbf{\Large Calcul vectoriel dans le plan }
+\end{center}
+\begin{multicols*}{2}
+
+\begin{exo}
+   Soit $ABCD$ un parallélogramme.
+
+   Simplifier les écritures vectorielles suivantes :
+   $\overrightarrow{CD} + \overrightarrow{DA}\quad;\quad \overrightarrow{CB} + \overrightarrow{CD}\quad;\quad \overrightarrow{AB} + \overrightarrow{AD}\quad;\quad \overrightarrow{AC} + \overrightarrow{BA} + \overrightarrow{CB}\quad;\quad \overrightarrow{CD} + \overrightarrow{AC} + \overrightarrow{DA}$
+\end{exo}
+
+\begin{exo}
+    Montrer que $\overrightarrow{AB} = \overrightarrow{DC}$ signifie que $\overrightarrow{AD} = \overrightarrow{BC}$.
+\end{exo}
+
+\begin{exo}
+Soient $A$, $B$, $C$ et $D$ quatre points distincts.
+On pose $\overrightarrow{u} = \overrightarrow{AB}$ et $\overrightarrow{v} = \overrightarrow{CD}$.
+
+Construire les vecteurs :
+
+$2\overrightarrow{u}\quad;\quad \displaystyle\frac{1}{3}\overrightarrow{u}\quad;\quad -\overrightarrow{u}\quad;\quad -3\overrightarrow{u}\quad;\quad\displaystyle\frac{3}{4}\overrightarrow{u}\quad;\quad\displaystyle\frac{6}{5}\overrightarrow{u}$
+
+$\overrightarrow{u} + \overrightarrow{v}\quad;\quad \overrightarrow{u} - \overrightarrow{v}\quad;\quad 2\overrightarrow{u} + \overrightarrow{v}\quad;\quad\displaystyle\frac{1}{3}\overrightarrow{u} + \displaystyle\frac{1}{5}\overrightarrow{v}$
+\end{exo}
+
+\begin{exo}
+Soit $ABCD$ un parallélogramme de centre $O$.
+
+Montrer que tous ces vecteurs sont nuls :
+\begin{enumerate}
+    \item $\overrightarrow{u} = \overrightarrow{OA} + \overrightarrow{OB} + \overrightarrow{OC} + \overrightarrow{OD}$
+    \item $\overrightarrow{v} = \overrightarrow{AO} - \overrightarrow{BO} + \overrightarrow{CO} - \overrightarrow{DO} $
+    \item $\overrightarrow{w} = \overrightarrow{AB} + 2\overrightarrow{BC} -\overrightarrow{AC} + \overrightarrow{AD} $
+\end{enumerate}
+\end{exo}
+
+\begin{exo}
+   Soient $A$, $B$, $C$, $M$ quatre points du plan et soit $\overrightarrow{u}$ le vecteur défini par :
+$$
+\overrightarrow{u} = \overrightarrow{MA} + 2\overrightarrow{MB} - 3\overrightarrow{MC}
+$$
+\begin{enumerate}
+    \item Montrer que : $\overrightarrow{u} = 2\overrightarrow{AB} - 3\overrightarrow{AC}$
+    \item Soit $\overrightarrow{v}$ le vecteur défini par : $\overrightarrow{v} = 2\overrightarrow{BA} - 6\overrightarrow{BC}$ \\
+    Montrer que les vecteurs $\overrightarrow{u}$ et $\overrightarrow{v}$ sont colinéaires.
+\end{enumerate}
+\end{exo}
+\columnbreak 
+\begin{exo}
+$ABCD$ est un parallélogramme et $M$ le point du plan tel que :
+\[
+\overrightarrow{AM} = \overrightarrow{AB} + 2\overrightarrow{AD}
+\]
+\begin{enumerate}
+    \item Montrer que $B$, $C$, $M$ sont alignés.
+    \item En déduire que $C$ est le milieu du segment $[BM]$.
+\end{enumerate}
+\end{exo}
+
+\begin{exo}
+$ABC$ est un triangle et $I$ et $J$ sont les milieux des segments $[AB]$ et $[AC]$ respectivement. \\
+Montrer que :
+\[
+\overrightarrow{BC} = 2\overrightarrow{JI}
+\]
+\end{exo}
+
+\begin{exo}
+$ABC$ est un triangle. On considère $I$ et $J$ les milieux des segments $[AB]$ et $[AC]$ respectivement.
+\begin{enumerate}
+    \item Montrer que : $\overrightarrow{BJ} = -\frac{1}{2}\overrightarrow{AB} + \frac{1}{2}\overrightarrow{AC}$ et $\overrightarrow{CI} = \frac{1}{2}\overrightarrow{AB} + \frac{1}{2}\overrightarrow{AC}$.
+    \item Soient $M$ et $N$ deux points du plan tels que : $\overrightarrow{BM} = 2\overrightarrow{BJ}$ et $\overrightarrow{CN} = 2\overrightarrow{CI}$.
+    \begin{enumerate}
+        \item Montrer que la nature du quadrilatère $ABCN$ est $ABCM$.
+        \item Montrer que les points $A$, $M$, $N$ sont alignés.
+    \end{enumerate}
+\end{enumerate}
+\end{exo}
+
+\begin{exo}
+    $ABCD$ est un parallélogramme et $M$ et $N$ deux points du plan tels que :
+\[
+\overrightarrow{BM} = \frac{1}{2}\overrightarrow{AB} \quad \text{et} \quad \overrightarrow{AN} = 3\overrightarrow{AD}
+\]
+\begin{enumerate}
+    \item Construire une figure convenable.
+    \item Montrer que : $\overrightarrow{CM} = \frac{1}{2}\overrightarrow{AB} - \overrightarrow{BC}$ et $\overrightarrow{CN} = 2\overrightarrow{AD} - \overrightarrow{DC}$.
+    \item Montrer que $C$, $M$, et $N$ sont alignés.
+    \item Soit $E$ le milieu de $[DN]$ et soit $F$ le point du plan tel que : $\overrightarrow{AB} = \overrightarrow{BF}$.
+    \item Montrer que $C$ est le milieu de $[EF]$.
+    \item Montrer que $ (\overrightarrow{BD})//(\overrightarrow{EF}) $.
+\end{enumerate}
+
+\end{exo}
+
+
+\end{multicols*}
+
+
+
+\end{document}
