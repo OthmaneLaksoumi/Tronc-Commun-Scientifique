@@ -188,7 +188,7 @@ attach boxed title to top left =
 fonttitle=\bfseries\sffamily,
 title={Théorème ~\thetcbcounter}}
 %------------------------------------------------------
-\newtcolorbox[auto counter]{exemple}{
+\newtcolorbox[auto counter]{Exemple}{
   % breakable,
   enhanced,
   colback=white,
@@ -355,11 +355,332 @@ title=#1,coltitle=black,fonttitle=\sffamily}
 \hline
 
 \vspace{1mm}
+\mysection{Repère : Coordonnées d'un point - Coordonnées d'un vecteur}
 
+\mysubsection{1}{Repère}
+\begin{Definition}
+Soit $(O;I;J)$ un repère du plan.\\
+On pose $\vec{i} = \overrightarrow{OI}$ et $\vec{j} = \overrightarrow{OJ}$.
+\begin{itemize}
+	\item Le triplet $(O;I;J)$ s'appelle repère du plan.
+	\item $(O;I;J)$ est un repère orthogonal si $(OI)\perp (OJ)$.
+	\item $(O;I;J)$ est un repère orthonormal (ou orthonormé) si $\vert\vert\vec{i}\vert\vert = \vert\vert\vec{j}\vert\vert = 1$ (c'est-à-dire $OI=OJ=1$).
+	\item La droite $(OI)$ est appelée axe des abscisses.
+	\item La droite $(OJ)$ est appelée axe des ordonnées.
+\end{itemize}
+\end{Definition}
+\mysubsection{2}{Coordonnées d'un point - Coordonnées d'un vecteur}
+\begin{Proposition}
+Soit $(O;\vec{i};\vec{j})$ un repère du plan.
+\begin{itemize}
+	\item Pour tout point $M$ du plan, il existe un couple unique $(x;y)$ de nombres réels tel que :
+	$$\overrightarrow{OM} = x\vec{i} + y\vec{j}$$
+	Le couple $(x;y)$ est appelé couple de coordonnées du point $M$. On écrit $M(x;y)$.
+	\item Pour tout vecteur $\vec{u}$ du plan, il existe un couple unique $(x;y)$ de nombres réels tel que : $$\vec{u} = x\vec{i} + y\vec{j}$$
+	Le couple $(x;y)$ est appelé couple de coordonnées du vecteur $M\vec{u}$. On écrit $u(x;y)$ ou $\vec{u}\left(\begin{matrix}
+x\\
+y
+\end{matrix}\right)$.
+\end{itemize}
+\end{Proposition}
+\begin{Proposition}
+\begin{itemize}
+	\item \textcolor{red}{Egalité de deux vecteurs} : 
+	Soient $\vec{u}(x;y)$ et $\vec{v}(x^{\prime};y^{\prime})$ deux vecteurs.\\
+	$\vec{u}(x;y)$ = $\vec{v}(x;y)$ signifie que $x = x^{\prime}$ et $y = y^{\prime}$
+	\item \textcolor{red}{Coordonnées du vecteur $\overrightarrow{AB}$} : $\overrightarrow{AB}(x_B - x_A; y_B - y_A)$.	
+	\item \textcolor{red}{Coordonnées de la somme de deux vecteurs} : $(\vec{u} + \vec{v})(x+x^{\prime}; y + y^{\prime})$.
+	\item \textcolor{red}{Coordonnées du produit d'un vecteur par un réel} : $k\vec{u}(kx,ky)$ où $k\in\mathbb{R}$.
+	\item \textcolor{red}{Colinéarité de deux vecteurs non nuls} :\\
+	$\vec{u}$ et $\vec{v}$ sont colinéaires si et seulement s'il existe un réel $k$ tel que : $x^{\prime} = kx$ et $y^{\prime} = ky$.
+	\item \textcolor{red}{Milieu d'un segment} : Si $I$ est le milieu du segment $[AB]$, alors $I\left(\dfrac{x_A + x_B}{2};\dfrac{y_A + y_B}{2}\right)$.
+	\item \textcolor{red}{Distance de deux points} : Dans un repère orthonormal, $AB = \sqrt{(x_B - x_A)^2 + (y_B - y_B)^2}$
+\end{itemize}
+\end{Proposition}
 
 &\\
 \hline
 \end{tabular}
+
+\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
+\hline
+\vspace{1mm}
+\mysection{Condition de colinéarité de deux vecteurs}
+\begin{Definition}
+On considére deux vecteurs $\vec{u}(x;y)$ et $\vec{v}(x^{\prime};y^{\prime})$.
+Le nombre $xy^{\prime} - yx^{\prime}$ s'appelle déterminant des deux vecteurs $\vec{u}$ et $\vec{v}$ et se note $det(\vec{u};\vec{v})$. On écrit $det(\vec{u};\vec{v}) = \begin{array}{|c c|}
+x & x^{\prime}\\
+y & y^{\prime}
+\end{array} = xy^{\prime} - yx^{\prime}$.
+\end{Definition}
+\begin{Exemple}
+On considére les vecteurs $\vec{u} = 3\vec{i} - 4\vec{j}$ et $\vec{v} = \vec{i} + 2\vec{j}$.\\
+On a $det(\vec{u};\vec{v}) = \begin{array}{|c c|}
+3 & 1\\
+-4 & 2\end{array} = 3\times 2 - 1\times (-4) = 6 + 4 = 10$
+\end{Exemple}
+\begin{Proposition}
+\begin{itemize}
+	\item $\vec{u}$ et $\vec{v}$ sont colinéaires si et seulement si $det(\vec{u};\vec{v}) = 0$.
+	\item $\vec{u}$ et $\vec{v}$ sont non colinéaires si et seulement si $det(\vec{u};\vec{v}) \neq 0$.
+	\item Les points $A,\ B$ et $C$ sont alignés si et seulement si $det(\overrightarrow{AB};\overrightarrow{AC}) = 0$.
+\end{itemize}
+\end{Proposition}
+\begin{Exemple}
+On considére les vecteurs $\vec{u} = \vec{i} - 2\vec{j}$ et $\vec{v} = 2\vec{i} - 4\vec{j}$.\\
+On considére les points $A(-1;2),\ B(2;3)$ et $C\left(\dfrac{1}{2};\dfrac{3}{2}\right)$.\\
+\end{Exemple}
+\mysection{La droite dans le plan}
+\begin{Definition}
+Soit $A$ un point du plan et soit $\vec{u}$ un vecteur non nul.\\
+L'ensemble des points $M$ qui vérifient : $\overrightarrow{AM} = k\vec{u}$, où $k\in\mathbb{R}$, est la droite passant par le point $A$ et dirigée par le vecteur $\vec{u}$. On la note $D(A,\vec{u})$.
+\end{Definition}
+\begin{Exemple}
+Construire la droite $D(A;\vec{u})$, avec $A(1;2)$ et $\vec{u}(-1;1)$.
+\end{Exemple}
+\mysection{Représentation paramétrique d'une droite}
+\begin{Definition}
+Le plan $\mathcal{P}$ est rapporté à un repère $(O; \vec{i}, \vec{j})$.
+
+Soient $A(x_0; y_0)$ un point du plan et $\vec{u}(\alpha; \beta)$ un vecteur non nul.\\
+
+$\text{Le système}
+\begin{cases}
+x = x_0 + k \alpha \\
+y = y_0 + k \beta
+\end{cases} \quad (k \in \mathbb{R})
+$\\
+s'appelle \textcolor{red}{représentation paramétrique} de la droite $(D)$ passant par le point $A(x_0; y_0)$ et dirigée par le vecteur $\vec{u}(\alpha; \beta)$.
+\end{Definition}
+\textcolor{red}{Remarque :}
+
+La droite $(AB)$ est dirigée par le vecteur $\overrightarrow{AB}$.
+&\\
+\hline
+\end{tabular}
+
+\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
+\hline
+\vspace{1mm}
+\begin{Exemple}
+\begin{itemize}
+    \item Soit $(D)$ la droite passant par le point $A(2; -3)$ et dirigée par le vecteur $\vec{u} = (3; -5)$.\\
+    $(D)$ est définie par la représentation paramétrique suivante :
+    \[
+    \begin{cases}
+    x = 2 + 3k \\
+    y = -3 - 5k
+    \end{cases} \quad (k \in \mathbb{R})
+    \]
+
+    Le nombre $k$ est le paramètre dépendant du point $M$.
+    \begin{itemize}
+        \item Si on prend $k = 0$, on obtient le point $A(2; -3)$ qui est évidemment un point de $(D)$.
+        \item Si on prend $k = 1$, on obtient le point $B(5; -8)$ appartenant à $(D)$.
+        \item Si on prend $k = \frac{1}{2}$, on obtient le point $C\left( \frac{7}{2}; -\frac{11}{2} \right)$ qui appartient donc à la droite $(D)$.
+    \end{itemize}
+
+    \item Le système
+    \[
+    \begin{cases}
+    x = 1 + 2t \\
+    y = 1 - 4t
+    \end{cases} \quad (t \in \mathbb{R})
+    \]
+    détermine une représentation paramétrique de la droite $(E)$ de point $A(1; 1)$ et de vecteur directeur $\vec{v}(2; -4)$.
+\end{itemize}
+\end{Exemple}
+\begin{Application}
+On considère les points $E(-1; 2)$, $F(2; 3)$ et $G(1;-1)$.
+    \begin{enumerate}
+        \item Déterminer une représentation paramétrique de la droite $(EF)$.
+        \item Le point $G$ appartient-il à la droite $(EF)$?
+        \item Déterminer une représentation paramétrique de la droite $G$ passant par le point $L$ et dirigée par le vecteur $\vec{w} = 3 \vec{i} + \vec{j}$.
+    \end{enumerate}
+\end{Application}
+
+\mysection{Equation cartésienne d'une droite}
+\begin{Definition}
+Le plan $\mathcal{P}$ est rapporté à un repère $(O; \vec{i}, \vec{j})$.\\
+Toute droite, dans le plan, admet une équation cartésienne de la forme : 
+$$ax + by + c = 0 \text{ où } (a;b)\neq (0;0)$$
+\end{Definition}
+\begin{Exemple}
+Déterminons une équation cartésienne de la droite $(D)$ passant par $A(-1;2)$ et de vecteur directeur $\vec{u}(-3;4)$.
+\end{Exemple}
+\begin{Application}
+On considére les deux points $B(1;-1)$ et $C(-2;3)$.\\
+Déterminer une équation cartésienne de la droite $(BC)$.
+\end{Application}
+\begin{Proposition}
+%Le plan $\mathcal{P}$ est rapporté à un repère $(O; \vec{i}, \vec{j})$.\\
+Soient $a,\ b$ et $c$ des nombres réels avec $(a;b)\neq (0;0)$.\\
+L'ensemble des points $M(x;y)$ tels que $ax + by + c = 0$ est une droite dirigée par le vecteur $\vec{u}(-b;a)$.
+\end{Proposition}
+&\\
+\hline
+
+\end{tabular}
+
+\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
+\hline
+\vspace{1mm}
+\begin{Exemple}
+Soit $(\Delta)$ la droite d'équation : $2x - y + 1 = 0$.
+La droite $(\Delta)$ est la droite passant par $A(-1;1)$ et de vecteur directeur $\vec{u}(1;-2)$.
+\end{Exemple}
+\begin{Application}
+Soit $(L)$ la droite d'équation : $3x + 4y - 5 = 0$.
+\begin{enumerate}
+	\item Déterminer un point appartenant à la droite $(L)$.
+	\item Déterminer un directeur de la droite $(L)$.
+	\item Le point $B\left(\dfrac{1}{3};\dfrac{5}{2}\right)$ apparitent-il à $(L)$?
+\end{enumerate}
+\end{Application}
+\mysection{Droites particuliéres}
+
+\mysubsection{1}{Droite paralléle à l'axe des ordonnées}
+\begin{Proposition}
+Le plan $\mathcal{P}$ est rapporté à un repère $(O,\vec{i};\vec{j})$.\\
+Pour qu'une droite soit paralléle à l'axe des ordonnées, il faut et il suffit qu'elle ait une équation cartésienne de la forme : $x = c$.
+\end{Proposition}
+\mysubsection{2}{Droite paralléle à l'axe des abscisses}
+\begin{Proposition}
+Le plan $\mathcal{P}$ est rapporté à un repère $(O,\vec{i};\vec{j})$.\\
+Pour qu'une droite soit paralléle à l'axe des abscisses, il faut et il suffit qu'elle ait une équation cartésienne de la forme : $y = c$.
+\end{Proposition}
+\begin{Exemple}
+Construire les droites d'équation $x = 1$ et $y = -2$.
+\end{Exemple}
+\mysection{Équation d'une droite et son coefficient directeur}
+\begin{Proposition}
+Le plan $\mathcal{P}$ est rapporté à un repère $(O,\vec{i};\vec{j})$.\\
+Pour qu'une droite $(D)$ ne soit pas paralléle à l'axe des ordonnées, il faut et il suffit qu'elle ait une équation de la forme : $y = mx + p$.
+\begin{itemize}
+	\item Le nombre réel $m$ s'appelle \textcolor{red}{coefficient directeur} de la droite $(D)$.
+	\item Le nombre réel $p$ s'appelle \textcolor{red}{l'ordonnée à l'origine} de $(D)$.
+	\item L'équation $y = mx + p$ est \textcolor{red}{l'équation réduite} de la droite $(D)$.
+\end{itemize}
+\end{Proposition}
+\begin{Proposition}
+Le plan $\mathcal{P}$ est rapporté à un repère $(O,\vec{i};\vec{j})$.\\
+La droite passant par le point $A(x_0;y_0)$ et de coefficient directeur $m$ a une équation cartésienne de la forme : $y - y_0 = m(x - x_0)$.
+\end{Proposition}
+&\\
+\hline
+\end{tabular}
+
+\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
+\hline
+\vspace{1mm}
+\begin{Exemple}
+Déterminons une équation de la droite passant par $A(-1;2)$ et de coefficient directeur $2$.
+\end{Exemple}
+\mysection{Positions relatives de deux droites}
+
+\mysubsection{1}{Parallélisme de deux droites définies par leurs équations cartésiennes}
+\begin{Theoreme}
+Le plan $\mathcal{P}$ est rapporté à un repère $(O,\vec{i};\vec{j})$.\\
+Pour que deux droites d'équation cartésienne respectives $ax + by + c = 0$ et $a'x + b^{\prime}y + c' = 0$ (où $(a;b)\neq (0;0)$ et $(a';b')\neq (0;0)$) soient parallèles, il faut et il suffit que : $ab' - ba' = 0$ c'est-à-dire $\begin{array}{|cc|}
+a & a' \\
+b & b'
+\end{array} = 0$.
+\end{Theoreme}
+\begin{Exemple}
+On considére les deux droites $\begin{cases}
+(D) : 2x - y + 3 = 0\\
+(D') : 3x + 4y -1 = 0
+\end{cases}$
+\end{Exemple}
+\mysubsection{2}{Parallélisme de deux droites définies par leurs équations réduites}
+\begin{Theoreme}
+Le plan $\mathcal{P}$ est rapporté à un repère $(O,\vec{i};\vec{j})$.\\
+Pour que deux droites d'équations respectives $y = mx + p$ et $y = m'x + p'$ soient paralléles, il faut et il suffit que $m = m'$.
+\end{Theoreme}
+\begin{Exemple}
+On considére la droite $(D)$ d'équation : $y = -\dfrac{1}{2}x + 3$.
+Déterminons une équation de la droite $(\Delta)$ passant par $A(3;-1)$
+\end{Exemple}
+\mysubsection{3}{Intersection de deux droites}
+\begin{Theoreme}
+Le plan $\mathcal{P}$ est rapporté à un repère $(O,\vec{i};\vec{j})$.\\
+\begin{itemize}
+	\item Pour que les droites $(D)$ et $(D')$ d'équations respectives : 
+	$ax + by + c = 0 \quad\text{et}\quad a'x + b'y + c' = 0$
+	soient sécantes, il faut et il suffit que $ab' - ba' \neq 0$.\\
+	Le couple de coordonnées du point d'intersection de $(D)$ et $^(D')$ est la solution du système : $\begin{cases}
+	ax + by + c = 0 \\
+	a'x + b'y + c' = 0
+	\end{cases}$
+	\item Pour que les droites $(\Delta)$ et $(\Delta')$ d'équations respectives : 
+	$y = mx + p \quad\text{et}\quad y = m'x + p'$
+	soient sécantes, il faut et il suffit que $m\neq m'$.\\
+	Le couple de coordonnées du point d'intersection de $(\Delta)$ et $(\Delta')$ est la solution du système : $\begin{cases}
+	y = mx + p \\
+	y = m'x + p'
+	\end{cases}$
+\end{itemize}
+\end{Theoreme}
+&\\
+\hline
+\end{tabular}
+\newpage
+\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
+\hline
+\vspace{1mm}
+\begin{Exemple}
+Étudions l'intersection des droites $(D)$ et $(D')$ d'équations respectives :
+$$2x + y + 1 = 0 \quad\text{et}\quad 3x + 4y - 5 = 0$$
+On a : $\begin{array}{|cc|}
+2 & 3\\
+1 & 4
+\end{array} = 8 - 3 = 5$
+Puisque $5\neq 0$, les droites $(D)$ et $(D')$ sont sécantes; le couple de coordonnées du point $I$ d'intersection de $(D)$ et $(D')$ est la solution du système :
+$$\begin{cases}
+2x + y + 1 = 0\\
+3x + 4y - 5 = 0
+\end{cases}
+\quad\text{c'est-à-dire}\quad
+\begin{cases}
+2x + y = -1\\
+3x + 4y = 5
+\end{cases}$$
+La solution de ce système est $(x;y)$ tel que :
+$$x = \dfrac{\begin{array}{|cc|} -1 & 5 \\ 
+1 & 4\end{array}}{5} = -\dfrac{9}{5}\quad\text{et}\quad y = \dfrac{\begin{array}{|cc|} 2 & -1 \\ 
+3 & 5\end{array}}{5} = \dfrac{13}{5}$$
+\end{Exemple}
+
+&\\
+\hline
+\end{tabular}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 \end{document}

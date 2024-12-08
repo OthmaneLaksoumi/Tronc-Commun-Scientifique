@@ -1,0 +1,101 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[top=2cm,left=1cm,right=1cm,bottom=2cm]{geometry}
+\usepackage{tikz}
+ \usepackage[tikz]{bclogo}%
+ \usetikzlibrary{calc,intersections}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{decorations.pathmorphing}
+\usepackage{amssymb,mathtools,amsthm}
+\usepackage{fourier}
+\usepackage{tkz-tab}
+\usepackage{xcolor}
+\usepackage{multicol, array, fancyhdr}
+\usepackage{tasks}
+\newcommand{\Lim}{\displaystyle\lim}
+\renewcommand{\columnseprule}{1pt}
+\renewcommand{\arraystretch}{1.5}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+
+% \renewcommand{\displaystyle\frac}[2]{\displaystyle\displaystyle\frac{#1}{#2}}
+
+
+%======================================================
+\newtheoremstyle{mystyle}
+  {\topsep}% espace avant
+  {\topsep}% espace après
+  {\upshape}% police du corps du théorème
+  {}% indentation (vide pour rien, \parindent)
+  {\bfseries\sffamily}% police du titre du théorème
+  { :\newline}% ponctuation après le théorème
+  { }% après le titre du théorème (espace ou \newline)
+  {%
+    \rule[0.5\baselineskip]{0.5\textwidth}{1pt}%
+    \newline\fcolorbox{black}{white}{%
+      \thmname{#1}\thmnumber{ \textup{#2}}\thmnote{ \textnormal{(#3)}}%
+    }%
+    
+    % \vspace{0.5em} % Adjust vertical space after the title
+  }% spécifications du titre
+
+\theoremstyle{mystyle}
+\newtheorem{exo}{Exercice}
+
+%======================================================
+
+
+
+\begin{document}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyhead[L]{Lycée : Zitoun \hspace{1.5cm} Année scolaire : 2024-2025} % Left header
+\fancyhead[C]{ \hspace{4cm} Niveau : 2BAC PC} % Right-Center header
+\fancyhead[R]{Prof. Othmane Laksoumi} % Right header
+\fancyfoot[C]{\thepage} % Footer
+
+
+\begin{center}
+    \textbf{\Large Résumé : Dérivation}
+\end{center}
+
+\subsection*{Déterminant de deux vecteurs}
+
+Le déterminant de deux vecteurs $\vec{u}(x; y)$ et $\vec{v}(x'; y')$ est le nombre réel noté :
+\[
+\det(\vec{u}, \vec{v}) = 
+\begin{vmatrix}
+x & x' \\
+y & y'
+\end{vmatrix} = x \cdot y' - y \cdot x'.
+\]
+
+\subsection*{Condition de colinéarité de deux vecteurs}
+
+\begin{itemize}
+    \item $\vec{u}$ et $\vec{v}$ sont colinéaires si et seulement si $\det(\vec{u}, \vec{v}) = 0$.
+    \item $\vec{u}$ et $\vec{v}$ ne sont pas colinéaires si et seulement si $\det(\vec{u}, \vec{v}) \neq 0$.
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
