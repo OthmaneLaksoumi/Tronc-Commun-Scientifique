@@ -1,0 +1,550 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[right=0.5cm, left=0.5cm,top=1cm,bottom=1.5cm]{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{array, tasks}
+\usepackage{blindtext}
+\usepackage{fontspec}
+\usepackage{amsmath,amsfonts,amssymb,mathrsfs,amsthm}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage[font={bf}]{caption}
+% \captionsetup[table]{box=colorbox,boxcolor=orange!20}
+\usepackage{float}
+\usepackage{esvect}
+\usepackage{tabularx}
+\usepackage{pifont}
+\usepackage{colortbl}
+ \usepackage{fancybox}
+ \mathversion{bold}
+ \usepackage{pgfplots}
+ % \usepackage[utf8]{inputenc}
+\usepackage{tikz}
+ \usepackage[tikz]{bclogo}%
+ \usepackage{mathpazo}
+\usepackage{ulem}
+\usepackage{yagusylo}
+\usepackage{textcomp}\usepackage{blindtext}
+\usepackage{multicol}
+\usepackage{varwidth}
+\usetikzlibrary{calc,intersections}
+\usepackage{pgfplots}
+%\usepackage{fourier}
+\pgfplotsset{compat=1.11}
+\usepackage{tkz-tab}
+\usepackage{xcolor}
+\usepackage{color}
+\usetikzlibrary{calc}
+\mathchardef\times="2202
+\usepackage[most]{tcolorbox}
+\definecolor{lightgray}{gray}{0.9}
+\definecolor{ocre}{RGB}{0,244,244} 
+\definecolor{head}{RGB}{255,211,204}
+\definecolor{browndark}{RGB}{105,79,56}
+%\RequirePackage[framemethod=default]{mdframed}
+\usepackage{tikz}
+\usetikzlibrary{calc,patterns,decorations.pathmorphing,arrows.meta,decorations.markings}
+\usetikzlibrary{arrows.meta}
+\makeatletter
+\tcbuselibrary{skins,breakable,xparse}
+\tcbset{%
+  save height/.code={%
+    \tcbset{breakable}%
+    \providecommand{#1}{2cm}%
+    \def\tcb@split@start{%
+      \tcb@breakat@init%
+      \tcb@comp@h@page%
+      \def\tcb@ch{%
+        \tcbset{height=\tcb@h@page}%
+        \tcbdimto#1{#1+\tcb@h@page-\tcb@natheight}%
+        \immediate\write\@auxout{\string\gdef\string#1{#1}}%
+        \tcb@ch%
+      }%
+      \tcb@drawcolorbox@standalone%
+    }%
+  }%
+}
+\newcommand{\Lim}{\displaystyle\lim}
+\makeatother
+\newcommand{\oij}{$\left( \text{O};\vv{i},\vv{j} , \vv{k}\right)$}
+\colorlet{darkred}{red!30!black}
+\newcommand{\red}[1]{\textcolor{darkred}{ #1}}
+\newcommand{\rr}{\mathbb{R}}
+\renewcommand{\baselinestretch}{1.2}
+ \setlength{\arrayrulewidth}{1.25pt}
+\usepackage{titlesec}
+\usepackage{titletoc}
+\usepackage{minitoc}
+\usepackage{ulem}
+%--------------------------------------------------------------
+
+\usetikzlibrary{decorations.pathmorphing}
+\tcbuselibrary{skins}
+
+%%%%%%%%%%%
+%-------------------------------------------------------------------------
+\tcbset{
+        enhanced,
+        colback=white,
+        boxrule=0.1pt,
+        colframe=brown!10,
+        fonttitle=\bfseries
+       }
+\definecolor{problemblue}{RGB}{100,134,158}
+\definecolor{idiomsgreen}{RGB}{0,162,0}
+\definecolor{exercisebgblue}{RGB}{192,232,252}
+\definecolor{darkbrown}{rgb}{0.4, 0.26, 0.13}
+
+\newcommand*{\arraycolor}[1]{\protect\leavevmode\color{#1}}
+\newcolumntype{A}{>{\columncolor{blue!50!white}}c}
+\newcolumntype{B}{>{\columncolor{LightGoldenrod}}c}
+\newcolumntype{C}{>{\columncolor{FireBrick!50}}c}
+\newcolumntype{D}{>{\columncolor{Gray!42}}c}
+
+\newcounter{mysection}
+\newcounter{mysubsection}
+\newcommand{\mysection}[1]{%
+    \stepcounter{mysection} % Increment the counter
+    \textcolor{red}{\LARGE\themysection. #1 :}
+}
+\newcommand{\mysubsection}[2]{
+    \stepcounter{mysubsection}
+    \textcolor{red}{\large \themysection.#1. #2 :}
+}
+% \textcolor{red}{\LARGE\bfseries 1. Les équation du deuxiéme degrée :}
+
+%------------------------------------------------------
+\newtcolorbox[auto counter]{Definition}{enhanced,
+before skip=2mm,after skip=2mm,
+colback=yellow!20!white,colframe=lime,boxrule=0.2mm,
+attach boxed title to top left =
+    {xshift=0.6cm,yshift*=1mm-\tcboxedtitleheight},
+    varwidth boxed title*=-3cm,
+    boxed title style={frame code={
+                        \path[fill=lime]
+                            ([yshift=-1mm,xshift=-1mm]frame.north west)  
+                            arc[start angle=0,end angle=180,radius=1mm]
+                            ([yshift=-1mm,xshift=1mm]frame.north east)
+                            arc[start angle=180,end angle=0,radius=1mm];
+                        \path[left color=lime,right color = lime,
+                            middle color = lime]
+                            ([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+                            [rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east) 
+                            -- (frame.south east) -- (frame.south west)
+                            -- ([xshift=-1mm,yshift=-1mm]frame.north west)
+                            [sharp corners]-- cycle;
+                            },interior engine=empty,
+                    },
+fonttitle=\bfseries\sffamily,
+title={Définition ~\thetcbcounter}}
+%------------------------------------------------------
+\newtcolorbox[auto counter]{Proposition}{enhanced,
+before skip=2mm,after skip=2mm,
+colback=yellow!20!white,colframe=blue,boxrule=0.2mm,
+attach boxed title to top left =
+    {xshift=0.6cm,yshift*=1mm-\tcboxedtitleheight},
+    varwidth boxed title*=-3cm,
+    boxed title style={frame code={
+                        \path[fill=blue]
+                            ([yshift=-1mm,xshift=-1mm]frame.north west)  
+                            arc[start angle=0,end angle=180,radius=1mm]
+                            ([yshift=-1mm,xshift=1mm]frame.north east)
+                            arc[start angle=180,end angle=0,radius=1mm];
+                        \path[left color=blue,right color = blue,
+                            middle color = blue]
+                            ([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+                            [rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east) 
+                            -- (frame.south east) -- (frame.south west)
+                            -- ([xshift=-1mm,yshift=-1mm]frame.north west)
+                            [sharp corners]-- cycle;
+                            },interior engine=empty,
+                    },
+fonttitle=\bfseries\sffamily,
+title={Proposition ~\thetcbcounter}}
+%------------------------------------------------------
+\newtcolorbox[auto counter]{Theoreme}{enhanced,
+before skip=2mm,after skip=2mm,
+colback=yellow!20!white,colframe=red,boxrule=0.2mm,
+attach boxed title to top left =
+    {xshift=0.6cm,yshift*=1mm-\tcboxedtitleheight},
+    varwidth boxed title*=-3cm,
+    boxed title style={frame code={
+                        \path[fill=red]
+                            ([yshift=-1mm,xshift=-1mm]frame.north west)  
+                            arc[start angle=0,end angle=180,radius=1mm]
+                            ([yshift=-1mm,xshift=1mm]frame.north east)
+                            arc[start angle=180,end angle=0,radius=1mm];
+                        \path[left color=red,right color = red,
+                            middle color = red]
+                            ([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+                            [rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east) 
+                            -- (frame.south east) -- (frame.south west)
+                            -- ([xshift=-1mm,yshift=-1mm]frame.north west)
+                            [sharp corners]-- cycle;
+                            },interior engine=empty,
+                    },
+fonttitle=\bfseries\sffamily,
+title={Théorème ~\thetcbcounter}}
+%------------------------------------------------------
+\newtcolorbox[auto counter]{Exemple}{
+  % breakable,
+  enhanced,
+  colback=white,
+  boxrule=0pt,
+  arc=0pt,
+  outer arc=0pt,
+  title=Exemple ~\thetcbcounter,
+  fonttitle=\bfseries\sffamily\large\strut,
+  coltitle=problemblue,
+  colbacktitle=problemblue,
+  title style={
+left color=exercisebgblue,
+    right color=white,
+    middle color=exercisebgblue  
+  },
+  overlay={
+    \draw[line width=1pt,problemblue] (frame.south west) -- (frame.south east);
+    % \draw[line width=1pt,problemblue] (frame.north west) -- (frame.north east);
+    \draw[line width=1pt,problemblue] (frame.south west) -- (frame.north west);
+    % \draw[line width=1pt,problemblue] (frame.south east) -- (frame.north east);
+  }
+}
+%----------------------------------------------------
+\newtcolorbox[auto counter]{Activite}{
+  % breakable,
+  enhanced,
+  colback=white,
+  boxrule=0pt,
+  arc=0pt,
+  outer arc=0pt,
+  title=Activité ~\thetcbcounter,
+  fonttitle=\bfseries\sffamily\large\strut,
+  coltitle=problemblue,
+  colbacktitle=problemblue,
+  title style={
+left color=yellow!50!white,
+    right color=white,
+    middle color=yellow!20!white  
+  },
+  overlay={
+    \draw[line width=1pt,problemblue] (frame.south west) -- (frame.south east);
+    \draw[line width=1pt,problemblue] (frame.north west) -- (frame.north east);
+    \draw[line width=1pt,problemblue] (frame.south west) -- (frame.north west);
+    \draw[line width=1pt,problemblue] (frame.south east) -- (frame.north east);
+  }
+}
+%----------------------------------------------------
+\newtcolorbox[auto counter]{Application}{
+  % breakable,
+  enhanced,
+  colback=white,
+  boxrule=0pt,
+  arc=0pt,
+  outer arc=0pt,
+  title=Application ~\thetcbcounter,
+  fonttitle=\bfseries\sffamily\large\strut,
+  coltitle=problemblue,
+  colbacktitle=problemblue,
+  title style={
+left color=exercisebgblue,
+    right color=white,
+    middle color=exercisebgblue  
+  },
+  overlay={
+    \draw[line width=1pt,problemblue] (frame.south west) -- (frame.south east);
+    \draw[line width=1pt,problemblue] (frame.north west) -- (frame.north east);
+    \draw[line width=1pt,problemblue] (frame.south west) -- (frame.north west);
+    \draw[line width=1pt,problemblue] (frame.south east) -- (frame.north east);
+  }
+}
+%----------------------------------------------------
+\newtcolorbox{mybox}[2]{enhanced,breakable,
+    before skip=2mm,after skip=2mm,
+    colback=white,colframe=#2!30!blue,boxrule=0.3mm,rightrule=0.3mm,
+    attach boxed title to top center={xshift=0cm,yshift*=1mm-\tcboxedtitleheight},
+    varwidth boxed title*=-3cm,
+    boxed title style={frame code={
+    \path[fill=#2!30!black]
+    ([yshift=-1mm,xshift=-1mm]frame.north west)
+    arc[start angle=0,end angle=180,radius=1mm]
+    ([yshift=-1mm,xshift=1mm]frame.north east)
+    arc[start angle=180,end angle=0,radius=1mm];
+    \path[draw=black,line width=1pt,left color=#2!1!white,right color=#2!1!blue!65,
+    middle color=#2!1!green]
+    ([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+    [rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east)
+    -- (frame.south east) -- (frame.south west)
+    -- ([xshift=-1mm,yshift=-1mm]frame.north west)
+    [sharp corners]-- cycle;
+    },interior engine=empty,
+    },
+title=#1,coltitle=black,fonttitle=\sffamily}
+%---------------------------------------------
+\newtcolorbox{boxone}{%
+    enhanced,
+    colback=brown!10,
+    boxrule=0pt,
+    sharp corners,
+    drop lifted shadow,
+    frame hidden,
+    fontupper=\bfseries,
+    notitle,
+    overlay={%
+        \draw[Circle-Circle, brown!70!black, line width=2pt](frame.north west)--(frame.south west); 
+        \draw[Circle-Circle, brown!70!black, line width=2pt](frame.north east)--(frame.south east);}
+    }
+    
+\begin{document}
+
+
+\begin{tcolorbox}[title=\textcolor{blue}{\shadowbox{ Prof : Othmane Laksoumi}}
+\hfill
+\textcolor{blue}{\shadowbox{ Ensemble des nombres entiers naturels $\mathbb{N}$ et notions en arithmétique
+ }}]
+
+\end{tcolorbox}
+
+\begin{mybox}{Lycée Qualifiant Zitoun}{gray}
+    \begin{minipage}{8cm}
+    \textcolor{darkbrown}{Année scolaire : } 2024-2025 \\
+    \textcolor{darkbrown}{Niveau : } Tronc commun scientifique \\
+    \textcolor{darkbrown}{Durée totale : } $7h$
+    \end{minipage}
+\end{mybox}
+
+\begin{boxone}
+{\Large\ding{45}}
+\textcolor{red}{\large Contenus du programme :}
+\begin{itemize}
+    \item Notion de polynôme, égalité de deux polynômes;
+    \item Somme et produit de deux polynômes;
+    \item Racine d'un polynôme, division par $x-a$;
+    \item Factorisation d'un polynôme.
+premiers
+\end{itemize}
+
+{\Large\ding{45}}
+\textcolor{red}{\large Les capacités attendues :}
+\begin{itemize}
+    \item Maitriser la technique de la division euclidienne par $x-a$ et reconnaitre la divisibilité par $x - a$.
+\end{itemize}
+
+{\Large\ding{45}}
+\textcolor{red}{\large Recommandations pédagogiques :} 
+  \begin{itemize}
+      \item  Il faudra écarter toute construction théorique de la notion de polynôme. ON se basera pour son introduction sur des exemples simples en indiquant les élément caractéristique de la division euclidienne par $x-a$ (degré, termes, coefficient)
+      \item La technique de la division euclidien par $x - a$ joue un rôle dans la factorisation d'un polynôme dont une racine est $a$, toutefois une importance devra être accordée aux autres techniques de factorisation.
+  \end{itemize}
+\end{boxone}
+
+\newpage
+
+\begin{tabular}{|>{\centering\arraybackslash}p{1.2cm}|>{\raggedright\arraybackslash}p{15.5cm}|>{\centering\arraybackslash}p{0.8cm}|}
+\hline
+\rowcolor{head}
+
+Etapes &
+\centering Contenu du cours &
+ Durée \\
+\hline
+
+&
+\vspace{0.1cm}
+\mysection{Polynôme}
+\begin{Definition}
+On appelle polynôme toute expression $P(x)$ qui s'écrit sous la forme : 
+$$P(x) = ax^n + bx^m + cx^p + \dots$$
+où $n$, $m$ et $p$ sont des entiers naturels et $a$, $b$ et $c$ sont des nombres réels.\\
+Les nombres $a$, $b$ et $c$ sont appelés \textcolor{red}{coefficient} du polynôme $P(x)$.
+\end{Definition}
+\begin{Exemple}
+\begin{enumerate}
+	\item $P(x) = -2x^3 + 7x^2 - 3x + 1$ est un polynôme dont les coefficient sont $-2$, $7$, $-3$ et $1$.
+	\item $Q(x) = 2x^4 - x^3 + x^2 + x - 5$ est un polynôme dont les coefficient sont $4$, $7$, $-3$ et $1$.
+\end{enumerate}
+\end{Exemple}
+\begin{Definition}
+Le degré d'un polynôme $P$ est la puissance la plus élevée de ses termes, on le note par : $deg(P)$.
+\end{Definition}
+\begin{Exemple}
+\begin{enumerate}
+	\item $P(x) = x^3 - x^2 + \sqrt{3}x + \dfrac{1}{2}$ est un polynôme de degré $3$ ($deg(P)$ = 3).
+	\item $Q(x) = 2x + 1$ est un polynôme de degré $1$ ($deg(Q) = 1$).
+\end{enumerate}
+\end{Exemple}
+\mysection{Égalité de deux polynômes}
+\begin{Proposition}
+\begin{itemize}
+	\item On dit qu'un polynôme $P(x)$ est \textcolor{red}{nul} si tous ses coefficients sont nuls. On écrit $P(x) = 0$.
+	\item Deux polynômes sont égaux si et seulement si, ils ont le même degré et les coefficient des termes de même degré sont égaux.
+\end{itemize}
+\end{Proposition}
+\begin{Exemple}
+\begin{enumerate}
+	\item On pose $P(x) = -2x^4 + 4x^2 + 5x - 1$ et $Q(x) = 5x + 2 -2(x^2 - 1)^2 -1$.
+	 Montrons que $P(x) = Q(x)$.
+	\item On pose $P(x) = 3x^4 - 2x^3 + 7x^2 + 5x + -1$ et $Q(x) = ax^4 +(a+b)x^3 + cx^2 + (2c + d)x - 1$.\\
+	Déterminons $a$, $b$, $c$ et $d$ sachant que $P(x) = Q(x)$.
+\end{enumerate}
+\end{Exemple}
+\begin{Application}
+On pose $P(x) = 3x^2 + (b-3)x + 4$ et $Q(x) = (a-1)x^2 + c$.
+
+Déterminer $a$, $b$ et $c$ sachant que $P(x) = Q(x)$.
+\end{Application}
+\mysection{Opérations sur les polynômes}\newpage
+\mysubsection{1}{Somme de deux polynômes}
+
+&\\
+\hline
+
+\end{tabular}
+
+
+
+\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
+\hline
+\vspace{0.1cm}
+
+\begin{Exemple}
+On considère les deux polynômes :
+$$P(x) = 5x^3 - 7x^2 + 8x + 6 \text{ et } Q(x) = 2x^4 - 2x^3 + 4x^2 + x - 9$$
+Calculons $P(x) + Q(x)$ et $deg(P(x) + Q(x))$.
+\end{Exemple}
+\begin{Application}
+Calculer la somme des deux polynômes et déterminer le degré de la somme, dans chacun des cas suivants :
+$$\begin{cases}
+P(x) =  7x^6 - 6x^3 -\dfrac{3}{4}x^2 + 4\\
+Q(x) = 8x^7 - 6x^6 + 7x^3 - \dfrac{5}{4}x^2 + 11
+\end{cases}
+\text{ et }
+\begin{cases}
+G(x) =  3x^5 - 7x^3 + 4x^2 - 13x + 1\\
+H(x) = 2x^3 + 5x^2 - 3x^5 - 9x
+\end{cases}
+$$
+\end{Application}
+
+\mysubsection{2}{Produit d'un nombre réel par un polynôme}
+\begin{Exemple}
+On considère le polynôme : $P(x) = 4x^5 - 3x^2 + x + 1$.
+
+Calculons $3P(x)$.
+\end{Exemple}
+\begin{Application}
+On considère les deux polynômes :
+$$P(x) = 5x^3 - 7x^2 + 8x + 6 \text{ et } Q(x) = 2x^4 - 2x^3 + 4x^2 + x - 9$$
+Calculer $2P(x) - 3Q(x)$.
+\end{Application}
+
+\mysubsection{3}{Produit de deux polynômes}
+\begin{Exemple}
+On considère les deux polynômes :
+$$P(x) = x^3 + x^2 - 3x + 1 \text{ et } Q(x) = 2x^2 - 3x + x - 9$$
+Calculons $P(x)\times Q(x)$ et $deg(P(x) \times Q(x))$.
+\end{Exemple}
+
+\mysection{Division par $(x - \alpha)$}
+\begin{Proposition}
+Soit $P(x)$ un polynôme de degré non nul.
+
+Soit $\alpha$ un nombre réel.
+
+Il existe un polynôme $Q(x)$ tel que $P(x) = (x - \alpha)Q(x) + P(\alpha)$.
+\begin{itemize}
+	\item $Q(x)$ est appelé quotient de la division euclidienne du polynôme $P(x)$ par $(x - \alpha)$.
+	\item $P(\alpha)$ est appelé reste de la division euclidienne du polynôme $P(x)$ par $(x - \alpha)$.
+\end{itemize}
+\end{Proposition}
+&\\
+\hline
+\end{tabular}
+
+
+\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
+\hline
+\vspace{0.1cm}
+
+\begin{Exemple}
+\begin{itemize}
+	\item Déterminions le quotient et le reste de la division euclidien du polynôme : $P(x) = 2x^3 - 5x^2 - x - 2$ par $x-3$.
+	\item Déterminions le quotient et le reste de la division euclidien du polynôme : $T(x) = 3x^4 - x^3 + 2x - 52$ par $x+3$.
+\end{itemize}
+\end{Exemple}
+
+\textcolor{red}{Remarque : }
+
+Si le reste de la division euclidienne de du polynôme $P(x)$ par $x-\alpha$ égale 0, on dit que le polynôme $P(x)$ est divisible par $x-\alpha$.
+
+\begin{Application}
+Déterminer le quotient et le reste de la division euclidien du polynôme $P(x)$ par $x- \alpha$ dans chacun des cas suivants :
+\begin{enumerate}
+	\item $P(x) = 2x^3 - 4x^2 + 2x + 36 \quad ;\quad \alpha = -2$.
+	\item $P(x) = x^5 - 3x^4 + 4x^3 - 12x^2 - 5x + 15 \quad ;\quad \alpha = 3$.
+	\item $P(x) = 2x^3 + x^2 - 24x - 12 \quad ;\quad \alpha = -\dfrac{1}{2}$.
+\end{enumerate}
+\end{Application}
+
+\mysection{Racine d'un polynôme}
+\begin{Definition}
+Soit $P(x)$ un polynôme et soit $\alpha$ un nombre réel.
+
+On dit que $\alpha$ est \textcolor{red}{une racine} (ou un zéro) du polynôme $P(x)$ si $P(\alpha) = 0$.
+\end{Definition}
+
+\begin{Exemple}
+On considère le polynôme $P(x) = 2x^4 - 3x^3 - 4x^2 - 45$.
+\begin{itemize}
+	\item On a : $P(1) = 2 - 3 - 4 - 45 = -50$.
+	
+	Donc $1$ n'est pas une racine de $P(x)$, car $P(1) \neq 0$.
+	\item On a $P(3) = 0$.
+	
+	Donc $3$ est une racine du polynôme $P(x)$.
+\end{itemize}
+\end{Exemple}
+
+\begin{Proposition}
+Soit $\alpha$ un nombre réel. Alors :
+$\alpha$ est une racine de $P(x)$ si et seulement si $P(x)$ est divisible par $(x-\alpha)$.
+\end{Proposition}
+
+\begin{Exemple}
+On considère le polynôme $P(x) = x^3 - (3 + \sqrt{2})x^2 + (2 + \sqrt{3})x - 2\sqrt{2}$.
+
+On a $P(2) = 0$, alors $2$ est une racine du polynôme $P(x)$.
+
+Donc le polynôme $P(x)$ est divisible par $(x - 2)$.
+\end{Exemple}
+
+&\\
+\hline
+
+\end{tabular}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
