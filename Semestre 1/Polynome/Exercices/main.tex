@@ -1,0 +1,195 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[top=2cm,left=1cm,right=1cm,bottom=2cm]{geometry}
+\usepackage{amssymb,mathtools,amsthm}
+\usepackage{fourier}
+\usepackage{xcolor}
+\usepackage{multicol, array, fancyhdr}
+\usepackage{tasks}
+\newcommand{\Lim}{\displaystyle\lim}
+\renewcommand{\columnseprule}{1pt}
+\renewcommand{\arraystretch}{1.5}
+% \renewcommand{\dfrac}[2]{\displaystyle\dfrac{#1}{#2}}
+
+
+%======================================================
+\newtheoremstyle{mystyle}
+  {\topsep}% espace avant
+  {\topsep}% espace après
+  {\upshape}% police du corps du théorème
+  {}% indentation (vide pour rien, \parindent)
+  {\bfseries\sffamily}% police du titre du théorème
+  { :}% ponctuation après le théorème
+  { }% après le titre du théorème (espace ou \newline)
+  {%
+    \rule[0.5\baselineskip]{0.5\textwidth}{1pt}%
+    \newline\fcolorbox{black}{white}{%
+      \thmname{#1}\thmnumber{ \textup{#2}}\thmnote{ \textnormal{(#3)}}%
+    }%
+    
+    % \vspace{0.5em} % Adjust vertical space after the title
+  }% spécifications du titre
+
+\theoremstyle{mystyle}
+\newtheorem{exo}{Exercice}
+
+%======================================================
+
+
+
+\begin{document}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyhead[L]{Lycée : Zitoun \hspace{1.5cm} Année scolaire : 2024-2025} % Left header
+\fancyhead[C]{ \hspace{4cm} Niveau : TCS} % Right-Center header
+\fancyhead[R]{Prof. Othmane Laksoumi} % Right header
+\fancyfoot[C]{\thepage} % Footer
+
+
+\begin{center}
+    \textbf{\Large Polynômes }
+\end{center}
+\begin{multicols*}{2}
+%\begin{exo}
+%Déterminer les polynômes parmi les expressions suivantes :
+%
+%\begin{enumerate}
+%    \item \(P(x) = x^2 - \sqrt{3}x^3 + 2\)
+%    \item \(P(x) = 3x^3 - \dfrac{1}{x} + 4\)
+%    \item \(P(x) = (1 - x)^3\)
+%    \item \(P(x) = x^3 - |x| + 4\)
+%    \item \(P(x) = 3x - \dfrac{1}{2}x^3 + \dfrac{1}{2}\)
+%    \item \(P(x) = x^2 - \sqrt{x} + 1\)
+%\end{enumerate}
+%\end{exo}
+
+\begin{exo}
+Calculer $P(x)\times Q(x)$ dans chacun des cas suivants :
+\begin{enumerate}
+	\item $P(x) = 2x^2 + 3x - 2$ et $Q(x) = x^3 - 2x^2 + 1$.
+	\item $P(x) = 2x^5 - \sqrt{2}x^4$ et $Q(x) = \sqrt{2}x^3 + \sqrt{3}x - 1$
+\end{enumerate}
+
+
+\end{exo}
+
+\begin{exo}
+Déterminer \(a\) et \(b\) sachant que 
+
+\(P(x) = Q(x)\) tel que :
+\[
+P(x) = 2x^3 - 5x^2 - 4x + 3 \quad \text{et} \quad Q(x) = (x + 1)(x - 3)(ax + b)
+\]
+\end{exo}
+
+\begin{exo}
+On considère le polynôme \[P(x) = 2x^2 - 5x - 3\]
+
+\begin{enumerate}
+    \item Vérifier que \(-\dfrac{1}{2}\) est une racine de \(P(x)\)
+    \item Déterminer le polynôme \(Q(x)\) tel que \[P(x) = \left(x + \dfrac{1}{2}\right)Q(x)\]
+    \item En déduire une autre racine de \(P(x)\)
+\end{enumerate}
+\end{exo}
+
+\begin{exo}
+On considère le polynôme \[Q(x) = 2x^2 - 5x + 2\]
+
+\begin{enumerate}
+    \item Calculer \(Q(2)\), le polynôme \(Q(x)\) est-il divisible par \(x - 2\)?
+    \item Déterminer le polynôme \(R(x)\) tel que \[Q(x) = (x - 2)R(x)\]
+\end{enumerate}
+\end{exo}
+
+\begin{exo}
+\text{ }
+\begin{enumerate}
+    \item Montrer que le polynôme \(P(x)\) est divisible par \(x - a\) dans les cas suivants :
+    \begin{enumerate}
+        \item \(P(x) = x^3 - 3x^2 + 4x - 4\) et \(a = 2\)
+        \item \(P(x) = x^4 - 3x^2 + x - 2\) et \(a = -2\)
+        \item \(P(x) = x^3 + 3x^2 + 4x + 12\) et \(a = 3\)
+    \end{enumerate}
+    \item Déterminer \(a\) et \(b\) sachant que le polynôme :
+    \[
+    P(x) = x^5 - 2x^4 + 3x^3 - 4x^2 + ax + b
+    \]
+    est divisible par \(x - 2\) et par \(x + 3\)
+\end{enumerate}
+\end{exo}
+\begin{exo}
+\text{ }
+\begin{enumerate}
+    \item Déterminer le quotient et le reste de la division euclidienne de \(P(x)\) par \((x - a)\) dans les cas suivants :
+    \begin{enumerate}
+        \item \(P(x) = x^3 - 3x - 2\) et \(a = 1\)
+        \item \(P(x) = x^3 + 4x^2 + 4x + 3\) et \(a = -3\)
+        \item \(P(x) = 3x^3 - x^2 - 6x + 2\) et \(a = \dfrac{1}{3}\)
+    \end{enumerate}
+    \item En utilisant la méthode de Horner, déterminer le quotient et le reste de la division euclidienne de \(P(x)\) par \((x - a)\) dans les cas suivants :
+    \begin{enumerate}
+        \item \(P(x) = 2x^3 - 5x^2 - x - 2\) et \(a = 3\)
+        \item \(P(x) = 3x^4 - x^3 + 2x - 52\) et \(a = -2\)
+        \item \(P(x) = 3x^5 - 2x^3 + 3x - 11\) et \(a = -4\)
+    \end{enumerate}
+\end{enumerate}
+\end{exo}
+\begin{exo}
+On considère le polynôme \[P(x) = 2x^3 + 5x^2 - x - 6\]
+
+\begin{enumerate}
+    \item Montrer que \(-2\) est une racine de \(P(x)\)
+    \item Déterminer le polynôme \(Q(x)\) tel que \[P(x) = (x + 2)Q(x)\]
+    \item Montrer que \(Q(x)\) est divisible par \((x - 1)\)
+    \item Factoriser le polynôme \(Q(x)\)
+    \item Donner une factorisation de \(P(x)\) en produit de trois binômes.
+\end{enumerate}
+\end{exo}
+
+%\begin{exo}
+%On considère le polynôme \[P(x) = 2x^4 - 9x^3 + 14x^2 - 9x + 2\]
+%
+%\begin{enumerate}
+%    \item Montrer que 0 n’est pas une racine de \(P(x)\)
+%    \item Montrer que si \(\alpha\) est une racine de \(P(x)\) alors \(\frac{1}{\alpha}\) est aussi une racine de \(P(x)\).
+%    \item 
+%    \begin{enumerate}
+%        \item Montrer que 2 est une racine de \(P(x)\)
+%        \item Déterminer le polynôme \(Q(x)\) tel que \(P(x) = (x - 2)Q(x)\)
+%        \item En déduire que \(Q\left(\frac{1}{2}\right) = 0\)
+%    \end{enumerate}
+%    \item 
+%    \begin{enumerate}
+%        \item Déterminer les réels \(a\), \(b\) et \(c\) tel que
+%        \[
+%        Q(x) = \left(x - \frac{1}{2}\right)(ax^2 + bx + c)
+%        \]
+%        \item En déduire une factorisation de \(P(x)\) en produit de quatre binômes.
+%    \end{enumerate}
+%\end{enumerate}
+%\end{exo}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{multicols*}
+
+
+
+\end{document}
