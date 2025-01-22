@@ -115,7 +115,7 @@
 % \textcolor{red}{\LARGE\bfseries 1. Les équation du deuxiéme degrée :}
 
 %------------------------------------------------------
-\newtcolorbox[auto counter]{Definition}{enhanced,
+\newtcolorbox[auto counter]{Définition}{enhanced,
 before skip=2mm,after skip=2mm,
 colback=yellow!20!white,colframe=lime,boxrule=0.2mm,
 attach boxed title to top left =
@@ -163,7 +163,7 @@ attach boxed title to top left =
 fonttitle=\bfseries\sffamily,
 title={Proposition ~\thetcbcounter}}
 %------------------------------------------------------
-\newtcolorbox[auto counter]{Theoreme}{enhanced,
+\newtcolorbox[auto counter]{Théorème}{enhanced,
 before skip=2mm,after skip=2mm,
 colback=yellow!20!white,colframe=red,boxrule=0.2mm,
 attach boxed title to top left =
@@ -187,7 +187,7 @@ attach boxed title to top left =
 fonttitle=\bfseries\sffamily,
 title={Théorème ~\thetcbcounter}}
 %------------------------------------------------------
-\newtcolorbox[auto counter]{exemple}{
+\newtcolorbox[auto counter]{Exemple}{
   % breakable,
   enhanced,
   colback=white,
@@ -211,7 +211,7 @@ left color=exercisebgblue,
   }
 }
 %----------------------------------------------------
-\newtcolorbox[auto counter]{Activite}{
+\newtcolorbox[auto counter]{Activité}{
   % breakable,
   enhanced,
   colback=white,
@@ -342,13 +342,13 @@ premiers
 
 \newpage
 
-\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
-\hline
-\rowcolor{head}
-
-\centering Contenu du cours &
- Durée \\
-\hline
+%\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
+%\hline
+%\rowcolor{head}
+%
+%\centering Contenu du cours &
+% Durée \\
+%\hline
 
 % \vspace{1cm}
 % \rotatebox{90}{Phase de lancement}
@@ -357,10 +357,10 @@ premiers
 
 % \rotatebox{90}{construction de connaissances}
  
-\vspace{0.1cm}
+%\vspace{0.1cm}
 
 \mysection{Egalité de deux vecteurs}
-\begin{Definition}
+\begin{Définition}
     Soient $A,$ $B,$ $C$ et $D$ quatre points du plan $\mathcal{P}$ tels que $A\neq B$ et $C\neq D$.\\
     On dit que les deux vecteurs $\overrightarrow{AB}$ et $\overrightarrow{DC}$ sont \textcolor{red}{égaux} et on écrit $\overrightarrow{AB} = \overrightarrow{CD}$ lorsque ces deux vecteurs ont :
     \begin{itemize}
@@ -368,23 +368,23 @@ premiers
         \item le même sens
         \item la même norme, c'est-à-dire $AB=DC$.
     \end{itemize}
-\end{Definition}
-\begin{exemple}
+\end{Définition}
+\begin{Exemple}
     \begin{center}        \includegraphics[width=0.5\textwidth]{download.png}
     \end{center}
     On a $\overrightarrow{AB} = \overrightarrow{CD}$ et $\overrightarrow{AB}\neq\overrightarrow{DC}$.
-\end{exemple}
+\end{Exemple}
 \begin{Proposition}
     Soient $A,$ $B,$ $C$ et $D$ quatre points du plan $\mathcal{P}$.\\
     $\overrightarrow{AB} = \overrightarrow{DC}$ si et seulement si $ABCD $ est un parallélogramme.
 \end{Proposition}
 
-\begin{exemple}
+\begin{Exemple}
     Soient $A$, $B$, $C$ et $D$ quatre points tels que : $\overrightarrow{AB}=\overrightarrow{DC}$.\\
     $\overrightarrow{AB}=\overrightarrow{DC}$ signifie que $ABCD$ est un parallélogramme.\\
     Donc $BADC$ et $ADCB$ et $DCBA$ sont des parallélogrammes.\\
     D'où $\overrightarrow{BA} = \overrightarrow{CD}$ et $\overrightarrow{AD} = \overrightarrow{BC}$ et $\overrightarrow{DC} = \overrightarrow{AB}$
-\end{exemple}
+\end{Exemple}
 
 \begin{Proposition}
     Pour tout vecteur $\overrightarrow{u}$ et tout point $A$ du plan $\mathcal{P}$, il existe un point $B$ tel que : $\overrightarrow{u} = \overrightarrow{AB}$.
@@ -402,39 +402,42 @@ Quels que soient les points $A$, $M$ et $N$ du plan, on a :
 \end{itemize}
 
 
-&\\
-\hline
+%&\\
+%\hline
+%
+%\end{tabular}
+%
+%\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
+%\hline
 
-\end{tabular}
+%\vspace{1mm}
 
-\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
-\hline
+\newpage
 
-\vspace{1mm}
 \mysection{Somme de deux vecteurs}
-\begin{Definition}
+\begin{Définition}
 Soient $\overrightarrow{u}$ et $\overrightarrow{v}$ deux vecteurs tels que : $\overrightarrow{u} = \overrightarrow{AB}$ et $\overrightarrow{v} = \overrightarrow{AC}$.\\
 La somme des deux vecteurs $\overrightarrow{u}$ et $\overrightarrow{v}$ est le vecteur noté $\overrightarrow{u} + \overrightarrow{v}$ et définie par $\overrightarrow{u} + \overrightarrow{v} = \overrightarrow{AD}$ tel que $ABCD$ est un parallélogramme.\\
 \begin{center}
-    \includegraphics[width=0.5\textwidth]{output-onlinepngtools.png}
+    \includegraphics[width=0.4\textwidth]{output-onlinepngtools.png}
 \end{center}
-\end{Definition}
+\end{Définition}
 \begin{Proposition}
 \textcolor{red}{Relation de Chasles}\\
 Soient $A$, $B$ et $C$ trois points du plan $\mathcal{P}$.
 On a $\overrightarrow{AB} + \overrightarrow{BC} = \overrightarrow{AC}$.
 \end{Proposition}
 
-\begin{exemple}
+\begin{Exemple}
     Soient $A$, $B$, $C$, $D$ et $O$ cinq points du plan $\mathcal{P}$.
     \begin{itemize}
         \item Montrons que $\overrightarrow{AC} + \overrightarrow{BD} = \overrightarrow{AD} + \overrightarrow{BC}$.
         \item Montrons que $\overrightarrow{AB} = \overrightarrow{OB} - \overrightarrow{OA}$.
     \end{itemize}
-\end{exemple}
+\end{Exemple}
 
 \mysection{Multiplication d'un vecteur par un nombre réel}
-\begin{Definition}
+\begin{Définition}
 Soit $\overrightarrow{u}$ un vecteur et $k$ un nombre réel.\\
 Le produit du vecteur $\overrightarrow{u}$ par le nombre réel $k$, que l'on note $\overrightarrow{w} = k \overrightarrow{u}$, est défini par :
 \begin{itemize}
@@ -447,8 +450,8 @@ Le produit du vecteur $\overrightarrow{u}$ par le nombre réel $k$, que l'on not
     \item Si $\overrightarrow{u} = \overrightarrow{0}$, alors $\overrightarrow{w} = \overrightarrow{0}$ (c'est-à-dire $k \overrightarrow{u} = \overrightarrow{0}$).
 \end{itemize}
     
-\end{Definition}
-\begin{exemple}
+\end{Définition}
+\begin{Exemple}
 On considére la figure suivante :
     \begin{center}
         \includegraphics{grille.PNG}
@@ -458,18 +461,8 @@ On considére la figure suivante :
         \item  Les vecteurs $\overrightarrow{DA}$ et $\overrightarrow{DB}$ ont la même direction, le même sens et $DA = \displaystyle\frac{12}{5}DB$, donc $\overrightarrow{DA} = \displaystyle\frac{12}{5}\overrightarrow{DB}$.
     \end{itemize}
     
-\end{exemple}
+\end{Exemple}
 
-
-&\\
-\hline
-
-\end{tabular}
-
-\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
-\hline
-
-\vspace{1mm}
 \begin{Application}
     Soient $A$, $B$, $C$ et $D$ quatre points.\\
     Construire les points $M$, $N$, $P$ définie par :
@@ -480,7 +473,7 @@ On considére la figure suivante :
     \end{enumerate}
 \end{Application}
 
-\begin{Activite}
+\begin{Activité}
 On considère un vecteur non nul $\overrightarrow{u}$ et on pose $\|\overrightarrow{u}\| = k$.
 
 Soient $a$ et $b$ deux nombres réels tels que $a > 0$, $b < 0$ et $a + b < 0$.\\
@@ -489,7 +482,7 @@ $A$, $B$ et $C$ sont des points tels que $\overrightarrow{AB} = a \overrightarro
     \item Calculer la norme $\|\overrightarrow{AC}\|$ en fonction de $a$, $b$ et $k$.
     \item Montrer que : $(a + b)\overrightarrow{u} = a\overrightarrow{u} + b\overrightarrow{u}$.
 \end{enumerate}
-\end{Activite}
+\end{Activité}
 
 \begin{Proposition}
     Quels que soient les vecteurs $\overrightarrow{u}$ et $\overrightarrow{v}$ et les réels $a,\ b$ et $k$, on a : 
@@ -501,7 +494,7 @@ $A$, $B$ et $C$ sont des points tels que $\overrightarrow{AB} = a \overrightarro
     \end{itemize}
 \end{Proposition}
 
-\begin{exemple}
+\begin{Exemple}
  $\begin{array}{ccc}
         \overrightarrow{V_1} & = & 4(\overrightarrow{u} + \overrightarrow{v}) - 2\overrightarrow{u} \\
          & = & 4\overrightarrow{u} + 4\overrightarrow{v} - 2\overrightarrow{u} \\
@@ -510,7 +503,7 @@ $A$, $B$ et $C$ sont des points tels que $\overrightarrow{AB} = a \overrightarro
          & = & 2(\overrightarrow{u} + 2\overrightarrow{v}) 
          
     \end{array}$
-\end{exemple}
+\end{Exemple}
 
 \begin{Application}
     Simplifier l'écriture des vecteurs suivants :
@@ -522,20 +515,20 @@ $A$, $B$ et $C$ sont des points tels que $\overrightarrow{AB} = a \overrightarro
     \end{enumerate}
 \end{Application}
 \mysection{Colinéarité de deux vecteurs :}
-\begin{Definition}
+\begin{Définition}
     On dit que deux vecteurs $\overrightarrow{u}$ et $\overrightarrow{v}$ sont \textcolor{red}{colinéaires} s'il existe un nombre réel $k$ tel que $\overrightarrow{u} = k\overrightarrow{v}$ ou $\overrightarrow{v} = k\overrightarrow{u}$.
-\end{Definition}
+\end{Définition}
 
 
 
-&\\
-\hline
-\end{tabular}
-
-\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
-\hline
-
-\vspace{1mm}
+%&\\
+%\hline
+%\end{tabular}
+%
+%\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
+%\hline
+%
+%\vspace{1mm}
 
 \begin{Proposition}
     Soient $A,\ B,\ C$ et $D$ quatre points du plan $\mathcal{P}$.
@@ -545,12 +538,12 @@ $A$, $B$ et $C$ sont des points tels que $\overrightarrow{AB} = a \overrightarro
     \end{itemize}
 \end{Proposition}
 
-\begin{exemple}
+\begin{Exemple}
     \begin{center}
         \includegraphics{colineare.PNG}
     \end{center}
     Déterminer tous les vecteurs qui sont colinéaires.
-\end{exemple}
+\end{Exemple}
 
 \begin{Application}
     Soient $ABCD$ un parallélogramme, $E$ et $F$ les points définis par :
@@ -573,31 +566,31 @@ $A$, $B$ et $C$ sont des points tels que $\overrightarrow{AB} = a \overrightarro
 
 
 
-&\\
-\hline
-\end{tabular}
+%&\\
+%\hline
+%\end{tabular}
+%
+%\newpage
+%
+%\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
+%\hline
 
-\newpage
-
-\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
-\hline
-
-\vspace{1mm}
-\begin{exemple}
+%\vspace{1mm}
+\begin{Exemple}
     Soit $ABC$ un triangle.\\
     Construisons les points $E$ et $F$ définis par : 
      $\overrightarrow{BE} = \overrightarrow{BA} + \overrightarrow{BC}$ et $\overrightarrow{AF} = \overrightarrow{AB} + \overrightarrow{AC}$
-    \includegraphics[width=0.3\textwidth]{exemple7.PNG}
+%    \includegraphics[width=0.3\textwidth]{Exemple7.PNG}
     
      Montrons que $C$ est le milieu de $[EF]$.
-\end{exemple}
+\end{Exemple}
 
 
-
-
-&\\
-\hline
-
-\end{tabular}
+%
+%
+%&\\
+%\hline
+%
+%\end{tabular}
 
 \end{document}

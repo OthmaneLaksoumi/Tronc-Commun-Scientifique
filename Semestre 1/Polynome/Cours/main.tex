@@ -1,5 +1,5 @@
 \documentclass[10pt,a4paper]{article}
-\usepackage[right=0.5cm, left=0.5cm,top=1cm,bottom=1.5cm]{geometry}
+\usepackage[right=1cm, left=1cm,top=1cm,bottom=1.5cm]{geometry}
 \usepackage{enumitem}
 \usepackage{graphicx}
 \usepackage{array, tasks}
@@ -205,9 +205,9 @@ left color=exercisebgblue,
   },
   overlay={
     \draw[line width=1pt,problemblue] (frame.south west) -- (frame.south east);
-    % \draw[line width=1pt,problemblue] (frame.north west) -- (frame.north east);
+     \draw[line width=1pt,problemblue] (frame.north west) -- (frame.north east);
     \draw[line width=1pt,problemblue] (frame.south west) -- (frame.north west);
-    % \draw[line width=1pt,problemblue] (frame.south east) -- (frame.north east);
+     \draw[line width=1pt,problemblue] (frame.south east) -- (frame.north east);
   }
 }
 %----------------------------------------------------
@@ -300,8 +300,7 @@ title=#1,coltitle=black,fonttitle=\sffamily}
 
 \begin{tcolorbox}[title=\textcolor{blue}{\shadowbox{ Prof : Othmane Laksoumi}}
 \hfill
-\textcolor{blue}{\shadowbox{ Ensemble des nombres entiers naturels $\mathbb{N}$ et notions en arithmétique
- }}]
+\textcolor{blue}{\shadowbox{ Polynômes }}]
 
 \end{tcolorbox}
 
@@ -340,16 +339,16 @@ premiers
 
 \newpage
 
-\begin{tabular}{|>{\centering\arraybackslash}p{1.2cm}|>{\raggedright\arraybackslash}p{15.5cm}|>{\centering\arraybackslash}p{0.8cm}|}
-\hline
-\rowcolor{head}
-
-Etapes &
-\centering Contenu du cours &
- Durée \\
-\hline
-
-&
+%\begin{tabular}{|>{\centering\arraybackslash}p{1.2cm}|>{\raggedright\arraybackslash}p{15.5cm}|>{\centering\arraybackslash}p{0.8cm}|}
+%\hline
+%\rowcolor{head}
+%
+%Etapes &
+%\centering Contenu du cours &
+% Durée \\
+%\hline
+%
+%&
 \vspace{0.1cm}
 \mysection{Polynôme}
 \begin{Definition}
@@ -393,25 +392,15 @@ On pose $P(x) = 3x^2 + (b-3)x + 4$ et $Q(x) = (a-1)x^2 + c$.
 
 Déterminer $a$, $b$ et $c$ sachant que $P(x) = Q(x)$.
 \end{Application}
-\mysection{Opérations sur les polynômes}\newpage
+\mysection{Opérations sur les polynômes}
+
 \mysubsection{1}{Somme de deux polynômes}
-
-&\\
-\hline
-
-\end{tabular}
-
-
-
-\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
-\hline
-\vspace{0.1cm}
-
 \begin{Exemple}
 On considère les deux polynômes :
-$$P(x) = 5x^3 - 7x^2 + 8x + 6 \text{ et } Q(x) = 2x^4 - 2x^3 + 4x^2 + x - 9$$
+\vspace{-0.3cm}$$P(x) = 5x^3 - 7x^2 + 8x + 6 \text{ et } Q(x) = 2x^4 - 2x^3 + 4x^2 + x - 9$$
 Calculons $P(x) + Q(x)$ et $deg(P(x) + Q(x))$.
 \end{Exemple}
+
 \begin{Application}
 Calculer la somme des deux polynômes et déterminer le degré de la somme, dans chacun des cas suivants :
 $$\begin{cases}
@@ -457,14 +446,14 @@ Il existe un polynôme $Q(x)$ tel que $P(x) = (x - \alpha)Q(x) + P(\alpha)$.
 	\item $P(\alpha)$ est appelé reste de la division euclidienne du polynôme $P(x)$ par $(x - \alpha)$.
 \end{itemize}
 \end{Proposition}
-&\\
-\hline
-\end{tabular}
+%&\\
+%\hline
+%\end{tabular}
 
 
-\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
-\hline
-\vspace{0.1cm}
+%\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
+%\hline
+%\vspace{0.1cm}
 
 \begin{Exemple}
 \begin{itemize}
@@ -518,11 +507,11 @@ On a $P(2) = 0$, alors $2$ est une racine du polynôme $P(x)$.
 Donc le polynôme $P(x)$ est divisible par $(x - 2)$.
 \end{Exemple}
 
-&\\
-\hline
-
-\end{tabular}
-
+%&\\
+%\hline
+%
+%\end{tabular}
+%
 
 
 

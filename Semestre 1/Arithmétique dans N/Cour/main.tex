@@ -187,7 +187,7 @@ attach boxed title to top left =
 fonttitle=\bfseries\sffamily,
 title={Théorème ~\thetcbcounter}}
 %------------------------------------------------------
-\newtcolorbox[auto counter]{exemple}{
+\newtcolorbox[auto counter]{Exemple}{
   % breakable,
   enhanced,
   colback=white,
@@ -205,9 +205,9 @@ left color=exercisebgblue,
   },
   overlay={
     \draw[line width=1pt,problemblue] (frame.south west) -- (frame.south east);
-    % \draw[line width=1pt,problemblue] (frame.north west) -- (frame.north east);
+    \draw[line width=1pt,problemblue] (frame.north west) -- (frame.north east);
     \draw[line width=1pt,problemblue] (frame.south west) -- (frame.north west);
-    % \draw[line width=1pt,problemblue] (frame.south east) -- (frame.north east);
+    \draw[line width=1pt,problemblue] (frame.south east) -- (frame.north east);
   }
 }
 %----------------------------------------------------
@@ -343,14 +343,14 @@ et des nombres impairs sans excès.
 
 \newpage
 
-\begin{tabular}{|>{\centering\arraybackslash}p{1.2cm}|>{\raggedright\arraybackslash}p{15.5cm}|>{\centering\arraybackslash}p{0.8cm}|}
-\hline
-\rowcolor{head}
-
-Etapes &
-\centering Contenu du cours &
- Durée \\
-\hline
+%\begin{tabular}{|>{\centering\arraybackslash}p{1.2cm}|>{\raggedright\arraybackslash}p{15.5cm}|>{\centering\arraybackslash}p{0.8cm}|}
+%\hline
+%\rowcolor{head}
+%
+%Etapes &
+%\centering Contenu du cours &
+% Durée \\
+%\hline
 
 % \vspace{1cm}
 % \rotatebox{90}{Phase de lancement}
@@ -359,8 +359,8 @@ Etapes &
 
 % \rotatebox{90}{construction de connaissances}
  
-&
-\vspace{0.1cm}
+
+%\vspace{0.1cm}
 
 \mysection{Nombres pairs et nombres impaires}
 \begin{Activite}
@@ -383,14 +383,14 @@ Etapes &
 \end{itemize}
 \end{Def}
 
-\begin{exemple}
+\begin{Exemple}
     \begin{enumerate}
         \item $2004$ est un nombre pair.
         \item $2005$ est un nombre impair.
         \item Soit $x$ un entier naturel non nul et différent de $1$.
         $A = 2x-3$ et $B = 4x + 2$
     \end{enumerate}
-\end{exemple}
+\end{Exemple}
 
 \begin{application}
 Soit $n$ un entier naturel. Etudier la parité de $A$ et $B$ tels que : $A = 2n^2 + 6$ et $B = 8n+3$
@@ -412,20 +412,22 @@ Pour qu'un entier naturel soit pair, il suffit que son chiffre d'unités soit 0,
 
     
 
-&
- \\
-\hline
+%&
+% \\
+%\hline
+%
+%\end{tabular}
 
-\end{tabular}
-
-\begin{tabular}{|>{\centering\arraybackslash}p{1.2cm}|>{\raggedright\arraybackslash}p{15.5cm}|>{\centering\arraybackslash}p{0.8cm}|}
-\hline
-
-&
-\vspace{1mm}
+%\begin{tabular}{|>{\centering\arraybackslash}p{1.2cm}|>{\raggedright\arraybackslash}p{15.5cm}|>{\centering\arraybackslash}p{0.8cm}|}
+%\hline
+%
+%&
+%\vspace{1mm}
 \begin{application}
     Soit $n$ un entier naturel. Etudier la parité des entiers naturels suivants :\newline $A = 4n^2+19$, $B = 10n^3+5n^2+1$ et $C = n(n+1)$
 \end{application}
+
+\newpage
 
 \mysection{Multiples d'un nombre entier naturel}
 \begin{Activite}
@@ -447,14 +449,14 @@ Cocher les réponses justes : \newline
     Soient $m$ et $n$ deux entiers naturels. On dit que $m$ est un multiple de $n$ si $m=n\times k$ où $k$ un entier naturel.
 \end{Def}
 
-\begin{exemple}
+\begin{Exemple}
     \begin{multicols}{2}
         \begin{itemize}
             \item $42$ est un multiple de $21$ car $42 = 2\times 21$
             \item $55$ est un multiple de $11$ car $55 = 5\times 11$
         \end{itemize}
     \end{multicols}
-\end{exemple}
+\end{Exemple}
 
 \textcolor{red}{Remarque :}
 \begin{itemize}
@@ -481,25 +483,25 @@ Cocher les réponses justes : \newline
     \end{itemize}
 \end{Def}
 
-\begin{exemple}
+\begin{Exemple}
     \begin{multicols}{2}
         \begin{itemize}
             \item $6$ est un diviseur de $24$ car $24 = 6\times 4$
             \item $7$ est un diviseur de $77$ car $77 = 7\times 11$
         \end{itemize}
     \end{multicols}
-\end{exemple}
-
-& \\
-\hline
-
-\end{tabular}
-
-\begin{tabular}{|>{\centering\arraybackslash}p{1.2cm}|>{\raggedright\arraybackslash}p{15.5cm}|>{\centering\arraybackslash}p{0.8cm}|}
-\hline
-
-&
-\vspace{1mm}
+\end{Exemple}
+%
+%& \\
+%\hline
+%
+%\end{tabular}
+%
+%\begin{tabular}{|>{\centering\arraybackslash}p{1.2cm}|>{\raggedright\arraybackslash}p{15.5cm}|>{\centering\arraybackslash}p{0.8cm}|}
+%\hline
+%
+%&
+%\vspace{1mm}
 \textcolor{red}{Remarque :}
     \begin{itemize}
         \item $1$ est un diviseur de tout entier.
@@ -532,11 +534,11 @@ Cocher les réponses justes : \newline
     Un entier naturel $p$ est dit premier s'il admet \textcolor{red}{exactement deux diviseurs} différents.
 \end{Def}
 
-\begin{exemple}
+\begin{Exemple}
     \begin{enumerate}
         \item 31 est un nombre premier.
     \end{enumerate}
-\end{exemple}
+\end{Exemple}
 
 \textcolor{red}{Remarque :}
 \begin{itemize}
@@ -550,40 +552,40 @@ Cocher les réponses justes : \newline
     Tout entier naturel non premier et supérieur à 1 peut être décomposé en produit de facteurs premiers.
 \end{Prop}
 
-\begin{exemple}
+\begin{Exemple}
     \begin{enumerate}
         \item L'écriture $2^2\times 3\times 5$ est la décomposition du nombre $60$ en produit de facteurs premiers.
     \end{enumerate}
-\end{exemple}
+\end{Exemple}
 
 \begin{application}
     Décomposer les nombres suivants en produits de facteurs premiers : $100$, $63$, $32$.
 \end{application}
 
 
-
-
-
-& \\
-\hline
-
-\end{tabular}
-
-
-\begin{tabular}{|>{\centering\arraybackslash}p{1.2cm}|>{\raggedright\arraybackslash}p{15.5cm}|>{\centering\arraybackslash}p{0.8cm}|}
-\hline
-
-&
-\vspace{1mm}
+%
+%
+%
+%& \\
+%\hline
+%
+%\end{tabular}
+%
+%
+%\begin{tabular}{|>{\centering\arraybackslash}p{1.2cm}|>{\raggedright\arraybackslash}p{15.5cm}|>{\centering\arraybackslash}p{0.8cm}|}
+%\hline
+%
+%&
+%\vspace{1mm}
 \mysection{Diviseurs communs de deux entiers naturels}
 \begin{Def}
     On dit qu'un entier naturel $d$ est un diviseur commun des deux entiers naturels $a$ et $b$ si $d$ est un diviseur de $a$ et $b$.
 \end{Def}
-\begin{exemple}
+\begin{Exemple}
     Les diviseurs de $12$ sont $1$, $2$, $3$, $4$, $6$, $12$. \\
     Les diviseurs de $18$ sont $1$, $2$, $3$, $6$, $9$, $18$. \\
     Les nombres $1$, $2$, $3$, $6$ sont les diviseurs communs de $12$ et $18$.
-\end{exemple}
+\end{Exemple}
 
 \begin{application}
     Déterminer les diviseurs communs de $18$ et $150$.
@@ -597,11 +599,11 @@ Cocher les réponses justes : \newline
 \textcolor{red}{Remarque :}\newline
 Pour dire que $a\wedge b$ est le plus grand commun diviseur de $a$ et $b$, on dit que $a\wedge b$ est le pgcd de $a$ et $b$.
 
-\begin{exemple}
+\begin{Exemple}
     Les diviseurs de $30$ sont $1$, $2$, $3$, $5$, $6$, $10$, $15$, $30$. \\
     Les diviseurs de $18$ sont $1$, $2$, $3$, $4$, $6$, $12$. \\
     Alors $a\wedge b = 6.$ 
-\end{exemple}
+\end{Exemple}
 
 \begin{application}
     Déterminer $15\wedge 75$, $13\wedge 14$, $27\wedge 36$.
@@ -612,9 +614,9 @@ Pour dire que $a\wedge b$ est le plus grand commun diviseur de $a$ et $b$, on di
     On dit qu'un entier naturel $m$ est un multiple commun des deux entiers naturels $a$ et $b$ si $m$ est un multiple de $a$ et $b$.
 \end{Def}
 
-\begin{exemple}
+\begin{Exemple}
     $36$ est un multiple commun de $6$ et $4$ (car $36=9\times 4$ et $36 = 6\times 6)$.
-\end{exemple}
+\end{Exemple}
 
 \mysection{Plus petit multiple commun de deux entiers naturels}
 \begin{Def}
@@ -626,22 +628,21 @@ Pour dire que $a\vee b$ est le plus petit multiple commun de $a$ et $b$, on dit 
 
 
 
-& \\
-\hline
+%& \\
+%\hline
+%
+%\end{tabular}
+%
+%\begin{tabular}{|>{\centering\arraybackslash}p{1.2cm}|>{\raggedright\arraybackslash}p{15.5cm}|>{\centering\arraybackslash}p{0.8cm}|}
+%\hline
+%
+%&
+%\vspace{1mm}
 
-\end{tabular}
-
-\begin{tabular}{|>{\centering\arraybackslash}p{1.2cm}|>{\raggedright\arraybackslash}p{15.5cm}|>{\centering\arraybackslash}p{0.8cm}|}
-\hline
-
-&
-\vspace{1mm}
-
-\begin{exemple}
-    Les multiples non nuls de $4$ sont $4$, $8$, $12$, $16$, $20$, ...\\
-    Les multiples non nuls de $6$ sont $6$, $12$, $18$, $24$, $30$, ...\\
-    Alors $4\vee 6 = 12$.
-\end{exemple}
+\begin{Exemple}
+    Les multiples non nuls de $4$ sont $4$, $8$, $12$, $16$, $20$, ... et 
+    les multiples non nuls de $6$ sont $6$, $12$, $18$, $24$, $30$, ...,  alors $4\vee 6 = 12$.
+\end{Exemple}
 
 \begin{application}
     Déterminer $15\vee 25$, $24\vee 18$, $5\vee 7$.
@@ -663,9 +664,9 @@ Pour dire que $a\vee b$ est le plus petit multiple commun de $a$ et $b$, on dit 
 \end{enumerate}
 \end{Thm}
 
-\begin{exemple}
+\begin{Exemple}
     $a = 2^4\times 3\times 5\times 11$ et $b = 2^2\times 5^2\times 7$. $a\wedge b = 2^2\times 5$ et $a\vee b = 2^4\times 3\times 5^2\times 7\times 11$.
-\end{exemple}
+\end{Exemple}
 
 \begin{application}
     Déterminez $a\wedge b$ et $a\vee b$ dans les cas suivants :
@@ -676,11 +677,11 @@ Pour dire que $a\vee b$ est le plus petit multiple commun de $a$ et $b$, on dit 
     \end{enumerate}
 \end{application}
 
-
-&\\
-\hline
-
-\end{tabular}
+%
+%&\\
+%\hline
+%
+%\end{tabular}
 
 
 

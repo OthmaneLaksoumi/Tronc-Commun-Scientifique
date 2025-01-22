@@ -35,7 +35,7 @@
 \usepackage{color}
 \usetikzlibrary{calc}
 \usepackage{tikz}
-% \mathchardef\times="2202
+% \mathcharDéfinition\times="2202
 \usepackage[most]{tcolorbox} 
 \definecolor{head}{RGB}{255,211,204}
 \definecolor{problemblue}{RGB}{100,134,158}
@@ -89,7 +89,7 @@
 % \textcolor{red}{\LARGE\bfseries 1. Les équation du deuxiéme degrée :}
 
 %------------------------------------------------------
-\newtcolorbox[auto counter]{Def}[1]{enhanced,
+\newtcolorbox[auto counter]{Définition}[1]{enhanced,
 before skip=2mm,after skip=2mm,
 colback=yellow!20!white,colframe=lime,boxrule=0.2mm,
 attach boxed title to top left =
@@ -113,7 +113,7 @@ attach boxed title to top left =
 fonttitle=\bfseries\sffamily,
 title={#1 ~\thetcbcounter}}
 %------------------------------------------------------
-\newtcolorbox[auto counter]{Prop}{enhanced,
+\newtcolorbox[auto counter]{Proposition}{enhanced,
 before skip=2mm,after skip=2mm,
 colback=yellow!20!white,colframe=blue,boxrule=0.2mm,
 attach boxed title to top left =
@@ -185,7 +185,7 @@ attach boxed title to top left =
 fonttitle=\bfseries\sffamily,
 title={#1 ~\thetcbcounter}}
 %------------------------------------------------------
-\newtcolorbox[auto counter]{exemple}{
+\newtcolorbox[auto counter]{Exemple}{
   % breakable,
   enhanced,
   colback=white,
@@ -203,9 +203,9 @@ left color=exercisebgblue,
   },
   overlay={
     \draw[line width=1pt,problemblue] (frame.south west) -- (frame.south east);
-    % \draw[line width=1pt,problemblue] (frame.north west) -- (frame.north east);
+    \draw[line width=1pt,problemblue] (frame.north west) -- (frame.north east);
     \draw[line width=1pt,problemblue] (frame.south west) -- (frame.north west);
-    % \draw[line width=1pt,problemblue] (frame.south east) -- (frame.north east);
+    \draw[line width=1pt,problemblue] (frame.south east) -- (frame.north east);
   }
 }
 %----------------------------------------------------
@@ -285,35 +285,15 @@ title=#1,coltitle=black,fonttitle=\sffamily}
     \end{minipage}
 \end{mybox}
 
-\begin{tabular}{|>{\centering\arraybackslash}p{1.2cm}|>{\raggedright\arraybackslash}p{15.5cm}|>{\centering\arraybackslash}p{0.8cm}|}
-\hline
-\rowcolor{head}
+\mysection{Les fractions}
 
-Etapes &
-\centering Contenu du cour &
- Durée \\
-\hline
-
-% \vspace{1cm}
-% \rotatebox{90}{Phase de lancement}
-
-% \vspace{1cm}
-
-% \rotatebox{90}{construction de connaissances}
- 
-&
-\vspace{0.1cm}
-
-% \textbf{Les équation du deuxiéme degrée :}
-% \textcolor{red}{\LARGE\bfseries 1. Les équation du deuxiéme degrée :}
-\mysection{Les fractions} \newline
 \mysubsection{1}{Somme de deux fractions}
 \begin{Regle}
     Pour additioner deux nombres rationnels de même dénominateur, on addition les numérateurs entre eux et on garde le dénominateur commun.\\
     Autrement dit : $\displaystyle\frac{a}{b}$ et $\displaystyle\frac{c}{b}$ sont deux nombres rationnels : $\displaystyle\frac{a}{b} + \displaystyle\frac{c}{b} = \displaystyle\frac{a+c}{b}$
 \end{Regle}
 
-\begin{exemple}
+\begin{Exemple}
     \begin{multicols}{2}
         \begin{enumerate}
             \item $A = \displaystyle\frac{1}{3} + \displaystyle\frac{2}{3}$
@@ -321,7 +301,7 @@ Etapes &
     \end{enumerate}
     \end{multicols}
     
-\end{exemple}
+\end{Exemple}
 
 \begin{Regle}
     Pour additioner deux nombres rationnels de dénominateur différents, on commence par les écrire avec le même dénominateur et on applique la régle précédente.\\
@@ -331,14 +311,14 @@ Etapes &
     \end{cases}$
 \end{Regle}
 
-\begin{exemple}
+\begin{Exemple}
     \begin{multicols}{2}
         \begin{enumerate}
         \item $A = \displaystyle\frac{-4}{7} + \displaystyle\frac{2}{3}$
         \item $B = \displaystyle\frac{4}{5} + \displaystyle\frac{1}{4}$
     \end{enumerate}
     \end{multicols}
-\end{exemple}
+\end{Exemple}
 
 \mysubsection{2}{Soustraction de deux fractions}
 
@@ -346,39 +326,26 @@ Etapes &
     $\displaystyle\frac{a}{b}$ et $\displaystyle\frac{c}{d}$ sont deux nombres rationnels, alors : $$ \displaystyle\frac{a}{b} - \displaystyle\frac{c}{d} = \displaystyle\frac{a}{b} + \displaystyle\frac{(-c)}{d}$$
 \end{Regle}
 
-\begin{exemple}
+\begin{Exemple}
    \begin{multicols}{2}
         \begin{enumerate}
             \item $A = \displaystyle\frac{7}{3} - \displaystyle\frac{4}{3}$
             \item $B = \displaystyle\frac{-3}{4} - \displaystyle\frac{7}{5}$
     \end{enumerate}
    \end{multicols}
-\end{exemple}
+\end{Exemple}
 
 \mysubsection{3}{Produit de deux fractions}
 \begin{Regle}
     $\displaystyle\frac{a}{b}$ et $\displaystyle\frac{c}{d}$ sont deux nombres rationnels, alors : $$ \displaystyle\frac{a}{b} \times \displaystyle\frac{c}{d} = \displaystyle\frac{ac}{bd}$$
 \end{Regle}
-
-
-
-&
- \\
-\hline
-
-\end{tabular}
-
-\begin{tabular}{|>{\centering\arraybackslash}p{1.2cm}|>{\raggedright\arraybackslash}p{15.5cm}|>{\centering\arraybackslash}p{0.8cm}|}
-\hline
-     & 
-\vspace{0mm}
-
+\newpage
 \mysubsection{3}{Division de deux fractions}
 \begin{Regle}
     $\displaystyle\frac{a}{b}$ et $\displaystyle\frac{c}{d}$ sont deux nombres rationnels, alors : $$ \displaystyle\frac{a}{b} \div \displaystyle\frac{c}{d} =\displaystyle\frac{a}{b} \times \displaystyle\frac{d}{c}$$
 \end{Regle}
 
-\begin{exemple}
+\begin{Exemple}
    \begin{multicols}{4}
         \begin{enumerate}
             \item $A = \displaystyle\frac{5}{3} \times \displaystyle\frac{4}{5}$
@@ -387,11 +354,12 @@ Etapes &
             \item $D = \displaystyle\frac{1}{5} \div \displaystyle\frac{20}{7}$
     \end{enumerate}
    \end{multicols}
-\end{exemple}
+\end{Exemple}
 
-\mysection{Puissances} \newline
+\mysection{Puissances}
+
 \mysubsection{2}{Puissance d'un réel}
-\begin{Def}{Définition}
+\begin{Définition}{Définition}
     Soit $a$ un nombre réel non nul et $n$ un entier non nul :
     \begin{itemize}
         \item $a^n = \underset{\underbrace{\hspace{2.5cm}}_{n \text{ facteurs de } a}}{a\times a\times\dots\times a}$ \hspace{2cm} et \hspace{2cm} $a^{-n} = \underset{\underbrace{\hspace{2.5cm}}_{n \text{ facteurs de } a}}{\displaystyle\frac{1}{a\times a\times\dots\times a}} = \displaystyle\frac{1}{a^n}$
@@ -420,9 +388,9 @@ Etapes &
 \end{center}
 L'écriture $a^n$ se lit : $a$ à la puissnace $n$ \\
 $a$ s'appelle la base, et $n$ s'appelle l'exposant
-\end{Def}
+\end{Définition}
 
-\begin{exemple}
+\begin{Exemple}
     \begin{multicols}{2}
         \begin{enumerate}
             \item $4^3 = 4\times4\times4 = 16\times 4 = 64$
@@ -432,36 +400,17 @@ $a$ s'appelle la base, et $n$ s'appelle l'exposant
             \item $(\sqrt{2})^3 = \sqrt{2}\times\sqrt{2}\times\sqrt{2} = 2\sqrt{2}$
         \end{enumerate}
     \end{multicols}
-\end{exemple}
+\end{Exemple}
 
 \mysubsection{2}{Puissance de 10}
-\begin{Prop}
+\begin{Proposition}
     Pour tout entier naturel $n$, on a :
     \begin{center}
          $10^n =\underset{\underbrace{\hspace{1.5cm}}_{n \text{ zéros }}}{1000000000}$ \hspace{1.5cm} et \hspace{1.5cm} $10^{-n} =\underset{\underbrace{\hspace{1.5cm}}_{n \text{ zéros }}}{0.0000000001}$
     \end{center}
-\end{Prop}
+\end{Proposition}
 
-\begin{exemple}
-    % \begin{multicols}{2}
-    %     \begin{enumerate}
-    %         \item $10^5 = 100000$ (5 zéros)
-    %         \item $10^{-4} = 0.00001$ (4 zéros)
-    %         \item $10^{-7} = 0.00000001$ (7 zéros)
-    %     \end{enumerate}
-    % \end{multicols}
-\end{exemple}
-
-& \\ 
-\hline
-\end{tabular}
-
-\begin{tabular}{|>{\centering\arraybackslash}p{1.2cm}|>{\raggedright\arraybackslash}p{15.5cm}|>{\centering\arraybackslash}p{0.8cm}|}
-\hline
-     & 
-\vspace{0mm}
-
-\begin{Prop}
+\begin{Proposition}
     Soit $ a $ et $ b $ deux nombres réels non nuls et soit $ n $ et $ p $ deux entiers relatifs :
     \begin{multicols}{3}
         \begin{itemize}
@@ -473,9 +422,9 @@ $a$ s'appelle la base, et $n$ s'appelle l'exposant
             \item $ \displaystyle\frac{a^n}{b^n} = \displaystyle\left(\frac{a}{b}\right)^n $
         \end{itemize}
     \end{multicols}
-\end{Prop}
+\end{Proposition}
 
-\begin{exemple}
+\begin{Exemple}
     \begin{multicols}{2}
         \begin{enumerate}
             \item $5^{-2}\times5^4 = 5^{-2+4} = 5^2$
@@ -485,17 +434,18 @@ $a$ s'appelle la base, et $n$ s'appelle l'exposant
             \item $\displaystyle\frac{15^3}{5^3} = \displaystyle(\frac{15}{5})^3 = 3^3 = 27$
         \end{enumerate}
     \end{multicols}
-\end{exemple}
+\end{Exemple}
 
-\mysection{Les identités remarquables} \newline
+\mysection{Les identités remarquables}
+
 \mysubsection{1}{Développer un produit}
-\begin{Def}{Définition}
+\begin{Définition}{Définition}
     \begin{itemize}
         \item Développer un produit, c’est l’écrire sous la forme d’une somme (ou d’une différence).
     \end{itemize}
-\end{Def}
+\end{Définition}
 
-\begin{Prop}
+\begin{Proposition}
     Soient $a,\ b,\ c$ et $d$ sont des nombres rationnels :
     \begin{multicols}{2}
         \begin{itemize}
@@ -504,9 +454,9 @@ $a$ s'appelle la base, et $n$ s'appelle l'exposant
             \item $(a+b)(c+d) = ac+ad+bc+bd$
         \end{itemize}
     \end{multicols}
-\end{Prop}
+\end{Proposition}
 
-\begin{exemple}
+\begin{Exemple}
   \begin{multicols}{2}
        $\begin{array}{ll}
         A = & 6(x-4) \\
@@ -522,14 +472,14 @@ $a$ s'appelle la base, et $n$ s'appelle l'exposant
         B = & x^2 -x - 6 \\
     \end{array}$
   \end{multicols}
-\end{exemple}
+\end{Exemple}
 
 \mysubsection{2}{Factorisation}
-\begin{Def}{Définition}
+\begin{Définition}{Définition}
     Factoriser une somme (ou une différence), c’est l’écrire sous la forme d’un produit
-\end{Def}
+\end{Définition}
 
-\begin{Prop}
+\begin{Proposition}
     Soient $a,\ b$ et $k$ sont des nombres rationnels :
     \begin{multicols}{2}
         \begin{itemize}
@@ -537,9 +487,9 @@ $a$ s'appelle la base, et $n$ s'appelle l'exposant
             \item $ka-kb = k(a-b)$
         \end{itemize}
     \end{multicols}
-\end{Prop}
+\end{Proposition}
 
-\begin{exemple}
+\begin{Exemple}
      \begin{multicols}{2}
        $\begin{array}{ll}
         A = & 4x^2 - 2x \\
@@ -555,28 +505,19 @@ $a$ s'appelle la base, et $n$ s'appelle l'exposant
         B = & (x + 2)(-x + 4) \\
     \end{array}$
   \end{multicols}
-\end{exemple}
+\end{Exemple}
 
-& \\
-\hline
-
-\end{tabular}
-
-\begin{tabular}{|>{\centering\arraybackslash}p{1.2cm}|>{\raggedright\arraybackslash}p{15.5cm}|>{\centering\arraybackslash}p{0.8cm}|}
-\hline
-     & 
-\vspace{0mm}
 \mysubsection{3}{Identités remarquables}
-\begin{Prop}
+\begin{Proposition}
     Soient $a$ et $b$ sont deux nombres rationnels : 
     \begin{itemize}
         \item $(a+b)^2 = a^2+2ab+b^2$
         \item $(a-b)^2 = a^2-2ab+b^2$
         \item $(a-b)(a+b) = a^2-b^2$
     \end{itemize}
-\end{Prop}
+\end{Proposition}
 
-\begin{exemple}
+\begin{Exemple}
      \begin{multicols}{2}
        $\begin{array}{ll}
         A = & (x+3)^2  \\
@@ -597,12 +538,7 @@ $a$ s'appelle la base, et $n$ s'appelle l'exposant
         B = & x^2 - 6x + 3^2\\
     \end{array}$
   \end{multicols}
-\end{exemple}
-& \\
-\hline
-\end{tabular}
-
-
+\end{Exemple}
 
 
 \end{document}

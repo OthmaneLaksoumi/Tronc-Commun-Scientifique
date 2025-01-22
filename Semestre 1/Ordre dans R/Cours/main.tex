@@ -116,7 +116,7 @@
 % \textcolor{red}{\LARGE\bfseries 1. Les équation du deuxiéme degrée :}
 
 %------------------------------------------------------
-\newtcolorbox[auto counter]{Definition}{enhanced,
+\newtcolorbox[auto counter]{Définition}{enhanced,
 before skip=2mm,after skip=2mm,
 colback=yellow!20!white,colframe=lime,boxrule=0.2mm,
 attach boxed title to top left =
@@ -164,7 +164,7 @@ attach boxed title to top left =
 fonttitle=\bfseries\sffamily,
 title={Proposition ~\thetcbcounter}}
 %------------------------------------------------------
-\newtcolorbox[auto counter]{Theoreme}{enhanced,
+\newtcolorbox[auto counter]{Théorème}{enhanced,
 before skip=2mm,after skip=2mm,
 colback=yellow!20!white,colframe=red,boxrule=0.2mm,
 attach boxed title to top left =
@@ -212,7 +212,7 @@ left color=exercisebgblue,
   }
 }
 %----------------------------------------------------
-\newtcolorbox[auto counter]{Activite}{
+\newtcolorbox[auto counter]{Activité}{
   % breakable,
   enhanced,
   colback=white,
@@ -332,42 +332,33 @@ title=#1,coltitle=black,fonttitle=\sffamily}
 \textcolor{red}{\large Les capacités attendues :}
 \begin{itemize}
     \item Maîtriser les différentes techniques de comparaison de deux nombres (ou expressions) et utiliser la technique convenable selon la situation étudiée ;
-    \item Représenter sur la droite numérique les différentes relations liées à l’ordre ;
-    \item Reconnaître et déterminer avec une précision donnée, une approximation d’un nombre (ou d’une expression) ;
-    \item Effectuer des majorations ou des minorations d’expressions algébriques ;
-    \item Utiliser la calculatrice pour déterminer des valeurs approchées d’un nombre réel.
+    \item Représenter sur la droite numérique les différentes relations liées à l'ordre ;
+    \item Reconnaître et déterminer avec une précision donnée, une approximation d'un nombre (ou d'une expression) ;
+    \item Effectuer des majorations ou des minorations d'expressions algébriques ;
+    \item Utiliser la calculatrice pour déterminer des valeurs approchées d'un nombre réel.
 \end{itemize}
 
 {\Large\ding{45}}
 \textcolor{red}{\large Recommandations pédagogiques :} 
   \begin{itemize}
-       \item On devra développer et consolider l’habilité d’utilisation de l’ordre pour comparer des nombres et pour prouver certaines relations.
-    \item On devra entraîner les élèves à interpréter des relations de la forme \( |x - a| \leq r \) et à majorer des expressions en utilisant l’inégalité triangulaire et les propriétés de la valeur absolue. Les élèves seront amenés à utiliser ces techniques fondamentales de manière progressive.
+       \item On devra développer et consolider l'habilité d'utilisation de l'ordre pour comparer des nombres et pour prouver certaines relations.
+    \item On devra entraîner les élèves à interpréter des relations de la forme \( |x - a| \leq r \) et à majorer des expressions en utilisant l'inégalité triangulaire et les propriétés de la valeur absolue. Les élèves seront amenés à utiliser ces techniques fondamentales de manière progressive.
     \item La notion de la valeur absolue devra être liée à la distance de deux points sur la droite graduée.
-    \item Les propriétés de l’encadrement et de l’approximation d’une somme et d’une différence de deux nombres peuvent être présentées dans le cas général, mais l’encadrement et l’approximation d’un produit et d’un quotient, devront être étudiés à partir d’exemples numériques bien choisis pour montrer aux élèves les précautions à prendre et les conditions à respecter, pour faire des raisonnements corrects.
-    \item La calculatrice est un outil qui pourra aider dans l’approche des notions précédentes (approximation et encadrement...), on devra s’assurer que les élèves maîtrisent l’écriture scientifique d’un nombre et qu’ils sont conscients des limites de l’usage de la calculatrice qui donne en général une valeur approchée décimale du résultat. On devra donc permettre aux élèves de s’approprier la technique de la calculatrice scientifique (règles de priorités des opérations, fonctionnalités des touches ...).
+    \item Les propriétés de l'encadrement et de l'approximation d'une somme et d'une différence de deux nombres peuvent être présentées dans le cas général, mais l'encadrement et l'approximation d'un produit et d'un quotient, devront être étudiés à partir d'exemples numériques bien choisis pour montrer aux élèves les précautions à prendre et les conditions à respecter, pour faire des raisonnements corrects.
+    \item La calculatrice est un outil qui pourra aider dans l'approche des notions précédentes (approximation et encadrement...), on devra s'assurer que les élèves maîtrisent l'écriture scientifique d'un nombre et qu'ils sont conscients des limites de l'usage de la calculatrice qui donne en général une valeur approchée décimale du résultat. On devra donc permettre aux élèves de s'approprier la technique de la calculatrice scientifique (règles de priorités des opérations, fonctionnalités des touches ...).
   \end{itemize}
 \end{boxone}
 
 \newpage
 
-\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
-\hline
-\rowcolor{head}
-
-\centering Contenu du cours &
- Durée \\
-\hline
-
-\vspace{1mm}
 \mysection{Ordre dans l'ensemble $\mathbb{R}$}
-\begin{Definition}
+\begin{Définition}
 Soient $a$ et $b$ deux nombres réels.
 \begin{enumerate}
 	\item On dit que $a$ est \textcolor{red}{inférieur ou égal} à $b$, si $b - a\geq 0$, et on écrit $a\leq b$ ou $b\geq a$.
 	\item On dit que $a$ est \textcolor{red}{inférieur strictement} à $b$, si $b - a > 0$, et on écrit $a > b$ ou $b > a$.
 \end{enumerate}
-\end{Definition}
+\end{Définition}
 
 \textcolor{red}{Remarque :}
 \begin{itemize}
@@ -390,7 +381,8 @@ Soient $a$ et $b$ deux réels strictement positifs.
 \end{enumerate}
 \end{Application}
 
-\mysection{Ordre et opérations}\\
+\mysection{Ordre et opérations}
+
 \mysubsection{1}{Ordre et addition}
 \begin{Proposition}
 Soient $a,b,c$ et $d$ des nombres réels.
@@ -416,13 +408,6 @@ Montrer que $x + y\leq \dfrac{1}{12}$.
 \begin{itemize}
 	\item Si $a\leq b$ et $c < d$, alors $a + c < b + d$.
 \end{itemize}
-
-&\\
-\hline
-\end{tabular}
-
-\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
-\hline
 
 \begin{itemize}
 	\item Si $a\geq 0$ et $b\geq 0$ et $a + b = 0$, alors $(a = 0$ et $b = 0)$.
@@ -474,21 +459,13 @@ Soient $a$ et $b$ deux nombres réels.
 
 \begin{Application}
 Soit $x$ un nombre réel tel que : $0 < \dfrac{1}{2x + 1} < \dfrac{3}{2}$. Montrer que $-\dfrac{1}{6} < x$.
-
-
 \end{Application}
 
-&\\
-\hline
+\newpage
 
-\end{tabular}
-
-\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
-\hline
-\vspace{1mm}
 \mysubsection{3}{Valeur absolue et propriétés}
-\begin{Activite}
-On considére les points $A,B,C,D,E$ et $F$ représentés sur $(\Delta)$ ci-dessous :
+\begin{Activité}
+On considère les points $A,B,C,D,E$ et $F$ représentés sur $(\Delta)$ ci-dessous :
 \begin{center}
 \begin{tikzpicture} 
 \draw[-] (-7,0) -- (4,0); % Dessiner la droite 
@@ -508,13 +485,13 @@ On considére les points $A,B,C,D,E$ et $F$ représentés sur $(\Delta)$ ci-dess
 \begin{enumerate}
 	\item Déterminer les distances $OB$, $OC$, $OD$, $OE$ et $OF$.
 \end{enumerate}
-\end{Activite}
+\end{Activité}
 
-\begin{Definition}
+\begin{Définition}
 Sur un axe normé, $x$ est l'abscisse d'un point $M$. \textcolor{red}{La valeur absolue} de $x$ est la distance entre l'origine du repère et le point $M$; on la note $|x|$.
 
 En d'autre termes : $OM = |x|$ (où $O$ est l'origine du repère).
-\end{Definition}
+\end{Définition}
 \begin{Exemple}
 \begin{itemize}
 	\item $|4| = 4$ et $|-3| = 3$ et $|-\dfrac{1}{2}| = \dfrac{1}{2}$.
@@ -532,9 +509,9 @@ x \text{ si } x\geq 0 \\
 $
 \end{Proposition}
 
-\begin{Definition}
+\begin{Définition}
 Si $a$ et $b$ sont les abscisses respectives de deux points $A$ et $B$ sur un axe normé (droite graduée), alors la distance entre $a$ et $b$ est la distance $AB$ et on a : $AB = |a - b|$.
-\end{Definition}
+\end{Définition}
 
 \begin{Proposition}
 Soient $x$ et $y$ deux nombres réels. On a :
@@ -551,14 +528,7 @@ Soient $x$ et $y$ deux nombres réels. On a :
 	\item \textcolor{red}{$|x| = |y|$ signifie que $x = y$ ou $x = - y$}.
 \end{enumerate}
 \end{Proposition}
-&\\
-\hline
 
-\end{tabular}
-
-\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
-\hline
-\vspace{1mm}
 \textcolor{red}{Remarque : }
 $$
 \begin{cases}
@@ -602,20 +572,12 @@ Résoudre dans $\mathbb{R}$ :
 \end{Application}
 
 \mysection{Intervalles}
-\begin{Activite}
+\begin{Activité}
 Représenter chaque fois sur une droite graduée $D(O;I)$ l'ensemble des nombres réels $x$ dans les cas suivants :
 $$2\leq x \leq 5 \ \ ; \ \ -2\leq x \leq -5 \ \ ; \ \ 0\leq x < 1 \ \ ; \ \ 2 < x < 3$$
-\end{Activite}
+\end{Activité}
 
-&\\
-\hline
-
-\end{tabular}
-
-\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
-\hline
-\vspace{1mm}
-\begin{Definition}
+\begin{Définition}
 Soient $a;b\in\mathbb{R}$ tel que $a < b$.
 
 L'ensemble des nombres réels $x$ tel que $a\leq x\leq b$ est appelée \textcolor{red}{l'intervalle} d'extrémités $a$ et $b$, on le note $[a;b]$.
@@ -802,7 +764,7 @@ Intervalle ouvert $]-\infty;a[$\\
 \hline
 \end{tabular}
 \end{center}
-\end{Definition}
+\end{Définition}
 
 \textcolor{red}{Remarque :}
 \begin{itemize}
@@ -842,20 +804,14 @@ La représentation des deux intervalles $[-3;2]$ et $[-1;4]$ sur une droite num�
 \begin{Application}
 Représenter chacun des deux intervalles $I = [2;+\infty[$ et $J = ]-5;7]$ sur une droite numérique.
 \end{Application}
-&\\
-\hline
-\end{tabular}
 
-\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
-\hline
-\vspace{1mm}
-\begin{Definition}
+\begin{Définition}
 Soit $I$ et $J$ deux intervalles.
 \begin{itemize}
 	\item L'ensemble des éléments communs de $I$ et $J$ se note $I\cap J$ et se lit \textcolor{red}{$I$ inter $J$}.
 	\item L'ensemble des éléments qui appartiennent à $I$ ou à $J$ se note $I\cup J$ et se lit \textcolor{red}{$I$ union $J$}.
 \end{itemize}
-\end{Definition}
+\end{Définition}
 
 \begin{Exemple}
 Déterminer $[3;5]\cap [2;4]$ et $[3;5]\cup [2;4]$.
@@ -886,10 +842,10 @@ Déterminer l'ensemble des réels $x$ qui vérifient :
 \end{Application}
 
 \mysection{Encadrement}
-\begin{Definition}
+\begin{Définition}
 Soient $a$ et $b$ deux nombres réels tels que $a<b$.
 Toute double inégalité (parmi les doubles inégalités suivantes) $a<x<b\;\ a<x\leq b\;\ a\leq x < b\;\ a\leq x\leq b$ est appelée encadrement, de $x$, d'amplitude $b - a$.
-\end{Definition}
+\end{Définition}
 
 \begin{Exemple}
 \begin{itemize}
@@ -904,14 +860,9 @@ Toute double inégalité (parmi les doubles inégalités suivantes) $a<x<b\;\ a<
 	\item Déterminer un encadrement de $\dfrac{9}{8}$ d'amplitude $2$ et un autre encadrement de $\dfrac{9}{8}$ d'amplitude $0,02$.
 \end{enumerate}
 \end{Application}
-&\\
-\hline
-\end{tabular}
 
+\newpage
 
-\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
-\hline
-\vspace{1mm}
 \mysubsection{1}{Encadrement de la somme de deux nombres}
 \begin{Proposition}
 Si $a\leq x\leq b$ et $c\leq x\leq d$ sont des encadrements des deux nombres réels $x$ et $y$, alors :
@@ -962,15 +913,6 @@ Soient $a,b,c$ et $d$ des nombres réels \underline{strictement positifs}.
 Si $a\leq x\leq b$ et $c\leq y\leq d$ sont deux encadrements des deux nombres réels $x$ et $y$, alors : $\dfrac{1}{b}\leq x\leq \dfrac{1}{a}$ et $\dfrac{1}{d}\leq y\leq \dfrac{1}{c}$ et $\dfrac{a}{d}\leq \dfrac{x}{y}\leq\dfrac{b}{c}$ sont deux encadrements des réels $\dfrac{1}{y}$ et $\dfrac{x}{y}$.
 \end{Proposition}
 
-&\\
-\hline
-
-\end{tabular}
-
-
-\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
-\hline
-\vspace{1mm}
 \begin{Exemple}
 \begin{itemize}
 	\item Soit $2\leq x\leq 4$ et $1\leq y\leq 3$.
@@ -990,13 +932,13 @@ Alors $\dfrac{1}{3}\leq y\leq 1$(encadrement de $y$) et $\dfrac{2}{3}\leq \dfrac
 \mysection{Approximation}
 
 \mysubsection{1}{Approximation par défaut et par excès}
-\begin{Definition}
+\begin{Définition}
 Soit $a\leq x\leq b$ ($a < x < b$ ; $a < x \leq b$ ; $a\leq x < b$) un encadrement du nombre $x$ d'amplitude $b-a$.
 \begin{itemize}
 	\item Le nombre $a$ est appelé approximation du nombre $x$ à prés par défaut.
 	\item Le nombre $b$ est appelé approximation du nombre $x$ à prés par excès.
 \end{itemize}
-\end{Definition}
+\end{Définition}
 
 \begin{Exemple}
 \begin{itemize}
@@ -1021,23 +963,16 @@ Soit $a\leq x\leq b$ ($a < x < b$ ; $a < x \leq b$ ; $a\leq x < b$) un encadreme
 \end{Application}
 
 \mysubsection{2}{Valeur approchée}
-\begin{Definition}
+\begin{Définition}
 Soient $x$ un nombre réel et $r$ un nombre réel strictement positif.
 
 Tout nombre réel $a$ qui vérifie l'une ou l'autre des deux inégalités $|x - a| < r$ ou $|x - a|\leq r$ est appelé valeur approchée (ou approximation) du nombre $x$ à $r$ près (ou à la précision $r$ prés).
-\end{Definition}
+\end{Définition}
 
 \begin{Exemple}
 On a : $|\sqrt{5} - 2,235|\leq 0,005$. Donc $2,235$ est une valeur approchée du nombre $\sqrt{5}$ à la précision $0,005$ (ou $0,005$ près).
 \end{Exemple}
 
-&\\
-\hline
-\end{tabular}
-
-\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
-\hline
-\vspace{1mm}
 \begin{Application}
 \begin{enumerate}
 	\item Déterminer une valeur approchée de $\dfrac{8}{7}$ à $10^{-2}$ près.
@@ -1047,14 +982,16 @@ On a : $|\sqrt{5} - 2,235|\leq 0,005$. Donc $2,235$ est une valeur approchée du
 \end{enumerate}
 \end{Application}
 
+\newpage
+
 \mysection{Approximation décimales}
-\begin{Definition}
+\begin{Définition}
 Soit $x$ un nombre réel tel que : $N\times 10^{-p}\leq x\leq (N+1)\times 10^{-p}$ où $p\in\mathbb{N}$ et $N\in\mathbb{Z}$.
 \begin{itemize}
 	\item Le nombre $N\times 10^{-p}$ est appelé l'approximation décimales du nombre $x$ à $10^{-p}$ prés par défaut.
 	\item Le nombre $(N+1)\times 10^{-p}$ est appelé l'approximation décimales du nombre $x$ à $10^{-p}$ prés par excès.
 \end{itemize}
-\end{Definition}
+\end{Définition}
 
 \begin{Exemple}
 On a : $0,62<\dfrac{5}{8} < 0,63$ c'est-à-dire $62\times 10^{-2} < \dfrac{5}{8} < (62 + 1)\times 10^{-2}$.
@@ -1074,29 +1011,6 @@ $63\times 10^{-2} = 0,63$ est l'approximation décimale du nombre $\dfrac{5}{8}$
 	Donner les approximations décimales à $10^{-2}$ prés par défaut et par excès du nombre $a$.
 \end{enumerate}
 \end{Application}
-
-
-&\\
-\hline
-\end{tabular}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

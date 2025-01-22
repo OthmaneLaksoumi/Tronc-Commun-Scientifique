@@ -116,7 +116,7 @@
 % \textcolor{red}{\LARGE\bfseries 1. Les équation du deuxiéme degrée :}
 
 %------------------------------------------------------
-\newtcolorbox[auto counter]{Definition}{enhanced,
+\newtcolorbox[auto counter]{Définition}{enhanced,
 before skip=2mm,after skip=2mm,
 colback=yellow!20!white,colframe=lime,boxrule=0.2mm,
 attach boxed title to top left =
@@ -164,7 +164,7 @@ attach boxed title to top left =
 fonttitle=\bfseries\sffamily,
 title={Proposition ~\thetcbcounter}}
 %------------------------------------------------------
-\newtcolorbox[auto counter]{Theoreme}{enhanced,
+\newtcolorbox[auto counter]{Théorème}{enhanced,
 before skip=2mm,after skip=2mm,
 colback=yellow!20!white,colframe=red,boxrule=0.2mm,
 attach boxed title to top left =
@@ -322,43 +322,43 @@ title=#1,coltitle=black,fonttitle=\sffamily}
 {\Large\ding{45}}
 \textcolor{red}{\large Contenus du programme :}
 \begin{itemize}
-     \item Le repère : coordonnées d’un point, coordonnées d’un vecteur;
+     \item Le repère : coordonnées d'un point, coordonnées d'un vecteur;
     \item Condition de colinéarité de deux vecteurs;
-    \item Détermination d’une droite définie par la donnée d’un point et d’un vecteur directeur;  
-    \item Représentation paramétrique d’une droite;
-    \item Équation cartésienne d’une droite;
+    \item Détermination d'une droite définie par la donnée d'un point et d'un vecteur directeur;  
+    \item Représentation paramétrique d'une droite;
+    \item Équation cartésienne d'une droite;
     \item Positions relatives de deux droites.
 \end{itemize}
 
 {\Large\ding{45}}
 \textcolor{red}{\large Les capacités attendues :}
 \begin{itemize}
-    \item Exprimer les notions et les propriétés de la géométrie affine et de la géométrie vectorielle à l’aide des coordonnées.
-    \item Utiliser l’outil analytique dans la résolution de problèmes géométriques.
+    \item Exprimer les notions et les propriétés de la géométrie affine et de la géométrie vectorielle à l'aide des coordonnées.
+    \item Utiliser l'outil analytique dans la résolution de problèmes géométriques.
 \end{itemize}
 
 {\Large\ding{45}}
 \textcolor{red}{\large Recommandations pédagogiques :} 
   \begin{itemize}
-      \item Il faudra habituer les élèves à l’utilisation des différentes méthodes pour exprimer la colinéarité de deux vecteurs.
+      \item Il faudra habituer les élèves à l'utilisation des différentes méthodes pour exprimer la colinéarité de deux vecteurs.
   \end{itemize}
 \end{boxone}
 
 \newpage
 
-\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
-\hline
-\rowcolor{head}
-
-\centering Contenu du cours &
- Durée \\
-\hline
-
-\vspace{1mm}
+%\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
+%\hline
+%\rowcolor{head}
+%
+%\centering Contenu du cours &
+% Durée \\
+%\hline
+%
+%\vspace{1mm}
 \mysection{Repère : Coordonnées d'un point - Coordonnées d'un vecteur}
 
 \mysubsection{1}{Repère}
-\begin{Definition}
+\begin{Définition}
 Soit $(O;I;J)$ un repère du plan.\\
 On pose $\vec{i} = \overrightarrow{OI}$ et $\vec{j} = \overrightarrow{OJ}$.
 \begin{itemize}
@@ -368,7 +368,7 @@ On pose $\vec{i} = \overrightarrow{OI}$ et $\vec{j} = \overrightarrow{OJ}$.
 	\item La droite $(OI)$ est appelée axe des abscisses.
 	\item La droite $(OJ)$ est appelée axe des ordonnées.
 \end{itemize}
-\end{Definition}
+\end{Définition}
 \mysubsection{2}{Coordonnées d'un point - Coordonnées d'un vecteur}
 \begin{Proposition}
 Soit $(O;\vec{i};\vec{j})$ un repère du plan.
@@ -385,7 +385,7 @@ y
 \end{Proposition}
 \begin{Proposition}
 \begin{itemize}
-	\item \textcolor{red}{Egalité de deux vecteurs} : 
+	\item \textcolor{red}{Égalité de deux vecteurs} : 
 	Soient $\vec{u}(x;y)$ et $\vec{v}(x^{\prime};y^{\prime})$ deux vecteurs.\\
 	$\vec{u}(x;y)$ = $\vec{v}(x;y)$ signifie que $x = x^{\prime}$ et $y = y^{\prime}$
 	\item \textcolor{red}{Coordonnées du vecteur $\overrightarrow{AB}$} : $\overrightarrow{AB}(x_B - x_A; y_B - y_A)$.	
@@ -397,24 +397,24 @@ y
 	\item \textcolor{red}{Distance de deux points} : Dans un repère orthonormal, $AB = \sqrt{(x_B - x_A)^2 + (y_B - y_B)^2}$
 \end{itemize}
 \end{Proposition}
-
-&\\
-\hline
-\end{tabular}
-
-\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
-\hline
-\vspace{1mm}
+%
+%&\\
+%\hline
+%\end{tabular}
+%
+%\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
+%\hline
+%\vspace{1mm}
 \mysection{Condition de colinéarité de deux vecteurs}
-\begin{Definition}
-On considére deux vecteurs $\vec{u}(x;y)$ et $\vec{v}(x^{\prime};y^{\prime})$.
+\begin{Définition}
+On considère deux vecteurs $\vec{u}(x;y)$ et $\vec{v}(x^{\prime};y^{\prime})$.
 Le nombre $xy^{\prime} - yx^{\prime}$ s'appelle déterminant des deux vecteurs $\vec{u}$ et $\vec{v}$ et se note $det(\vec{u};\vec{v})$. On écrit $det(\vec{u};\vec{v}) = \begin{array}{|c c|}
 x & x^{\prime}\\
 y & y^{\prime}
 \end{array} = xy^{\prime} - yx^{\prime}$.
-\end{Definition}
+\end{Définition}
 \begin{Exemple}
-On considére les vecteurs $\vec{u} = 3\vec{i} - 4\vec{j}$ et $\vec{v} = \vec{i} + 2\vec{j}$.\\
+On considère les vecteurs $\vec{u} = 3\vec{i} - 4\vec{j}$ et $\vec{v} = \vec{i} + 2\vec{j}$.\\
 On a $det(\vec{u};\vec{v}) = \begin{array}{|c c|}
 3 & 1\\
 -4 & 2\end{array} = 3\times 2 - 1\times (-4) = 6 + 4 = 10$
@@ -427,19 +427,19 @@ On a $det(\vec{u};\vec{v}) = \begin{array}{|c c|}
 \end{itemize}
 \end{Proposition}
 \begin{Exemple}
-On considére les vecteurs $\vec{u} = \vec{i} - 2\vec{j}$ et $\vec{v} = 2\vec{i} - 4\vec{j}$.\\
-On considére les points $A(-1;2),\ B(2;3)$ et $C\left(\dfrac{1}{2};\dfrac{3}{2}\right)$.\\
+On considère les vecteurs $\vec{u} = \vec{i} - 2\vec{j}$ et $\vec{v} = 2\vec{i} - 4\vec{j}$.\\
+On considère les points $A(-1;2),\ B(2;3)$ et $C\left(\dfrac{1}{2};\dfrac{3}{2}\right)$.\\
 \end{Exemple}
 \mysection{La droite dans le plan}
-\begin{Definition}
+\begin{Définition}
 Soit $A$ un point du plan et soit $\vec{u}$ un vecteur non nul.\\
 L'ensemble des points $M$ qui vérifient : $\overrightarrow{AM} = k\vec{u}$, où $k\in\mathbb{R}$, est la droite passant par le point $A$ et dirigée par le vecteur $\vec{u}$. On la note $D(A,\vec{u})$.
-\end{Definition}
+\end{Définition}
 \begin{Exemple}
 Construire la droite $D(A;\vec{u})$, avec $A(1;2)$ et $\vec{u}(-1;1)$.
 \end{Exemple}
 \mysection{Représentation paramétrique d'une droite}
-\begin{Definition}
+\begin{Définition}
 Le plan $\mathcal{P}$ est rapporté à un repère $(O; \vec{i}, \vec{j})$.
 
 Soient $A(x_0; y_0)$ un point du plan et $\vec{u}(\alpha; \beta)$ un vecteur non nul.\\
@@ -451,17 +451,17 @@ y = y_0 + k \beta
 \end{cases} \quad (k \in \mathbb{R})
 $\\
 s'appelle \textcolor{red}{représentation paramétrique} de la droite $(D)$ passant par le point $A(x_0; y_0)$ et dirigée par le vecteur $\vec{u}(\alpha; \beta)$.
-\end{Definition}
+\end{Définition}
 \textcolor{red}{Remarque :}
 
 La droite $(AB)$ est dirigée par le vecteur $\overrightarrow{AB}$.
-&\\
-\hline
-\end{tabular}
-
-\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
-\hline
-\vspace{1mm}
+%&\\
+%\hline
+%\end{tabular}
+%
+%\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
+%\hline
+%\vspace{1mm}
 \begin{Exemple}
 \begin{itemize}
     \item Soit $(D)$ la droite passant par le point $A(2; -3)$ et dirigée par le vecteur $\vec{u} = (3; -5)$.\\
@@ -499,17 +499,17 @@ On considère les points $E(-1; 2)$, $F(2; 3)$ et $G(1;-1)$.
     \end{enumerate}
 \end{Application}
 
-\mysection{Equation cartésienne d'une droite}
-\begin{Definition}
+\mysection{Équation cartésienne d'une droite}
+\begin{Définition}
 Le plan $\mathcal{P}$ est rapporté à un repère $(O; \vec{i}, \vec{j})$.\\
 Toute droite, dans le plan, admet une équation cartésienne de la forme : 
 $$ax + by + c = 0 \text{ où } (a;b)\neq (0;0)$$
-\end{Definition}
+\end{Définition}
 \begin{Exemple}
 Déterminons une équation cartésienne de la droite $(D)$ passant par $A(-1;2)$ et de vecteur directeur $\vec{u}(-3;4)$.
 \end{Exemple}
 \begin{Application}
-On considére les deux points $B(1;-1)$ et $C(-2;3)$.\\
+On considère les deux points $B(1;-1)$ et $C(-2;3)$.\\
 Déterminer une équation cartésienne de la droite $(BC)$.
 \end{Application}
 \begin{Proposition}
@@ -517,14 +517,14 @@ Déterminer une équation cartésienne de la droite $(BC)$.
 Soient $a,\ b$ et $c$ des nombres réels avec $(a;b)\neq (0;0)$.\\
 L'ensemble des points $M(x;y)$ tels que $ax + by + c = 0$ est une droite dirigée par le vecteur $\vec{u}(-b;a)$.
 \end{Proposition}
-&\\
-\hline
-
-\end{tabular}
-
-\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
-\hline
-\vspace{1mm}
+%&\\
+%\hline
+%
+%\end{tabular}
+%
+%\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
+%\hline
+%\vspace{1mm}
 \begin{Exemple}
 Soit $(\Delta)$ la droite d'équation : $2x - y + 1 = 0$.
 La droite $(\Delta)$ est la droite passant par $A(-1;1)$ et de vecteur directeur $\vec{u}(1;-2)$.
@@ -537,17 +537,17 @@ Soit $(L)$ la droite d'équation : $3x + 4y - 5 = 0$.
 	\item Le point $B\left(\dfrac{1}{3};\dfrac{5}{2}\right)$ apparitent-il à $(L)$?
 \end{enumerate}
 \end{Application}
-\mysection{Droites particuliéres}
+\mysection{Droites particulières}
 
-\mysubsection{1}{Droite paralléle à l'axe des ordonnées}
+\mysubsection{1}{Droite parallèle à l'axe des ordonnées}
 \begin{Proposition}
 Le plan $\mathcal{P}$ est rapporté à un repère $(O,\vec{i};\vec{j})$.\\
-Pour qu'une droite soit paralléle à l'axe des ordonnées, il faut et il suffit qu'elle ait une équation cartésienne de la forme : $x = c$.
+Pour qu'une droite soit parallèle à l'axe des ordonnées, il faut et il suffit qu'elle ait une équation cartésienne de la forme : $x = c$.
 \end{Proposition}
-\mysubsection{2}{Droite paralléle à l'axe des abscisses}
+\mysubsection{2}{Droite parallèle à l'axe des abscisses}
 \begin{Proposition}
 Le plan $\mathcal{P}$ est rapporté à un repère $(O,\vec{i};\vec{j})$.\\
-Pour qu'une droite soit paralléle à l'axe des abscisses, il faut et il suffit qu'elle ait une équation cartésienne de la forme : $y = c$.
+Pour qu'une droite soit parallèle à l'axe des abscisses, il faut et il suffit qu'elle ait une équation cartésienne de la forme : $y = c$.
 \end{Proposition}
 \begin{Exemple}
 Construire les droites d'équation $x = 1$ et $y = -2$.
@@ -555,7 +555,7 @@ Construire les droites d'équation $x = 1$ et $y = -2$.
 \mysection{Équation d'une droite et son coefficient directeur}
 \begin{Proposition}
 Le plan $\mathcal{P}$ est rapporté à un repère $(O,\vec{i};\vec{j})$.\\
-Pour qu'une droite $(D)$ ne soit pas paralléle à l'axe des ordonnées, il faut et il suffit qu'elle ait une équation de la forme : $y = mx + p$.
+Pour qu'une droite $(D)$ ne soit pas parallèle à l'axe des ordonnées, il faut et il suffit qu'elle ait une équation de la forme : $y = mx + p$.
 \begin{itemize}
 	\item Le nombre réel $m$ s'appelle \textcolor{red}{coefficient directeur} de la droite $(D)$.
 	\item Le nombre réel $p$ s'appelle \textcolor{red}{l'ordonnée à l'origine} de $(D)$.
@@ -566,43 +566,43 @@ Pour qu'une droite $(D)$ ne soit pas paralléle à l'axe des ordonnées, il faut
 Le plan $\mathcal{P}$ est rapporté à un repère $(O,\vec{i};\vec{j})$.\\
 La droite passant par le point $A(x_0;y_0)$ et de coefficient directeur $m$ a une équation cartésienne de la forme : $y - y_0 = m(x - x_0)$.
 \end{Proposition}
-&\\
-\hline
-\end{tabular}
-
-\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
-\hline
-\vspace{1mm}
+%&\\
+%\hline
+%\end{tabular}
+%
+%\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
+%\hline
+%\vspace{1mm}
 \begin{Exemple}
 Déterminons une équation de la droite passant par $A(-1;2)$ et de coefficient directeur $2$.
 \end{Exemple}
 \mysection{Positions relatives de deux droites}
 
 \mysubsection{1}{Parallélisme de deux droites définies par leurs équations cartésiennes}
-\begin{Theoreme}
+\begin{Théorème}
 Le plan $\mathcal{P}$ est rapporté à un repère $(O,\vec{i};\vec{j})$.\\
 Pour que deux droites d'équation cartésienne respectives $ax + by + c = 0$ et $a'x + b^{\prime}y + c' = 0$ (où $(a;b)\neq (0;0)$ et $(a';b')\neq (0;0)$) soient parallèles, il faut et il suffit que : $ab' - ba' = 0$ c'est-à-dire $\begin{array}{|cc|}
 a & a' \\
 b & b'
 \end{array} = 0$.
-\end{Theoreme}
+\end{Théorème}
 \begin{Exemple}
-On considére les deux droites $\begin{cases}
+On considère les deux droites $\begin{cases}
 (D) : 2x - y + 3 = 0\\
 (D') : 3x + 4y -1 = 0
 \end{cases}$
 \end{Exemple}
 \mysubsection{2}{Parallélisme de deux droites définies par leurs équations réduites}
-\begin{Theoreme}
+\begin{Théorème}
 Le plan $\mathcal{P}$ est rapporté à un repère $(O,\vec{i};\vec{j})$.\\
-Pour que deux droites d'équations respectives $y = mx + p$ et $y = m'x + p'$ soient paralléles, il faut et il suffit que $m = m'$.
-\end{Theoreme}
+Pour que deux droites d'équations respectives $y = mx + p$ et $y = m'x + p'$ soient parallèles, il faut et il suffit que $m = m'$.
+\end{Théorème}
 \begin{Exemple}
-On considére la droite $(D)$ d'équation : $y = -\dfrac{1}{2}x + 3$.
+On considère la droite $(D)$ d'équation : $y = -\dfrac{1}{2}x + 3$.
 Déterminons une équation de la droite $(\Delta)$ passant par $A(3;-1)$
 \end{Exemple}
 \mysubsection{3}{Intersection de deux droites}
-\begin{Theoreme}
+\begin{Théorème}
 Le plan $\mathcal{P}$ est rapporté à un repère $(O,\vec{i};\vec{j})$.\\
 \begin{itemize}
 	\item Pour que les droites $(D)$ et $(D')$ d'équations respectives : 
@@ -620,14 +620,8 @@ Le plan $\mathcal{P}$ est rapporté à un repère $(O,\vec{i};\vec{j})$.\\
 	y = m'x + p'
 	\end{cases}$
 \end{itemize}
-\end{Theoreme}
-&\\
-\hline
-\end{tabular}
-\newpage
-\begin{tabular}{|>{\raggedright\arraybackslash}p{17cm}|>{\centering\arraybackslash}p{0.8cm}|}
-\hline
-\vspace{1mm}
+\end{Théorème}
+%
 \begin{Exemple}
 Étudions l'intersection des droites $(D)$ et $(D')$ d'équations respectives :
 $$2x + y + 1 = 0 \quad\text{et}\quad 3x + 4y - 5 = 0$$
@@ -651,9 +645,9 @@ $$x = \dfrac{\begin{array}{|cc|} -1 & 5 \\
 3 & 5\end{array}}{5} = \dfrac{13}{5}$$
 \end{Exemple}
 
-&\\
-\hline
-\end{tabular}
+%&\\
+%\hline
+%\end{tabular}
 
 
 
