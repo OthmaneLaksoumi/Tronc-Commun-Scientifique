@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.1 (MiKTeX 24.1) (format=lualatex 2024.11.23)  15 JAN 2025 22:46
+This is LuaHBTeX, Version 1.17.1 (MiKTeX 24.1) (format=lualatex 2024.11.23)  31 JAN 2025 16:35
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1719,6 +1719,14 @@ LaTeX Font Info:    Trying to load font information for U+fplmbb on input line
 (C:/Users/user/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/ufplmbb.fd
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 )
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 18.00587pt on input line 371.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 12.50409pt on input line 371.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 18.00587pt on input line 371.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 12.50409pt on input line 371.
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the main.maf file.
@@ -1747,31 +1755,34 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 )
 
 Here is how much of LuaTeX's memory you used:
- 43872 strings out of 476497
+ 44290 strings out of 476497
  100000,1977958 words of node,token memory allocated
  1652 words of node memory still in use:
    34 hlist, 2 vlist, 16 rule, 2 glue, 4 kern, 1 glyph, 87 attribute, 111 glue_s
 pec, 87 attribute_list, 2 write, 24 pdf_literal, 24 pdf_colorstack nodes
-   avail lists: 1:3,2:1812,3:1135,4:178,5:180,6:56,7:5708,8:70,9:558,10:3,11:420
+   avail lists: 1:3,2:2046,3:1135,4:178,5:181,6:56,7:5708,8:70,9:804,10:3,11:420
 
- 64632 multiletter control sequences out of 65536+600000
- 90 fonts using 5486439 bytes
+ 65008 multiletter control sequences out of 65536+600000
+ 138 fonts using 8586023 bytes
  99i,9n,97p,716b,1355s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<//?/c:/users/user/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroma
-n17-regular.otf><//?/c:/users/user/appdata/local/programs/miktex/fonts/opentype/
-public/lm/lmroman12-regular.otf>{C:/Users/user/AppData/Local/Programs/MiKTeX/fon
-ts/enc/dvips/base/8r.enc}<//?/c:/users/user/appdata/local/programs/miktex/fonts/
-opentype/public/lm/lmsans10-regular.otf><//?/c:/users/user/appdata/local/program
-s/miktex/fonts/opentype/public/lm/lmroman10-regular.otf><C:/Users/user/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/Users/user/A
-ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users
-/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmbb.pfb><C:/U
-sers/user/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/
-Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplbi8a.pfb><C
-:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on main.pdf (2 pages, 82521 bytes).
+<//?/c:/users/user/appdata/local/programs/miktex/fonts/opentype/public/lm/lmsans
+10-bold.otf><//?/c:/users/user/appdata/local/programs/miktex/fonts/opentype/publ
+ic/lm/lmroman17-regular.otf><//?/c:/users/user/appdata/local/programs/miktex/fon
+ts/opentype/public/lm/lmroman12-regular.otf>{C:/Users/user/AppData/Local/Program
+s/MiKTeX/fonts/enc/dvips/base/8r.enc}<//?/c:/users/user/appdata/local/programs/m
+iktex/fonts/opentype/public/lm/lmsans10-regular.otf><//?/c:/users/user/appdata/l
+ocal/programs/miktex/fonts/opentype/public/lm/lmroman10-regular.otf><C:/Users/us
+er/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/
+Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.p
+fb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplm
+b.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/f
+plmbb.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/
+uplb8a.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino
+/uplbi8a.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/urw/zapfdi
+ng/uzdr.pfb>
+Output written on main.pdf (2 pages, 95176 bytes).
 
-PDF statistics: 103 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 118 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
- 266 words of extra memory for PDF output out of 10000 (max. 100000000)
+ 286 words of extra memory for PDF output out of 10000 (max. 100000000)
 
