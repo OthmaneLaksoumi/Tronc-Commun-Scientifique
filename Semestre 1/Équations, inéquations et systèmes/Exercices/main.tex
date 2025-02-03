@@ -1,0 +1,180 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[top=2cm,left=1cm,right=1cm,bottom=2cm]{geometry}
+\usepackage{amssymb,mathtools,amsthm}
+\usepackage{fourier}
+\usepackage{xcolor}
+\usepackage{multicol, array, fancyhdr}
+\usepackage{tasks}
+\newcommand{\Lim}{\displaystyle\lim}
+\renewcommand{\columnseprule}{1pt}
+\renewcommand{\arraystretch}{1.5}
+% \renewcommand{\dfrac}[2]{\displaystyle\dfrac{#1}{#2}}
+
+
+%======================================================
+\newtheoremstyle{mystyle}
+  {\topsep}% espace avant
+  {\topsep}% espace après
+  {\upshape}% police du corps du théorème
+  {}% indentation (vide pour rien, \parindent)
+  {\bfseries\sffamily}% police du titre du théorème
+  { :}% ponctuation après le théorème
+  { }% après le titre du théorème (espace ou \newline)
+  {%
+    \rule[0.5\baselineskip]{0.5\textwidth}{1pt}%
+    \newline\fcolorbox{black}{white}{%
+      \thmname{#1}\thmnumber{ \textup{#2}}\thmnote{ \textnormal{(#3)}}%
+    }%
+    
+    % \vspace{0.5em} % Adjust vertical space after the title
+  }% spécifications du titre
+
+\theoremstyle{mystyle}
+\newtheorem{exo}{Exercice}
+
+%======================================================
+
+
+
+\begin{document}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyhead[L]{Lycée : Zitoun \hspace{1.5cm} Année scolaire : 2024-2025} % Left header
+\fancyhead[C]{ \hspace{4cm} Niveau : TCS} % Right-Center header
+\fancyhead[R]{Prof. Othmane Laksoumi} % Right header
+\fancyfoot[C]{\thepage} % Footer
+
+
+\begin{center}
+    \textbf{\Large Équations, inéquations et systèmes}
+\end{center}
+\begin{multicols*}{2}
+
+\begin{exo}
+\text{ }
+\begin{enumerate}
+	\item Dresser le tableau de signe de : 
+	
+	$-4x + 8$, $2x - 3$, $(5x - 2)(3x + 1)$ et $\dfrac{-4x + 8}{6x + 2}$
+	\item Résoudre dans $\mathbb{R}^2$ les systèmes suivants :
+	$$\begin{cases} 
+5x - 2y = 4 \\ 
+-3x + 4y = 6 
+\end{cases}
+\begin{cases} 
+10x + y = 7 \\ 
+100x + y = 1 
+\end{cases}$$
+$$\begin{cases} 
+3x + 4y = 1 \\ 
+x - 2y = 2 
+\end{cases}
+\begin{cases} 
+3x - 2y = 6 \\ 
+\dfrac{x}{2} - \dfrac{y}{3} = 0 
+\end{cases}
+$$
+\end{enumerate}
+\end{exo}
+
+\begin{exo}
+Résoudre dans \(\mathbb{R}\) les équations suivantes :
+%\begin{multicols}{2}
+\begin{enumerate}
+    \item \(2x^{2} + x - 1 = 0\)
+    \item \(x^{2} - 8x + 16 = 0\)
+    \item \(-2x^{2} + 2\sqrt{2}x - 1 = 0\)
+    \item \(x^{2} - 2x - 3 = 0\)
+    \item \(x^{4} - 4\sqrt{2}x^{2} + 6 = 0\)
+    \item \(3x^{4} - 4\sqrt{3}x^{2} + 4 = 0\)
+    \item \(-3x^2 + 5x - 4 = 0\)
+\end{enumerate}
+
+%\end{multicols}
+\end{exo}
+
+\begin{exo}
+Factoriser si c'est possible les trinômes suivants :
+\begin{enumerate}
+	\item \(P_{1}(x) = 2x^{2} + 3x - 2\)
+	\item \(P_{2}(x) = -3x^{2} + 7x - 2\)
+	\item \(P_{3}(x) = 25x^{2} - 10x + 1\)
+	\item \(P_{4}(x) = 3x^{2} + 6\sqrt{3}x + 9\)
+	\item \(P_{5}(x) = -3x^{4} + x^{2} - 2\)
+	\item \(P_{5}(x) = -3x^{2} + x - 2\)
+\end{enumerate}
+\end{exo}
+
+\newcolumn
+
+\begin{exo}
+Étudier le signe du trinôme \(P(x)\) :
+\begin{enumerate}
+    \item \(P(x) = x^{2} - 7x + 12\)
+    \item \(P(x) = -x^{2} + 6x - 9\)
+    \item \(P(x) = -x^{2} + 2x - 3\)
+    \item \(P(x) = 7x^{2} + 12x + 5\)
+    \item \(P(x) = x^{2} + x + 1\)
+\end{enumerate}
+\end{exo}
+
+\begin{exo}
+Résoudre dans \(\mathbb{R}\) les inéquations :
+\begin{enumerate}
+	\item \(x^{2} - 5x + 6 \geq 0\)
+	\item \(x^{2} - 8x + 5 < 0\)
+	\item \(49x^{2} - 70x + 25 > 0\)
+	\item \(-x^{2} + x + 3 < 0\)
+	\item \(-9x^{2} + 6\sqrt{2}x - 2 > 0\)
+	\item \(\dfrac{x^{2} - 6x + 9}{3x^{2} + 10x - 8} \geq 0\)
+%	\item \(4x - 3\sqrt{x} + 1 < 0\)
+	\item \(\dfrac{x^{2} - 8x + 9}{x^{2} - 4x} < 0\)
+	\item \(\dfrac{x^{2} - 8}{x^{2} + 12x - 13} \geq 0\)
+%	\item \(\dfrac{2}{x + 1} + \dfrac{1}{x^{2} + x} \leq \dfrac{3(x + 3)}{x}\)
+	\item \(-\dfrac{2x^{2} + x + 1}{x^{2} - 4x - 5} \geq 0\)
+\end{enumerate}
+\end{exo}
+
+\begin{exo}
+On considère l'équation \[(E): -2x^{2} + \sqrt{2}x + 2 = 0\]
+
+\begin{enumerate}
+    \item Montrer que l'équation \((E)\) admet deux \\ solutions distinctes \(\alpha\) et \(\beta\) (sans les calculer).
+    \item Calculer \(\alpha + \beta\), \(\alpha \times \beta\), \(\dfrac{1}{\alpha} + \dfrac{1}{\beta}\), \(\alpha^{2}\beta + \alpha\beta^{2}\), \(\alpha^{2} + \beta^{2}\), \(\dfrac{\alpha}{\beta} + \dfrac{\beta}{\alpha}\) et \(\alpha^{3} + \beta^{3}\).
+\end{enumerate}
+\end{exo}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{multicols*}
+
+
+
+\end{document}
