@@ -343,10 +343,53 @@ title=#1,coltitle=black,fonttitle=\sffamily}
 \end{itemize}
 \end{boxone}
 \newpage
+\newcommand{\C}{\mathcal{C}}
+\mysection{Unités de mesure des angles}
 
+\begin{Définition}
+Soit \( \C \) un cercle de centre \( O \) et de rayon 1. 
 
+Soient \( I \) et \( M \) deux points de \( \C \).  
+La mesure de l'angle géométrique \( \widehat{IOM} \) en \textcolor{red}{radians} est la longueur $l$ de l'arc \( \widehat{IM} \).
 
+\centering \begin{tikzpicture}
+    % Dessiner un cercle avec un rayon de 2 cm
+    \draw (0,0) circle (1cm);
+    \filldraw (0,0) circle (0.5pt) node[above right] {O};
+\end{tikzpicture}
+\end{Définition}
 
+\mysubsection{1}{Proportionnalité des unités de mesure}
+\begin{Proposition}
+\begin{itemize}
+    \item La mesure d'un angle plat en degrés est \( 180^\circ \) tandis que sa mesure en radians est \( \pi \) (longueur d'un demi-cercle de rayon 1).
+    \item Si \( a \) et \( \alpha \) sont les mesures respectives d'un angle géométrique en degrés et radians alors \( a \), \( \alpha \) alors on a :
+    $$\alpha = \dfrac{a}{180}\pi \quad \quad \text{ et } \quad\quad a = \dfrac{180}{\pi}\alpha $$
+\end{itemize}
+\end{Proposition}
+
+\begin{Exemple}
+\begin{enumerate}
+    \item La mesure d'un angle droit en degrés est \( a = 90^\circ \); donc sa mesure en radians est \( \alpha = \dfrac{180}{180} \times \pi \) c'est-à-dire \( \alpha = \dfrac{\pi}{2} \) rad.
+\end{enumerate}
+\end{Exemple}
+
+\begin{Application}
+Calculer en radians les mesures des angles d'un triangle équilatéral.
+\end{Application}
+
+\mysection{Abscisses curvilignes d'un point d'un cercle trigonométrique}
+
+\mysubsection{2}{Cercle trigonométrique}
+
+\begin{Définition}
+\textcolor{red}{Le cercle trigonométrique} est un cercle orienté, muni d'un repère orthonormé $(O;\overrightarrow{OI};\overrightarrow{OJ})$, de centre $O$, de rayon $1$. Sur ce cercle, on définit deux sens :
+
+\begin{itemize}
+    \item Le sens positif (ou direct) est le sens de rotation autour du cercle en partant de 1 dans le sens inverse des aiguilles d'une montre ;
+    \item Le sens négatif (ou indirect) est le sens des aiguilles d'une montre.
+\end{itemize}
+\end{Définition}
 
 
 

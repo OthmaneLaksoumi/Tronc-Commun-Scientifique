@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.1 (MiKTeX 24.1) (format=lualatex 2024.11.23)  1 FEB 2025 12:34
+This is LuaHBTeX, Version 1.17.1 (MiKTeX 24.1) (format=lualatex 2024.11.23)  9 FEB 2025 19:34
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1741,28 +1741,35 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 )
 
 Here is how much of LuaTeX's memory you used:
- 43856 strings out of 476497
+ 43917 strings out of 476497
  100000,1977958 words of node,token memory allocated
- 1636 words of node memory still in use:
-   34 hlist, 2 vlist, 16 rule, 2 glue, 4 kern, 1 glyph, 83 attribute, 111 glue_s
-pec, 83 attribute_list, 2 write, 24 pdf_literal, 24 pdf_colorstack nodes
-   avail lists: 1:3,2:1742,3:1083,4:154,5:162,6:44,7:3302,8:20,9:554,10:2,11:156
+ 1640 words of node memory still in use:
+   34 hlist, 2 vlist, 16 rule, 2 glue, 4 kern, 1 glyph, 84 attribute, 111 glue_s
+pec, 84 attribute_list, 2 write, 24 pdf_literal, 24 pdf_colorstack nodes
+   avail lists: 1:3,2:2922,3:1771,4:208,5:165,6:50,7:3860,8:29,9:922,10:4,11:156
 
- 64621 multiletter control sequences out of 65536+600000
- 86 fonts using 5216687 bytes
- 99i,9n,97p,716b,1355s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<//?/c:/users/user/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroma
-n12-regular.otf>{C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/bas
-e/8r.enc}<//?/c:/users/user/appdata/local/programs/miktex/fonts/opentype/public/
-lm/lmsans10-regular.otf><//?/c:/users/user/appdata/local/programs/miktex/fonts/o
-pentype/public/lm/lmroman10-regular.otf><C:/Users/user/AppData/Local/Programs/Mi
-KTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/user/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/user/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Users/user/AppData/Local/P
-rograms/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on main.pdf (2 pages, 60794 bytes).
+ 64682 multiletter control sequences out of 65536+600000
+ 91 fonts using 5875511 bytes
+ 99i,16n,97p,716b,1355s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<//?/c:/users/user/appdata/local/programs/miktex/fonts/opentype/public/lm/lmsans
+10-bold.otf><//?/c:/users/user/appdata/local/programs/miktex/fonts/opentype/publ
+ic/lm/lmroman17-regular.otf><//?/c:/users/user/appdata/local/programs/miktex/fon
+ts/opentype/public/lm/lmroman12-regular.otf>{C:/Users/user/AppData/Local/Program
+s/MiKTeX/fonts/enc/dvips/base/8r.enc}<//?/c:/users/user/appdata/local/programs/m
+iktex/fonts/opentype/public/lm/lmsans10-regular.otf><//?/c:/users/user/appdata/l
+ocal/programs/miktex/fonts/opentype/public/lm/lmroman10-regular.otf><C:/Users/us
+er/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/
+Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.p
+fb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mex10.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpa
+zo/fplmbi.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/symbols/msbm10.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/urw/palatino/uplb8a.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/urw/palatino/uplbi8a.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/
+type1/urw/zapfding/uzdr.pfb>
+Output written on main.pdf (2 pages, 103973 bytes).
 
-PDF statistics: 88 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 124 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
- 266 words of extra memory for PDF output out of 10000 (max. 100000000)
+ 296 words of extra memory for PDF output out of 10000 (max. 100000000)
 
