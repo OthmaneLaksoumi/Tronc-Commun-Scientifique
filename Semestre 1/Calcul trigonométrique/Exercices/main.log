@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.1 (MiKTeX 24.1) (format=lualatex 2024.11.23)  22 FEB 2025 13:10
+This is LuaHBTeX, Version 1.17.1 (MiKTeX 24.1) (format=lualatex 2024.11.23)  22 FEB 2025 17:38
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -471,6 +471,332 @@ rs
 \f@nch@O@olf=\skip71
 \f@nch@O@orf=\skip72
 )
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/latex/pgf/frontendlayer/tikz.s
+ty
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/latex/pgf/basiclayer/pgf.sty
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgfrcs.sty
+
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfutil-
+common.tex
+\pgfutil@everybye=\toks32
+\pgfutil@tempdima=\dimen178
+\pgfutil@tempdimb=\dimen179
+)
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfutil-
+latex.def
+\pgfutil@abb=\box102
+)
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfrcs.c
+ode.tex
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/latex/pgf/basiclayer/pgfcore.s
+ty (C:/Users/user/AppData/Local/Programs/MiKTeX/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/latex/graphics-cfg/graphics.cf
+g
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: luatex.def on input line 107.
+)
+\Gin@req@height=\dimen180
+\Gin@req@width=\dimen181
+)
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/latex/pgf/systemlayer/pgfsys.s
+ty
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfsys
+.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfkeys.
+code.tex
+\pgfkeys@pathtoks=\toks33
+\pgfkeys@temptoks=\toks34
+
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfkeysl
+ibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks35
+))
+\pgf@x=\dimen182
+\pgf@y=\dimen183
+\pgf@xa=\dimen184
+\pgf@ya=\dimen185
+\pgf@xb=\dimen186
+\pgf@yb=\dimen187
+\pgf@xc=\dimen188
+\pgf@yc=\dimen189
+\pgf@xd=\dimen190
+\pgf@yd=\dimen191
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count288
+\c@pgf@countb=\count289
+\c@pgf@countc=\count290
+\c@pgf@countd=\count291
+\t@pgf@toka=\toks36
+\t@pgf@tokb=\toks37
+\t@pgf@tokc=\toks38
+\pgf@sys@id@count=\count292
+
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgf.cf
+g
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-luatex.def
+
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfsys
+-luatex.def
+File: pgfsys-luatex.def 2023-01-15 v3.1.10 (3.1.10)
+
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfsys
+-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfsys
+softpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count293
+\pgfsyssoftpath@bigbuffer@items=\count294
+)
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfsys
+protocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcore
+.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmath.code.
+tex
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathutil.c
+ode.tex)
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathparser
+.code.tex
+\pgfmath@dimen=\dimen192
+\pgfmath@count=\count295
+\pgfmath@box=\box103
+\pgfmath@toks=\toks39
+\pgfmath@stack@operand=\toks40
+\pgfmath@stack@operation=\toks41
+)
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfuncti
+ons.code.tex)
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfuncti
+ons.basic.code.tex)
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfuncti
+ons.trigonometric.code.tex)
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfuncti
+ons.random.code.tex)
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfuncti
+ons.comparison.code.tex)
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfuncti
+ons.base.code.tex)
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfuncti
+ons.round.code.tex)
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfuncti
+ons.misc.code.tex)
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfuncti
+ons.integerarithmetics.code.tex)
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathcalc.c
+ode.tex)
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfloat.
+code.tex
+\c@pgfmathroundto@lastzeros=\count296
+))
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfint.code.t
+ex)
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcore
+points.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen193
+\pgf@picmaxx=\dimen194
+\pgf@picminy=\dimen195
+\pgf@picmaxy=\dimen196
+\pgf@pathminx=\dimen197
+\pgf@pathmaxx=\dimen198
+\pgf@pathminy=\dimen199
+\pgf@pathmaxy=\dimen256
+\pgf@xx=\dimen257
+\pgf@xy=\dimen258
+\pgf@yx=\dimen259
+\pgf@yy=\dimen260
+\pgf@zx=\dimen261
+\pgf@zy=\dimen262
+)
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcore
+pathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen263
+\pgf@path@lasty=\dimen264
+)
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcore
+pathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen265
+\pgf@shorten@start@additional=\dimen266
+)
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcore
+scopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box104
+\pgf@hbox=\box105
+\pgf@layerbox@main=\box106
+\pgf@picture@serial@count=\count297
+)
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcore
+graphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen267
+)
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcore
+transformations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen268
+\pgf@pt@y=\dimen269
+\pgf@pt@temp=\dimen270
+)
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcore
+quick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcore
+objects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcore
+pathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcore
+arrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen271
+)
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcore
+shade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen272
+\pgf@sys@shading@range@num=\count298
+\pgf@shadingcount=\count299
+)
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcore
+image.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcore
+external.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box107
+)
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcore
+layers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcore
+transparency.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcore
+patterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcore
+rdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/modules/pgfmodules
+hapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box108
+)
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/modules/pgfmodulep
+lot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/latex/pgf/compatibility/pgfcom
+p-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen273
+\pgf@nodesepend=\dimen274
+)
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/latex/pgf/compatibility/pgfcom
+p-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgffor.sty
+
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgfkeys.st
+y
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfkeys.
+code.tex))
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/latex/pgf/math/pgfmath.sty
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmath.code.
+tex))
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgffor.c
+ode.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen275
+\pgffor@skip=\dimen276
+\pgffor@stack=\toks42
+\pgffor@toks=\toks43
+))
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tikz
+/tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/pgflibra
+ryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count300
+\pgfplotmarksize=\dimen277
+)
+\tikz@lastx=\dimen278
+\tikz@lasty=\dimen279
+\tikz@lastxsaved=\dimen280
+\tikz@lastysaved=\dimen281
+\tikz@lastmovetox=\dimen282
+\tikz@lastmovetoy=\dimen283
+\tikzleveldistance=\dimen284
+\tikzsiblingdistance=\dimen285
+\tikz@figbox=\box109
+\tikz@figbox@bg=\box110
+\tikz@tempbox=\box111
+\tikz@tempbox@bg=\box112
+\tikztreelevel=\count301
+\tikznumberofchildren=\count302
+\tikznumberofcurrentchild=\count303
+\tikz@fig@count=\count304
+
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/modules/pgfmodulem
+atrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count305
+\pgfmatrixcurrentcolumn=\count306
+\pgf@matrix@numberofcolumns=\count307
+)
+\tikz@expandcount=\count308
+
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tikz
+/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tikz
+/libraries/tikzlibraryangles.code.tex
+File: tikzlibraryangles.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tikz
+/libraries/tikzlibraryquotes.code.tex
+File: tikzlibraryquotes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
 (C:/Users/user/AppData/Local/Programs/MiKTeX/tex/latex/tasks/tasks.sty
 (C:/Users/user/AppData/Local/Programs/MiKTeX/tex/latex/l3kernel/expl3.sty
 Package: expl3 2024-01-04 L3 programming layer (loader) 
@@ -478,9 +804,9 @@ Package: expl3 2024-01-04 L3 programming layer (loader)
 (C:/Users/user/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-luat
 ex.def
 File: l3backend-luatex.def 2024-01-04 L3 backend support: PDF output (LuaTeX)
-\l__color_backend_stack_int=\count288
+\l__color_backend_stack_int=\count309
 Inserting `l3color' in `luaotfload.parse_color'.
-\l__pdf_internal_box=\box102
+\l__pdf_internal_box=\box113
 ))
 (C:/Users/user/AppData/Local/Programs/MiKTeX/tex/latex/l3packages/xparse/xparse
 .sty
@@ -489,98 +815,98 @@ Package: xparse 2023-10-10 L3 Experimental document command parser
 (C:/Users/user/AppData/Local/Programs/MiKTeX/tex/latex/l3packages/xtemplate/xte
 mplate.sty
 Package: xtemplate 2023-10-10 L3 Experimental prototype document functions
-\l__xtemplate_tmp_dim=\dimen178
-\l__xtemplate_tmp_int=\count289
+\l__xtemplate_tmp_dim=\dimen286
+\l__xtemplate_tmp_int=\count310
 \l__xtemplate_tmp_muskip=\muskip17
 \l__xtemplate_tmp_skip=\skip73
 )
 Package: tasks 2022/01/08 v1.4a lists with columns filled horizontally
-\g__tasks_total_items_int=\count290
-\l__tasks_columns_int=\count291
-\g__tasks_rows_int=\count292
-\g__tasks_current_col_num_int=\count293
-\g__tasks_current_row_num_int=\count294
-\l__tasks_item_columns_int=\count295
-\g__tasks_env_int=\count296
-\l__tasks_start_int=\count297
-\l__tasks_item_indent_dim=\dimen179
-\l__tasks_item_default_indent_dim=\dimen180
-\l__tasks_item_width_dim=\dimen181
-\l__tasks_label_width_dim=\dimen182
-\l__tasks_label_default_width_dim=\dimen183
-\l__tasks_label_offset_dim=\dimen184
-\l__tasks_label_default_offset_dim=\dimen185
-\l__tasks_column_sep_dim=\dimen186
-\l__tasks_correction_dim=\dimen187
-\l__tasks_full_width_dim=\dimen188
+\g__tasks_total_items_int=\count311
+\l__tasks_columns_int=\count312
+\g__tasks_rows_int=\count313
+\g__tasks_current_col_num_int=\count314
+\g__tasks_current_row_num_int=\count315
+\l__tasks_item_columns_int=\count316
+\g__tasks_env_int=\count317
+\l__tasks_start_int=\count318
+\l__tasks_item_indent_dim=\dimen287
+\l__tasks_item_default_indent_dim=\dimen288
+\l__tasks_item_width_dim=\dimen289
+\l__tasks_label_width_dim=\dimen290
+\l__tasks_label_default_width_dim=\dimen291
+\l__tasks_label_offset_dim=\dimen292
+\l__tasks_label_default_offset_dim=\dimen293
+\l__tasks_column_sep_dim=\dimen294
+\l__tasks_correction_dim=\dimen295
+\l__tasks_full_width_dim=\dimen296
 \l__tasks_after_item_skip=\skip74
 \l__tasks_custom_after_item_skip=\skip75
 \l__tasks_before_list_skip=\skip76
 \l__tasks_after_list_skip=\skip77
-\l__tasks_item_coffin=\box103
-\l__tasks_label_coffin=\box104
-\c@task=\count298
-\l__tasks_tmpa_int=\count299
-\l__tasks_tmpb_int=\count300
-\l__tasks_tmpa_coffin=\box105
-\l__tasks_tmpa_box=\box106
+\l__tasks_item_coffin=\box114
+\l__tasks_label_coffin=\box115
+\c@task=\count319
+\l__tasks_tmpa_int=\count320
+\l__tasks_tmpb_int=\count321
+\l__tasks_tmpa_coffin=\box116
+\l__tasks_tmpa_box=\box117
 
 Package xtemplate Info: Declaring object type 'tasks' taking 3 argument(s) on
 (xtemplate)             line 450.
 
 
 (C:/Users/user/AppData/Local/Programs/MiKTeX/tex/latex/tasks/tasks.cfg))
-\c@exo=\count301
+\c@exo=\count322
 
 (./main.aux)
 \openout1 = main.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 3
-9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 4
+6.
 
 (C:/Users/user/AppData/Local/Programs/MiKTeX/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 46.
 LaTeX Font Info:    Trying to load font information for FML+futm on input line 
-39.
+46.
 
 (C:/Users/user/AppData/Local/Programs/MiKTeX/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 46.
 LaTeX Font Info:    Trying to load font information for FMS+futm on input line 
-39.
+46.
 
 (C:/Users/user/AppData/Local/Programs/MiKTeX/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 46.
 LaTeX Font Info:    Trying to load font information for FMX+futm on input line 
-39.
+46.
 
 (C:/Users/user/AppData/Local/Programs/MiKTeX/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    ... okay on input line 46.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -616,41 +942,23 @@ LaTeX Font Info:    ... okay on input line 39.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/latex/graphics/graphicx.sty
-Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
-
-(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/latex/graphics/graphics.sty
-Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
-
-(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/latex/graphics/trig.sty
-Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-)
-(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/latex/graphics-cfg/graphics.cf
-g
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: luatex.def on input line 107.
-)
-\Gin@req@height=\dimen189
-\Gin@req@width=\dimen190
-)
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 39.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 39.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 46.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 46.
 
 (C:/Users/user/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mki
 i
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count302
-\scratchdimen=\dimen191
-\scratchbox=\box107
-\nofMPsegments=\count303
-\nofMParguments=\count304
-\everyMPshowfont=\toks32
-\MPscratchCnt=\count305
-\MPscratchDim=\dimen192
-\MPnumerator=\count306
-\makeMPintoPDFobject=\count307
-\everyMPtoPDFconversion=\toks33
+\scratchcounter=\count323
+\scratchdimen=\dimen297
+\scratchbox=\box118
+\nofMPsegments=\count324
+\nofMParguments=\count325
+\everyMPshowfont=\toks44
+\MPscratchCnt=\count326
+\MPscratchDim=\dimen298
+\MPnumerator=\count327
+\makeMPintoPDFobject=\count328
+\everyMPtoPDFconversion=\toks45
 )
 (C:/Users/user/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-ba
 se.sty
@@ -662,83 +970,81 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 g
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 5
-6.
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 6
+3.
  (C:/Users/user/AppData/Local/Programs/MiKTeX/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for FML+futmi on input line
- 56.
+Overfull \hbox (5.0pt too wide) in paragraph at lines 63--64
+[][] 
+ []
 
+LaTeX Font Info:    Trying to load font information for FML+futmi on input line
+ 65.
 (C:/Users/user/AppData/Local/Programs/MiKTeX/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 56.
+(Font)              scaled to size 11.03998pt on input line 65.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 56.
+(Font)              scaled to size 8.27998pt on input line 65.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 56.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 56.
+(Font)              scaled to size 6.43999pt on input line 65.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 65.
 
 
 (C:/Users/user/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 56.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 65.
 
 
 (C:/Users/user/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 56.
+(Font)              scaled to size 11.03998pt on input line 65.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 56.
+(Font)              scaled to size 8.27998pt on input line 65.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 56.
+(Font)              scaled to size 6.43999pt on input line 65.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 56--57
+Overfull \hbox (5.0pt too wide) in paragraph at lines 72--73
+[][] 
+ []
+
+<Exercice2.png, id=4, 392.46625pt x 271.0125pt>
+File: Exercice2.png Graphic file (type png)
+<use Exercice2.png>
+Package luatex.def Info: Exercice2.png  used on input line 74.
+(luatex.def)             Requested size: 196.23264pt x 135.5059pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 87--88
 [][] 
  []
 
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 63--64
+Overfull \hbox (5.0pt too wide) in paragraph at lines 94--95
 [][] 
  []
 
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 67--69
+Overfull \hbox (5.0pt too wide) in paragraph at lines 102--103
 [][] 
  []
 
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 78--79
+Overfull \hbox (5.0pt too wide) in paragraph at lines 115--116
 [][] 
  []
 
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 89--90
+Overfull \hbox (5.0pt too wide) in paragraph at lines 127--128
 [][] 
  []
 
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 101--102
-[][] 
- []
-
-
-Overfull \hbox (5.0pt too wide) in paragraph at lines 112--114
-[][] 
- []
-
-
-Overfull \hbox (5.0pt too wide) in paragraph at lines 120--121
-[][] 
- []
-
-
-Overfull \hbox (5.0pt too wide) in paragraph at lines 132--133
+Overfull \hbox (5.0pt too wide) in paragraph at lines 137--138
 [][] 
  []
 
@@ -752,7 +1058,75 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [1{C:/Users/user/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
-] (./main.aux)
+<./Exercice2.png>]
+Overfull \hbox (5.0pt too wide) in paragraph at lines 150--151
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
+[] []$ \T1/futs/m/n/12 ; $[] []$ ; $[] []$ ;
+ []
+
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 158--162
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--162
+
+ []
+
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 165--167
+[][] 
+ []
+
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 174--176
+[][] 
+ []
+
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 185--188
+[][] 
+ []
+
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 191--200
+[][] 
+ []
+
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 203--210
+[][] 
+ []
+
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 213--214
+[][] 
+ []
+
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 222--223
+[][] 
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+futs on input line 
+224.
+(C:/Users/user/AppData/Local/Programs/MiKTeX/tex/latex/fourier/ts1futs.fd
+File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
+)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[2] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -760,25 +1134,29 @@ L3 programming layer <2024-01-04>
 )
 
 Here is how much of LuaTeX's memory you used:
- 6107 strings out of 476497
- 125007,1977958 words of node,token memory allocated
- 568 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 11 attribute, 63 glue_spec
-, 11 attribute_list, 1 write nodes
-   avail lists: 2:3652,3:434,4:266,5:1701,6:76,7:8880,8:76,9:3458,10:11,11:190
- 27948 multiletter control sequences out of 65536+600000
- 67 fonts using 3999735 bytes
- 70i,14n,76p,312b,437s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 16300 strings out of 476497
+ 100000,1977958 words of node,token memory allocated
+ 579 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 13 attribute, 63 glue_spec
+, 13 attribute_list, 2 write nodes
+   avail lists: 2:1973,3:453,4:256,5:1136,6:70,7:5998,8:77,9:2242,10:13,11:138
+ 37787 multiletter control sequences out of 65536+600000
+ 69 fonts using 4110135 bytes
+ 102i,16n,101p,414b,442s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}{C:/Use
 rs/user/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}<C:/Users/use
-r/AppData/Local/Programs/MiKTeX/fonts/type1/public/fourier/fourier-ms.pfb><C:/Us
-ers/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Us
-ers/user/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putb8a.pfb><C:/U
-sers/user/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putr8a.pfb><C:/
-Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on main.pdf (1 page, 75358 bytes).
+r/AppData/Local/Programs/MiKTeX/fonts/type1/public/fourier/fourier-bb.pfb><C:/Us
+ers/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/fourier/fourier-mex.pf
+b><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/fourier/fourie
+r-mlit.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/fouri
+er/fourier-ms.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/lm/lmssbx10.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/adobe
+/utopia/putb8a.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/adob
+e/utopia/putr8a.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/ado
+be/utopia/putri8a.pfb>
+Output written on main.pdf (2 pages, 133267 bytes).
 
-PDF statistics: 28 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 48 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
- 1 words of extra memory for PDF output out of 10000 (max. 100000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 100000000)
 

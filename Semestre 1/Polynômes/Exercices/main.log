@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.1 (MiKTeX 24.1) (format=lualatex 2024.11.23)  12 JAN 2025 16:43
+This is LuaHBTeX, Version 1.17.1 (MiKTeX 24.1) (format=lualatex 2024.11.23)  1 MAR 2025 15:08
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -766,7 +766,7 @@ Here is how much of LuaTeX's memory you used:
  584 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 15 attribute, 63 glue_spec
 , 15 attribute_list, 1 write nodes
-   avail lists: 2:1063,3:452,4:258,5:735,6:82,7:5114,8:42,9:802,10:11,11:158
+   avail lists: 2:1063,3:452,4:258,5:735,6:82,7:5116,8:42,9:802,10:11,11:158
  27948 multiletter control sequences out of 65536+600000
  67 fonts using 3999735 bytes
  70i,11n,76p,220b,437s stack positions out of 10000i,1000n,20000p,200000b,200000s

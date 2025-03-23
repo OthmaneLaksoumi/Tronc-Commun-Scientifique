@@ -1,0 +1,570 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[right=1cm, left=1cm,top=1cm,bottom=1.5cm]{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{array, tasks}
+\usepackage{blindtext}
+\usepackage{fontspec}
+\usepackage{amsmath,amsfonts,amssymb,mathrsfs,amsthm}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage[font={bf}]{caption}
+% \captionsetup[table]{box=colorbox,boxcolor=orange!20}
+\usepackage{float}
+\usepackage{esvect}
+\usepackage{tabularx}
+\usepackage{pifont}
+\usepackage{colortbl}
+ \usepackage{fancybox}
+ \mathversion{bold}
+ \usepackage{pgfplots}
+ % \usepackage[utf8]{inputenc}
+\usepackage{tikz}
+ \usepackage[tikz]{bclogo}%
+ \usepackage{mathpazo}
+\usepackage{ulem}
+\usepackage{yagusylo}
+\usepackage{textcomp}\usepackage{blindtext}
+\usepackage{multicol}
+\usepackage{varwidth}
+\usetikzlibrary{calc,intersections}
+\usepackage{pgfplots}
+%\usepackage{fourier}
+\pgfplotsset{compat=1.11}
+\usepackage{tkz-tab}
+\usepackage{xcolor}
+\usepackage{color}
+\usetikzlibrary{calc}
+\mathchardef\times="2202
+\usepackage[most]{tcolorbox}
+\definecolor{lightgray}{gray}{0.9}
+\definecolor{ocre}{RGB}{0,244,244} 
+\definecolor{head}{RGB}{255,211,204}
+\definecolor{browndark}{RGB}{105,79,56}
+%\RequirePackage[framemethod=default]{mdframed}
+\usepackage{tikz}
+\usetikzlibrary{calc,patterns,decorations.pathmorphing,arrows.meta,decorations.markings}
+\usetikzlibrary{arrows.meta}
+\makeatletter
+\tcbuselibrary{skins,breakable,xparse}
+\tcbset{%
+  save height/.code={%
+    \tcbset{breakable}%
+    \providecommand{#1}{2cm}%
+    \def\tcb@split@start{%
+      \tcb@breakat@init%
+      \tcb@comp@h@page%
+      \def\tcb@ch{%
+        \tcbset{height=\tcb@h@page}%
+        \tcbdimto#1{#1+\tcb@h@page-\tcb@natheight}%
+        \immediate\write\@auxout{\string\gdef\string#1{#1}}%
+        \tcb@ch%
+      }%
+      \tcb@drawcolorbox@standalone%
+    }%
+  }%
+}
+\newcommand{\Lim}{\displaystyle\lim}
+\makeatother
+\newcommand{\oij}{$\left( \text{O};\vv{i},\vv{j} , \vv{k}\right)$}
+\colorlet{darkred}{red!30!black}
+\newcommand{\red}[1]{\textcolor{darkred}{ #1}}
+\newcommand{\rr}{\mathbb{R}}
+\renewcommand{\baselinestretch}{1.2}
+ \setlength{\arrayrulewidth}{1.25pt}
+\usepackage{titlesec}
+\usepackage{titletoc}
+\usepackage{minitoc}
+\usepackage{ulem}
+%--------------------------------------------------------------
+
+\usetikzlibrary{decorations.pathmorphing}
+\tcbuselibrary{skins}
+
+%%%%%%%%%%%
+%-------------------------------------------------------------------------
+\tcbset{
+        enhanced,
+        colback=white,
+        boxrule=0.1pt,
+        colframe=brown!10,
+        fonttitle=\bfseries
+       }
+\definecolor{problemblue}{RGB}{100,134,158}
+\definecolor{idiomsgreen}{RGB}{0,162,0}
+\definecolor{exercisebgblue}{RGB}{192,232,252}
+\definecolor{darkbrown}{rgb}{0.4, 0.26, 0.13}
+
+\newcommand*{\arraycolor}[1]{\protect\leavevmode\color{#1}}
+\newcolumntype{A}{>{\columncolor{blue!50!white}}c}
+\newcolumntype{B}{>{\columncolor{LightGoldenrod}}c}
+\newcolumntype{C}{>{\columncolor{FireBrick!50}}c}
+\newcolumntype{D}{>{\columncolor{Gray!42}}c}
+
+\newcounter{mysection}
+\newcounter{mysubsection}
+\newcommand{\mysection}[1]{%
+    \stepcounter{mysection} % Increment the counter
+    \textcolor{red}{\LARGE\themysection. #1 :}
+}
+\newcommand{\mysubsection}[2]{
+    \stepcounter{mysubsection}
+    \textcolor{red}{\large \themysection.#1. #2 :}
+}
+% \textcolor{red}{\LARGE\bfseries 1. Les équation du deuxiéme degrée :}
+
+%------------------------------------------------------
+\newtcolorbox[auto counter]{Définition}{enhanced,
+before skip=2mm,after skip=2mm,
+colback=yellow!20!white,colframe=lime,boxrule=0.2mm,
+attach boxed title to top left =
+    {xshift=0.6cm,yshift*=1mm-\tcboxedtitleheight},
+    varwidth boxed title*=-3cm,
+    boxed title style={frame code={
+                        \path[fill=lime]
+                            ([yshift=-1mm,xshift=-1mm]frame.north west)  
+                            arc[start angle=0,end angle=180,radius=1mm]
+                            ([yshift=-1mm,xshift=1mm]frame.north east)
+                            arc[start angle=180,end angle=0,radius=1mm];
+                        \path[left color=lime,right color = lime,
+                            middle color = lime]
+                            ([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+                            [rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east) 
+                            -- (frame.south east) -- (frame.south west)
+                            -- ([xshift=-1mm,yshift=-1mm]frame.north west)
+                            [sharp corners]-- cycle;
+                            },interior engine=empty,
+                    },
+fonttitle=\bfseries\sffamily,
+title={Définition ~\thetcbcounter}}
+%------------------------------------------------------
+\newtcolorbox[auto counter]{Proposition}{enhanced,
+before skip=2mm,after skip=2mm,
+colback=yellow!20!white,colframe=blue,boxrule=0.2mm,
+attach boxed title to top left =
+    {xshift=0.6cm,yshift*=1mm-\tcboxedtitleheight},
+    varwidth boxed title*=-3cm,
+    boxed title style={frame code={
+                        \path[fill=blue]
+                            ([yshift=-1mm,xshift=-1mm]frame.north west)  
+                            arc[start angle=0,end angle=180,radius=1mm]
+                            ([yshift=-1mm,xshift=1mm]frame.north east)
+                            arc[start angle=180,end angle=0,radius=1mm];
+                        \path[left color=blue,right color = blue,
+                            middle color = blue]
+                            ([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+                            [rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east) 
+                            -- (frame.south east) -- (frame.south west)
+                            -- ([xshift=-1mm,yshift=-1mm]frame.north west)
+                            [sharp corners]-- cycle;
+                            },interior engine=empty,
+                    },
+fonttitle=\bfseries\sffamily,
+title={Proposition ~\thetcbcounter}}
+%------------------------------------------------------
+\newtcolorbox[auto counter]{Théorème}{enhanced,
+before skip=2mm,after skip=2mm,
+colback=yellow!20!white,colframe=red,boxrule=0.2mm,
+attach boxed title to top left =
+    {xshift=0.6cm,yshift*=1mm-\tcboxedtitleheight},
+    varwidth boxed title*=-3cm,
+    boxed title style={frame code={
+                        \path[fill=red]
+                            ([yshift=-1mm,xshift=-1mm]frame.north west)  
+                            arc[start angle=0,end angle=180,radius=1mm]
+                            ([yshift=-1mm,xshift=1mm]frame.north east)
+                            arc[start angle=180,end angle=0,radius=1mm];
+                        \path[left color=red,right color = red,
+                            middle color = red]
+                            ([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+                            [rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east) 
+                            -- (frame.south east) -- (frame.south west)
+                            -- ([xshift=-1mm,yshift=-1mm]frame.north west)
+                            [sharp corners]-- cycle;
+                            },interior engine=empty,
+                    },
+fonttitle=\bfseries\sffamily,
+title={Théorème ~\thetcbcounter}}
+%------------------------------------------------------
+\newtcolorbox[auto counter]{Exemple}{
+  % breakable,
+  enhanced,
+  colback=white,
+  boxrule=0pt,
+  arc=0pt,
+  outer arc=0pt,
+  title=Exemple ~\thetcbcounter,
+  fonttitle=\bfseries\sffamily\large\strut,
+  coltitle=problemblue,
+  colbacktitle=problemblue,
+  title style={
+left color=exercisebgblue,
+    right color=white,
+    middle color=exercisebgblue  
+  },
+  overlay={
+    \draw[line width=1pt,problemblue] (frame.south west) -- (frame.south east);
+     \draw[line width=1pt,problemblue] (frame.north west) -- (frame.north east);
+    \draw[line width=1pt,problemblue] (frame.south west) -- (frame.north west);
+     \draw[line width=1pt,problemblue] (frame.south east) -- (frame.north east);
+  }
+}
+%----------------------------------------------------
+\newtcolorbox[auto counter]{Activité}{
+  % breakable,
+  enhanced,
+  colback=white,
+  boxrule=0pt,
+  arc=0pt,
+  outer arc=0pt,
+  title=Activité ~\thetcbcounter,
+  fonttitle=\bfseries\sffamily\large\strut,
+  coltitle=problemblue,
+  colbacktitle=problemblue,
+  title style={
+left color=yellow!50!white,
+    right color=white,
+    middle color=yellow!20!white  
+  },
+  overlay={
+    \draw[line width=1pt,problemblue] (frame.south west) -- (frame.south east);
+    \draw[line width=1pt,problemblue] (frame.north west) -- (frame.north east);
+    \draw[line width=1pt,problemblue] (frame.south west) -- (frame.north west);
+    \draw[line width=1pt,problemblue] (frame.south east) -- (frame.north east);
+  }
+}
+%----------------------------------------------------
+\newtcolorbox[auto counter]{Application}{
+  % breakable,
+  enhanced,
+  colback=white,
+  boxrule=0pt,
+  arc=0pt,
+  outer arc=0pt,
+  title=Application ~\thetcbcounter,
+  fonttitle=\bfseries\sffamily\large\strut,
+  coltitle=problemblue,
+  colbacktitle=problemblue,
+  title style={
+left color=exercisebgblue,
+    right color=white,
+    middle color=exercisebgblue  
+  },
+  overlay={
+    \draw[line width=1pt,problemblue] (frame.south west) -- (frame.south east);
+    \draw[line width=1pt,problemblue] (frame.north west) -- (frame.north east);
+    \draw[line width=1pt,problemblue] (frame.south west) -- (frame.north west);
+    \draw[line width=1pt,problemblue] (frame.south east) -- (frame.north east);
+  }
+}
+%----------------------------------------------------
+\newtcolorbox{mybox}[2]{enhanced,breakable,
+    before skip=2mm,after skip=2mm,
+    colback=white,colframe=#2!30!blue,boxrule=0.3mm,rightrule=0.3mm,
+    attach boxed title to top center={xshift=0cm,yshift*=1mm-\tcboxedtitleheight},
+    varwidth boxed title*=-3cm,
+    boxed title style={frame code={
+    \path[fill=#2!30!black]
+    ([yshift=-1mm,xshift=-1mm]frame.north west)
+    arc[start angle=0,end angle=180,radius=1mm]
+    ([yshift=-1mm,xshift=1mm]frame.north east)
+    arc[start angle=180,end angle=0,radius=1mm];
+    \path[draw=black,line width=1pt,left color=#2!1!white,right color=#2!1!blue!65,
+    middle color=#2!1!green]
+    ([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+    [rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east)
+    -- (frame.south east) -- (frame.south west)
+    -- ([xshift=-1mm,yshift=-1mm]frame.north west)
+    [sharp corners]-- cycle;
+    },interior engine=empty,
+    },
+title=#1,coltitle=black,fonttitle=\sffamily}
+%---------------------------------------------
+\newtcolorbox{boxone}{%
+    enhanced,
+    colback=brown!10,
+    boxrule=0pt,
+    sharp corners,
+    drop lifted shadow,
+    frame hidden,
+    fontupper=\bfseries,
+    notitle,
+    overlay={%
+        \draw[Circle-Circle, brown!70!black, line width=2pt](frame.north west)--(frame.south west); 
+        \draw[Circle-Circle, brown!70!black, line width=2pt](frame.north east)--(frame.south east);}
+    }
+    
+\newcommand{\R}{\mathbb{R}}
+\begin{document}
+
+
+\begin{tcolorbox}[title=\textcolor{blue}{\shadowbox{ Prof : Othmane Laksoumi}}
+\hfill
+\textcolor{blue}{\shadowbox{ Généralités sur les fonctions numériques }}]
+
+\end{tcolorbox}
+
+\begin{mybox}{Lycée Qualifiant Zitoun}{gray}
+    \begin{minipage}{8cm}
+    \textcolor{darkbrown}{Année scolaire : } 2024-2025 \\
+    \textcolor{darkbrown}{Niveau : } Tronc commun scientifique \\
+    \textcolor{darkbrown}{Durée totale : } $4h$
+    \end{minipage}
+\end{mybox}
+
+\begin{boxone}
+{\Large\ding{45}}
+\textcolor{red}{\large Contenus du programme :}
+    \begin{itemize}
+        \item Ensemble de définition d'une fonction numérique ; Égalité de deux fonctions numériques ;
+%        \item Égalité de deux fonctions numériques ;
+        \item Représentation graphique d'une fonction numérique ;
+        
+       	\item Fonction paire et fonction impaire (interprétation graphique) ;
+       	\item Variations d'une fonction numérique ;
+        \item Maximum, minimum d'une fonction numérique sur un intervalle ;
+        \item Représentation graphique et variations des fonctions suivantes :  \( x \mapsto ax^2 \) ; \( x \mapsto \dfrac{a}{x} \) ; \(x\mapsto ax^2 + bx + c\) ; \( x\mapsto \dfrac{ax + b}{cx + d}\) ; \( x\mapsto \sin(x) \) ; \( x\mapsto \cos(x) \) 
+%        \begin{itemize}
+%            \item
+%        \end{itemize}
+    \end{itemize}
+    
+    
+
+{\Large\ding{45}}
+\textcolor{red}{\large Les capacités attendues :}
+\begin{itemize}
+    		\item Reconnaître la variable et le domaine de définition de cette variable pour une fonction définie par un tableau de données ou une courbe ou une expression ;
+        \item Déterminer graphiquement l'image d'un nombre ;
+        \item Déterminer graphiquement un nombre dont l'image est connue à partir de la représentation graphique d'une fonction ;
+        Déduire les variations d'une fonction ou les valeurs maximales ou minimales à partir de la représentation graphique de cette fonction ;
+        \item Résoudre graphiquement des équations et des inéquations ;
+        \item Tracer la courbe d'une fonction polynôme du second degré ou d'une fonction homographique sans utiliser un changement de repère ;
+        \item Exprimer, en utilisant la notion de fonction, des situations issues de la vie courante ou des autres disciplines.
+\end{itemize}
+
+{\Large\ding{45}}
+\textcolor{red}{\large Recommandations pédagogiques :} 
+  \begin{itemize}
+      \item  Pour approcher la notion de fonction et sa représentation graphique, on pourra utiliser, dans la mesure du possible, des logiciels qui permettent de construire les courbes de fonctions, on pourra également faire cette approche à partir de situations bien choisies de la géométrie, de la physique, de l'économie ou de la vie courante
+      \item Il faudra entraîner les élèves à mathématiser des situations et à résoudre des problèmes divers lors de l'étude des extrémums d'une fonction ;
+    \item Toutes les fonctions traitées dans ce chapitre ainsi que les fonctions cos et sin sont considérées comme fonctions de référence ;
+    \item On pourra utiliser les calculatrices scientifiques pour déterminer des images ou les calculatrices programmables pour construire des courbes (ou signaler cette possibilité aux élèves) ;
+    \item On proposera des problèmes conduisant à des équations dont la résolution algébrique s'avère difficile et on en déterminera graphiquement des solutions approchées.
+  \end{itemize}
+\end{boxone}
+
+\newpage
+
+%\begin{tabular}{|>{\centering\arraybackslash}p{1.2cm}|>{\raggedright\arraybackslash}p{15.5cm}|>{\centering\arraybackslash}p{0.8cm}|}
+%\hline
+%\rowcolor{head}
+%
+%Etapes &
+%\centering Contenu du cours &
+% Durée \\
+%\hline
+%
+%&
+\vspace{0.1cm}
+\mysection{Généralités}
+
+\mysubsection{1}{Fonction numérique d'une variable réelle}
+\begin{Activité}
+Considérons un rectangle de longueur \((x - 3)\) cm et de largeur \((x - 2)\) cm tel que \(x\) un réel supérieur à \(3\).
+
+On désigne par \(f(x)\) la surface de ce rectangle.
+
+\begin{enumerate}
+    \item Déterminer l'expression de \(f(x)\).
+    \item Déterminer la surface de ce triangle si \(x = 4\) et si \(x = 5\).
+    \item Déterminer les valeurs possibles de \(x\) si \(f(x) = 12\) puis si \(f(x) = 20\).
+\end{enumerate}
+\end{Activité}
+
+\begin{Définition}
+Soit \(D\) un ensemble de nombre réels. Définir une fonction numérique \(f\) sur \(D\) revient à associer, à chaque réel \(x\) de \(D\), au plus un seul réel, appelé image de \(x\).
+\end{Définition}
+
+\begin{Exemple}
+\begin{itemize}
+	\item On pose $f(x) = x^3 - 2$, alors $f$ est une fonction numérique de la variable réelle $x$.
+	\item On pose $f(x) = \dfrac{x-2}{x+1}$, alors $f$ est une fonction numérique de la variable réelle $x$.
+	\item On pose $f(x) = \sqrt{x^2 + x - 1}$, alors $f$ est une fonction numérique de la variable réelle $x$.
+\end{itemize}
+
+\end{Exemple}
+
+\textcolor{red}{Remarque :}
+\begin{itemize}
+    \item L'image du nombre \(a\) par la fonction \(f\) est unique et se note \(f(a)\).
+    \item \(f(a)\) se lit \(f\) de \(a\). La notation suivante se rencontre également \(f: x \mapsto f(x)\).
+    \item Une fonction $f$ se note par $f : x\mapsto f(x)$.
+    \item Si \(b\) est l'image de \(a\), on a l'égalité \(f(a) = b\) et \(a\) s'appelle un antécédent de \(b\) par la fonction \(f\).
+\end{itemize}
+
+\begin{Application}
+Considérons \(f\) la fonction définie sur \(\mathbb{R}\) par : \(f(x) = 2x^2 - 3\).
+
+\begin{enumerate}
+    \item Déterminer les images de \(-2\), \(0\) et \(2\) par \(f\).
+    \item Déterminer les antécédents, si existent, des nombres \(0\), \(5\) et \(-4\).
+\end{enumerate}
+
+\end{Application}
+
+\mysubsection{2}{Ensemble de définition à une fonction numérique}
+
+\begin{Activité}
+Considérons \(f\) la fonction définie par : \(f(x) = \dfrac{2x}{x^2 - 1}\).
+
+Déterminer les images, si possible, des nombres \(0\), \(1\) et \(-1\).
+
+On dit que \(1\) et \(-1\) n'appartiennent pas au domaine de définition de \(f\).
+
+On écrit : \(D_f = \mathbb{R} \setminus \{-1, 1\}\) et se lit << \( \R \) privé de \(-1\) et \(1\)>>.
+\end{Activité}
+
+\begin{Définition}
+L'ensemble de définition d'une fonction \(f\), noté souvent \(D_f\), est l'ensemble des nombres réels \(x\) pour lesquels l'image \(f(x)\) est bien définie. On écrit : \(D_f = \{x \in \mathbb{R} \mid f(x) \in \mathbb{R}\}\).
+\end{Définition}
+
+\begin{Exemple}
+\begin{itemize}
+	\item Soit $f$ la fonction numérique définie par : $f(x) =  \sqrt{x + 6}$. Déterminons les réels qui appartient à $D_f$ parmi les nombres suivants : \( 3 \), \( -2 \), \( -6 \) et \( -7 \). 
+%	\item Soit $g$ la fonction numérique définie par : $g(x) =  \sqrt{x + 6}$. Déterminons les réels qui appartient à $D_g$ parmi les nombres suivants : \( 3 \), \( -2 \), \( -6 \) et \( -7 \). 
+	\item Soit $h$ la fonction numérique définie par : $g(x) =  \dfrac{x-3}{x+1}$. Déterminons les réels qui appartient à $D_g$ parmi les nombres suivants : \( 0 \), \( 1 \) et \( -1 \).
+\end{itemize}
+\end{Exemple}
+
+
+
+\textcolor{red}{Remarque :}
+
+Pour déterminer l'ensemble de définition d'une fonction il faut éliminer tous les nombre
+pour lesquels le dénominateur est nul et ce qui est sous le symbole de la racine carrée
+est négatif.
+\begin{Proposition}
+Soient \( P(x) \) et \( Q(x) \) deux polynômes, on a :
+\begin{center}
+\begin{tabularx}{0.8\textwidth} { 
+  | >{\centering\arraybackslash}X 
+  | >{\centering\arraybackslash}X |}
+ \hline
+ La fonction $f$ & Ensemble de définition \\
+ \hline
+ \( x\mapsto P(x) \)  & \( D_f = \R \) \\
+\hline
+ \( x\mapsto \dfrac{P(x)}{Q(x)} \)  & \( D_f = \{x\in\R / Q(x) \neq 0 \} \) \\
+\hline
+ \( x\mapsto \sqrt{P(x)} \)  & \( D_f = \{ x\in\R / P(x) \geq 0 \} \) \\
+\hline
+ \( x\mapsto \dfrac{P(x)}{\sqrt{Q(x)}} \)  & \(  D_f = \{ x\in\R / Q(x) > 0 \} \) \\
+\hline
+ \( x\mapsto \dfrac{\sqrt{P(x)}}{Q(x)} \)  & \(  D_f = \{ x\in\R / P(x) \geq 0 \text{ et } Q(x) \neq 0\} \) \\
+\hline
+ \( x\mapsto \sqrt{\dfrac{P(x)}{Q(x)}} \)  & \(  D_f = \{ x\in\R / \dfrac{P(x)}{Q(x)} \geq 0 \text{ et } Q(x) \neq 0 \} \) \\
+\hline
+ \( x\mapsto \dfrac{\sqrt{P(x)}}{\sqrt{Q(x)}} \)  & \(  D_f = \{ x\in\R / P(x) \geq 0 \text{ et } Q(x) > 0 \} \) \\
+\hline
+\end{tabularx}
+\end{center}
+\end{Proposition}
+
+\begin{Exemple}
+Déterminons l'ensemble de définition de la fonction $f$ définie par : $f(x) = \dfrac{x+1}{x-4}$.
+\end{Exemple}
+
+\begin{Application}
+Déterminer l'ensemble de définition de fonctions suivantes : 
+\begin{multicols}{3}
+\begin{enumerate}
+    \item \( f_1 : x \mapsto x^3 + 12x - 5 \)
+    \item \( f_2 : x \mapsto \dfrac{-2x + 4}{5x + 3} \)
+    \item \( f_3 : x \mapsto \dfrac{\sqrt{x}}{x^2 + x - 2} \)
+    \item \( f_4 : x \mapsto \dfrac{4x^2 - 5}{\sqrt{2x^2 + 2x - 4}} \)
+    \item \( f_5 : x \mapsto \dfrac{x + 4}{|x| - 3} \)
+    \item \( f_6 : x \mapsto \dfrac{\sqrt{2 - x}}{|x + 2| - 1} \)
+    \item \( f_7 : x \mapsto \dfrac{\sqrt{2 - x}}{\sqrt{4x + 2}} \)
+    \item \( f_8 : x \mapsto \sqrt{\dfrac{2 - x}{4x + 2}} \)
+\end{enumerate}
+\end{multicols}
+\end{Application}
+
+\mysubsection{3}{Égalité de deux fonctions numériques}
+\begin{Définition}
+Soient $f$ et $g$ deux fonctions et $D_f$ et $D_g$ ses ensembles de définitions respectifs.
+
+On dit que $f$ et \( g \) sont \textcolor{red}{égales} et on écrit $f = g$ si :
+\begin{itemize}
+	\item $D_f = D_g$ (On pose $D = D_f = D_g$)
+	\item $f(x) = g(x)$ pour tout $x$ de $D$.
+\end{itemize}
+\end{Définition}
+
+\begin{Exemple}
+\begin{itemize}
+	\item Considérons les fonctions $f$ et $g$ définies par $f(x) = \sqrt{x^2}$ et $g(x) = |x|$. Montrons que $f = g$.
+	\item Considérons les fonctions $f$ et $g$ définies par $f(x) = x$ et $g(x) = \dfrac{x^2}{x}$. Montrons que $f \neq g$.
+\end{itemize}
+\end{Exemple}
+
+\begin{Application}
+Montrer que les fonctions $f$ et $g$ définies par : $f(x) = \dfrac{\sqrt{x} + 2}{x - 4}$ et $g(x)  = \dfrac{1}{\sqrt{x} - 2}$ sont égales.
+
+\end{Application}
+
+\mysubsection{4}{Représentation graphique d'une fonction numérique}
+\begin{Activité}
+Considérons $f$ la fonction définie sur $\R$ par : $f(x) = 2x - 1$.
+Représenter graphiquement la fonction $f$ dans un repère orthonormé.
+\end{Activité}
+
+\begin{Définition}
+Dans un repère du plan, la courbe représentative de la fonction \( f \) , noté souvent \( (C_f) \), est l'ensemble des points \( M(x; f (x)) \) où \( x \) parcourt le domaine de définition $D_f$ de la fonction f.
+\end{Définition}
+
+\begin{Application}
+Considérons \( f \) la fonction définie par \( f(x) = \dfrac{x^2}{x+1} \).
+
+Parmi les points \( A(0;0), \ B(-1;2), \ C\left(1;\dfrac{1}{2}\right), \ D(-2;-4) \) et \( E(2;4) \) déterminer ceux appartient à \( C_f \).
+\end{Application}
+
+\begin{Application}
+Considérons $f$ la fonction définie par sa courbe \( C_f \) représentée ci-contre :
+\begin{enumerate}
+	\item Déterminer l'ensemble de définition de $f$.
+	\item Déterminer les images par $f$ des nombres suivants : -5, -4, -3.
+	\item Par $f$, quels sont les antécédents de $3$ et de $5$.
+	\item Déterminer les points d’intersection de \( C_f \) avec les axes du repère .
+\end{enumerate}
+\end{Application}
+
+\textcolor{red}{Remarque :}
+
+Soit $f$ une fonction et $(C_f)$ sa courbe dans un repère du plan.
+\begin{itemize}
+	\item Pour déterminer les points d'intersection de $(C_f)$ avec l'axe des abscisses, on résoudre l'équation $f(x) = 0$ tel que $x\in D_f$.
+	\item Si $0\in D_f$, alors le point d'intersection de $(C_f)$ avec l'axe des ordonnées est : $A(0;f(0))$.
+\end{itemize}
+
+\begin{Application}
+Considérons $f$ la fonction définie par $f(x) = x^2 + 2x - 8$.
+Déterminer les points d'intersection de $(C_f)$ avec les axes du repère.
+\end{Application}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
